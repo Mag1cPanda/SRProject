@@ -8,24 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		5855C485213674CC00009064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C484213674CC00009064 /* AppDelegate.m */; };
-		5855C488213674CC00009064 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C487213674CC00009064 /* ViewController.m */; };
-		5855C48B213674CC00009064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5855C489213674CC00009064 /* Main.storyboard */; };
 		5855C48D213674CE00009064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5855C48C213674CE00009064 /* Assets.xcassets */; };
 		5855C490213674CE00009064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5855C48E213674CE00009064 /* LaunchScreen.storyboard */; };
 		5855C493213674CE00009064 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C492213674CE00009064 /* main.m */; };
+		5855C4A32136775700009064 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4A22136775700009064 /* BaseModel.m */; };
+		5855C4A62136776C00009064 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4A52136776C00009064 /* BaseViewModel.m */; };
+		5855C4AA2136783800009064 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4A92136783800009064 /* BaseViewController.m */; };
+		5855C4AD2136787C00009064 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4AC2136787C00009064 /* BaseTableViewController.m */; };
+		5855C4B0213678E500009064 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4AF213678E500009064 /* BaseTableViewCell.m */; };
+		5855C4B621368ECD00009064 /* SRGloble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4B521368ECD00009064 /* SRGloble.m */; };
+		5855C4BD213692A900009064 /* SRConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4BC213692A900009064 /* SRConstant.m */; };
+		5855C4C52136BC4500009064 /* SRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4C42136BC4500009064 /* SRTabBarController.m */; };
+		5855C4C82136BC6500009064 /* SRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4C72136BC6500009064 /* SRNavigationController.m */; };
+		5855C4CF2136BF0500009064 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4CE2136BF0500009064 /* OneViewController.m */; };
+		5855C4D22136BF1F00009064 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4D12136BF1F00009064 /* TwoViewController.m */; };
+		5855C4D52136BF2C00009064 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4D42136BF2C00009064 /* ThreeViewController.m */; };
+		5855C4D82136BF3500009064 /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4D72136BF3500009064 /* FourViewController.m */; };
+		5855C4E12136C67100009064 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C4DF2136C67100009064 /* FiveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5855C480213674CC00009064 /* SRProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5855C483213674CC00009064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5855C484213674CC00009064 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5855C486213674CC00009064 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5855C487213674CC00009064 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5855C48A213674CC00009064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5855C48C213674CE00009064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5855C48F213674CE00009064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5855C491213674CE00009064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5855C492213674CE00009064 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5855C4A12136775700009064 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		5855C4A22136775700009064 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		5855C4A42136776C00009064 /* BaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		5855C4A52136776C00009064 /* BaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		5855C4A82136783800009064 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5855C4A92136783800009064 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5855C4AB2136787C00009064 /* BaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		5855C4AC2136787C00009064 /* BaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		5855C4AE213678E500009064 /* BaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
+		5855C4AF213678E500009064 /* BaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
+		5855C4B1213680FB00009064 /* SRMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRMacro.h; sourceTree = "<group>"; };
+		5855C4B321368E5900009064 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5855C4B421368ECD00009064 /* SRGloble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRGloble.h; sourceTree = "<group>"; };
+		5855C4B521368ECD00009064 /* SRGloble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRGloble.m; sourceTree = "<group>"; };
+		5855C4B921368F0E00009064 /* SRConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRConstant.h; sourceTree = "<group>"; };
+		5855C4BC213692A900009064 /* SRConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRConstant.m; sourceTree = "<group>"; };
+		5855C4C32136BC4500009064 /* SRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRTabBarController.h; sourceTree = "<group>"; };
+		5855C4C42136BC4500009064 /* SRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRTabBarController.m; sourceTree = "<group>"; };
+		5855C4C62136BC6400009064 /* SRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRNavigationController.h; sourceTree = "<group>"; };
+		5855C4C72136BC6500009064 /* SRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRNavigationController.m; sourceTree = "<group>"; };
+		5855C4CD2136BF0500009064 /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		5855C4CE2136BF0500009064 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		5855C4D02136BF1F00009064 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		5855C4D12136BF1F00009064 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		5855C4D32136BF2C00009064 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		5855C4D42136BF2C00009064 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		5855C4D62136BF3500009064 /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		5855C4D72136BF3500009064 /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
+		5855C4DF2136C67100009064 /* FiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		5855C4E02136C67100009064 /* FiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +97,156 @@
 		5855C482213674CC00009064 /* SRProject */ = {
 			isa = PBXGroup;
 			children = (
+				5855C4C22136BC4000009064 /* Tab&Nav */,
+				5855C4A02136770800009064 /* Network */,
+				5855C49F213676F400009064 /* Base */,
+				5855C49E2136769700009064 /* Third */,
+				5855C49D2136766C00009064 /* Other */,
+				5855C49C2136764B00009064 /* ViewModel */,
+				5855C49B2136764100009064 /* Controller */,
+				5855C49A2136761D00009064 /* View */,
+				5855C4992136761600009064 /* Model */,
 				5855C483213674CC00009064 /* AppDelegate.h */,
 				5855C484213674CC00009064 /* AppDelegate.m */,
-				5855C486213674CC00009064 /* ViewController.h */,
-				5855C487213674CC00009064 /* ViewController.m */,
-				5855C489213674CC00009064 /* Main.storyboard */,
 				5855C48C213674CE00009064 /* Assets.xcassets */,
 				5855C48E213674CE00009064 /* LaunchScreen.storyboard */,
 				5855C491213674CE00009064 /* Info.plist */,
 				5855C492213674CE00009064 /* main.m */,
+				5855C4B321368E5900009064 /* PrefixHeader.pch */,
 			);
 			path = SRProject;
+			sourceTree = "<group>";
+		};
+		5855C4992136761600009064 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5855C49A2136761D00009064 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5855C49B2136764100009064 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4C92136BEDF00009064 /* FunctionOne */,
+				5855C4CC2136BEDF00009064 /* FunctionTwo */,
+				5855C4CB2136BEDF00009064 /* FunctionThree */,
+				5855C4CA2136BEDF00009064 /* FunctionFour */,
+				5855C4DE2136C66300009064 /* FunctionFive */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5855C49C2136764B00009064 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5855C49D2136766C00009064 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4B1213680FB00009064 /* SRMacro.h */,
+				5855C4B921368F0E00009064 /* SRConstant.h */,
+				5855C4BC213692A900009064 /* SRConstant.m */,
+				5855C4B421368ECD00009064 /* SRGloble.h */,
+				5855C4B521368ECD00009064 /* SRGloble.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		5855C49E2136769700009064 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		5855C49F213676F400009064 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4A12136775700009064 /* BaseModel.h */,
+				5855C4A22136775700009064 /* BaseModel.m */,
+				5855C4A42136776C00009064 /* BaseViewModel.h */,
+				5855C4A52136776C00009064 /* BaseViewModel.m */,
+				5855C4A82136783800009064 /* BaseViewController.h */,
+				5855C4A92136783800009064 /* BaseViewController.m */,
+				5855C4AB2136787C00009064 /* BaseTableViewController.h */,
+				5855C4AC2136787C00009064 /* BaseTableViewController.m */,
+				5855C4AE213678E500009064 /* BaseTableViewCell.h */,
+				5855C4AF213678E500009064 /* BaseTableViewCell.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5855C4A02136770800009064 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5855C4C22136BC4000009064 /* Tab&Nav */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4C32136BC4500009064 /* SRTabBarController.h */,
+				5855C4C42136BC4500009064 /* SRTabBarController.m */,
+				5855C4C62136BC6400009064 /* SRNavigationController.h */,
+				5855C4C72136BC6500009064 /* SRNavigationController.m */,
+			);
+			path = "Tab&Nav";
+			sourceTree = "<group>";
+		};
+		5855C4C92136BEDF00009064 /* FunctionOne */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4CD2136BF0500009064 /* OneViewController.h */,
+				5855C4CE2136BF0500009064 /* OneViewController.m */,
+			);
+			path = FunctionOne;
+			sourceTree = "<group>";
+		};
+		5855C4CA2136BEDF00009064 /* FunctionFour */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4D62136BF3500009064 /* FourViewController.h */,
+				5855C4D72136BF3500009064 /* FourViewController.m */,
+			);
+			path = FunctionFour;
+			sourceTree = "<group>";
+		};
+		5855C4CB2136BEDF00009064 /* FunctionThree */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4D32136BF2C00009064 /* ThreeViewController.h */,
+				5855C4D42136BF2C00009064 /* ThreeViewController.m */,
+			);
+			path = FunctionThree;
+			sourceTree = "<group>";
+		};
+		5855C4CC2136BEDF00009064 /* FunctionTwo */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4D02136BF1F00009064 /* TwoViewController.h */,
+				5855C4D12136BF1F00009064 /* TwoViewController.m */,
+			);
+			path = FunctionTwo;
+			sourceTree = "<group>";
+		};
+		5855C4DE2136C66300009064 /* FunctionFive */ = {
+			isa = PBXGroup;
+			children = (
+				5855C4E02136C67100009064 /* FiveViewController.h */,
+				5855C4DF2136C67100009064 /* FiveViewController.m */,
+			);
+			path = FunctionFive;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +308,6 @@
 			files = (
 				5855C490213674CE00009064 /* LaunchScreen.storyboard in Resources */,
 				5855C48D213674CE00009064 /* Assets.xcassets in Resources */,
-				5855C48B213674CC00009064 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +318,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5855C488213674CC00009064 /* ViewController.m in Sources */,
+				5855C4AA2136783800009064 /* BaseViewController.m in Sources */,
+				5855C4C52136BC4500009064 /* SRTabBarController.m in Sources */,
 				5855C493213674CE00009064 /* main.m in Sources */,
+				5855C4AD2136787C00009064 /* BaseTableViewController.m in Sources */,
+				5855C4BD213692A900009064 /* SRConstant.m in Sources */,
+				5855C4B0213678E500009064 /* BaseTableViewCell.m in Sources */,
+				5855C4D22136BF1F00009064 /* TwoViewController.m in Sources */,
+				5855C4A32136775700009064 /* BaseModel.m in Sources */,
+				5855C4E12136C67100009064 /* FiveViewController.m in Sources */,
+				5855C4D52136BF2C00009064 /* ThreeViewController.m in Sources */,
+				5855C4D82136BF3500009064 /* FourViewController.m in Sources */,
+				5855C4C82136BC6500009064 /* SRNavigationController.m in Sources */,
 				5855C485213674CC00009064 /* AppDelegate.m in Sources */,
+				5855C4A62136776C00009064 /* BaseViewModel.m in Sources */,
+				5855C4B621368ECD00009064 /* SRGloble.m in Sources */,
+				5855C4CF2136BF0500009064 /* OneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5855C489213674CC00009064 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5855C48A213674CC00009064 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5855C48E213674CE00009064 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,7 +466,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5GVMMT2RZ7;
+				DEVELOPMENT_TEAM = S58CK2GNVZ;
 				INFOPLIST_FILE = SRProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,7 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5GVMMT2RZ7;
+				DEVELOPMENT_TEAM = S58CK2GNVZ;
 				INFOPLIST_FILE = SRProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

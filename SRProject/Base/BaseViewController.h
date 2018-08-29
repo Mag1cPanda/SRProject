@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseViewController.h
 //  SRProject
 //
 //  Created by longrise on 2018/8/29.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SRConstant.h"
+#import "SRMacro.h"
+#import "SRGloble.h"
 
-@interface ViewController : UIViewController
-
+@interface BaseViewController : UIViewController
 
 @end
-
