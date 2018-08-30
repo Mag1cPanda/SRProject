@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SRTabBarController.h"
 #import "SRNavigationController.h"
+#import <IQKeyboardManager.h>
 
 @interface AppDelegate ()
 
@@ -25,6 +26,9 @@
     
     SRTabBarController *tabBarC = [SRTabBarController new];
     self.window.rootViewController = tabBarC;
+    
+    IQKeyboardManager.sharedManager.enable = YES;
+    IQKeyboardManager.sharedManager.enableAutoToolbar = YES;
     
     return YES;
 }

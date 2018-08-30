@@ -20,6 +20,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
+//重写setTitle方法，避免setTitle时改变TarBarItem
+-(void)setTitle:(NSString *)title
+{
+    self.navigationItem.title = title;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SRMacro.h"
 
 //编译时刻:宏是预编译（编译之前处理），const是编译阶段。
 //编译检查:宏不做检查，不会报编译错误，只是替换，const会编译检查，会报编译错误。
@@ -37,9 +38,9 @@
 
 //extern与const联合使用
 //开发中使用场景:在多个文件中经常使用的同一个字符串常量，可以使用extern与const组合。
-extern NSString * const nameKey;
+extern NSString * const kBBURL;
 
-static const NSString *BBURL = @"http://59.173.241.186:51108/BBT/restservices/bbapp";
+//static const UIColor *kOrangeTextColor = kColorWithHex(0xFE9806);
 
 @interface SRConstant : NSObject
 

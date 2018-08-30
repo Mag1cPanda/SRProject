@@ -23,6 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self setupControllers];
 }
 
@@ -34,19 +37,19 @@
 - (void)setupControllers
 {
     OneViewController *oneVC = [OneViewController new];
-    [oneVC.tabBarItem setupWithTitle:@"首页" imageName:@"bar1_inactive" selectedImageName:@"bar1_active"];
+    [oneVC.tabBarItem setupWithTitle:@"One" imageName:@"bar1_inactive" selectedImageName:@"bar1_active"];
     
     TwoViewController *twoVC = [TwoViewController new];
-    [twoVC.tabBarItem setupWithTitle:@"圈子" imageName:@"bar2_inactive" selectedImageName:@"bar2_active"];
+    [twoVC.tabBarItem setupWithTitle:@"Two" imageName:@"bar2_inactive" selectedImageName:@"bar2_active"];
     
     ThreeViewController *threeVC = [ThreeViewController new];
-    [threeVC.tabBarItem setupWithTitle:@"学习" imageName:@"bar3_inactive" selectedImageName:@"bar3_active"];
+    [threeVC.tabBarItem setupWithTitle:@"Three" imageName:@"bar3_inactive" selectedImageName:@"bar3_active"];
     
     FourViewController *fourVC = [FourViewController new];
-    [fourVC.tabBarItem setupWithTitle:@"题库" imageName:@"bar4_inactive" selectedImageName:@"bar4_active"];
+    [fourVC.tabBarItem setupWithTitle:@"Four" imageName:@"bar4_inactive" selectedImageName:@"bar4_active"];
     
     FiveViewController *fiveVC = [FiveViewController new];
-    [fiveVC.tabBarItem setupWithTitle:@"我的" imageName:@"bar5_inactive" selectedImageName:@"bar5_active"];
+    [fiveVC.tabBarItem setupWithTitle:@"Five" imageName:@"bar5_inactive" selectedImageName:@"bar5_active"];
     
     SRNavigationController *nav1 = [[SRNavigationController alloc] initWithRootViewController:oneVC];
     SRNavigationController *nav2 = [[SRNavigationController alloc] initWithRootViewController:twoVC];

@@ -10,4 +10,26 @@
 
 @implementation BaseModel
 
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key
+{
+    NSLog(@"forUndefinedKey ~ %@",key);
+}
+
+-(instancetype)initWithDic:(NSDictionary *)dic
+{
+    self = [super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:dic];
+    }
+    return self;
+}
+
++(instancetype)modelWithDic:(NSDictionary *)dic
+{
+    BaseModel *model = [BaseModel new];
+//    [model setValuesForKeysWithDictionary:dic];
+    
+    return model;
+}
+
 @end

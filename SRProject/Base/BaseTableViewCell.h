@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry.h>
+#import "SRMacro.h"
+#import "SRConstant.h"
 
 @interface BaseTableViewCell : UITableViewCell
 
