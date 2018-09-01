@@ -42,7 +42,7 @@
     };
 }
 
-- (CBTableViewSectionMaker * (^)())autoHeight {
+- (CBTableViewSectionMaker * (^)(void))autoHeight {
     return ^CBTableViewSectionMaker * {
         self.section.isAutoHeight = YES;
         return self;
@@ -87,15 +87,15 @@
     return retStr;
 }
 
-- (CBTableViewSectionMaker * (^)(UIView * (^)()))headerView {
-    return ^CBTableViewSectionMaker *(UIView * (^view)()) {
+- (CBTableViewSectionMaker * (^)(UIView * (^)(void)))headerView {
+    return ^CBTableViewSectionMaker *(UIView * (^view)(void)) {
         self.section.headerView = view();
         return self;
     };
 }
 
-- (CBTableViewSectionMaker * (^)(UIView * (^)()))footerView {
-    return ^CBTableViewSectionMaker *(UIView * (^view)()) {
+- (CBTableViewSectionMaker * (^)(UIView * (^)(void)))footerView {
+    return ^CBTableViewSectionMaker *(UIView * (^view)(void)) {
         self.section.footerView = view();
         return self;
     };

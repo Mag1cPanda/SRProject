@@ -48,6 +48,8 @@
 		5855C5342137F5C500009064 /* FourModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C5332137F5C500009064 /* FourModel.m */; };
 		5855C5372137F5D100009064 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C5362137F5D100009064 /* ThreeModel.m */; };
 		5855C53A2137F5DC00009064 /* TwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C5392137F5DC00009064 /* TwoModel.m */; };
+		5855C53D2137F7C000009064 /* PXBMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C53C2137F7C000009064 /* PXBMViewController.m */; };
+		586B4F2D2138D14A0073A90E /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +136,10 @@
 		5855C5362137F5D100009064 /* ThreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeModel.m; sourceTree = "<group>"; };
 		5855C5382137F5DC00009064 /* TwoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoModel.h; sourceTree = "<group>"; };
 		5855C5392137F5DC00009064 /* TwoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoModel.m; sourceTree = "<group>"; };
+		5855C53B2137F7C000009064 /* PXBMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXBMViewController.h; sourceTree = "<group>"; };
+		5855C53C2137F7C000009064 /* PXBMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXBMViewController.m; sourceTree = "<group>"; };
+		586B4F2B2138D14A0073A90E /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
+		586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		7B5E38B92BE30C973AD422E6 /* Pods-SRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRProject/Pods-SRProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CDF8F22E889AC2A14A6150 /* libPods-SRProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -255,6 +261,8 @@
 			isa = PBXGroup;
 			children = (
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
+				586B4F2B2138D14A0073A90E /* UINavigationBar+Awesome.h */,
+				586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -301,6 +309,8 @@
 			children = (
 				5855C4CD2136BF0500009064 /* OneViewController.h */,
 				5855C4CE2136BF0500009064 /* OneViewController.m */,
+				5855C53B2137F7C000009064 /* PXBMViewController.h */,
+				5855C53C2137F7C000009064 /* PXBMViewController.m */,
 			);
 			path = FunctionOne;
 			sourceTree = "<group>";
@@ -640,9 +650,11 @@
 				5855C4B0213678E500009064 /* BaseTableViewCell.m in Sources */,
 				5855C4D22136BF1F00009064 /* TwoViewController.m in Sources */,
 				5855C4F0213792E200009064 /* CBTableViewSectionMaker.m in Sources */,
+				5855C53D2137F7C000009064 /* PXBMViewController.m in Sources */,
 				5855C52B2137C69100009064 /* PXBMSecondClassCell.m in Sources */,
 				5855C503213793BD00009064 /* FourViewModel.m in Sources */,
 				5855C5252137C15700009064 /* SRTableView.m in Sources */,
+				586B4F2D2138D14A0073A90E /* UINavigationBar+Awesome.m in Sources */,
 				5855C4EF213792E200009064 /* CBTableViewDataSourceMaker.m in Sources */,
 				5855C5312137F5BB00009064 /* FiveModel.m in Sources */,
 				5855C51F2137946800009064 /* ThreeTableViewCell.m in Sources */,

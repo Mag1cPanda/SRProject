@@ -14,6 +14,4 @@
 
 @property (nonatomic, copy) NSString *topClassName;
 
--(void)configure:(NSDictionary * )row index:(NSNumber * )index;
-
 @end

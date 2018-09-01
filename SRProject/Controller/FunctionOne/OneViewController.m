@@ -11,6 +11,7 @@
 #import "CBTableViewDataSource.h"
 #import "PXBMTopClassCell.h"
 #import "OneViewModel.h"
+#import "PXBMViewController.h"
 
 @interface OneViewController ()
 @property (nonatomic, strong) SRTableView *tableView;
@@ -56,23 +57,23 @@
             });
             
             section.event(^(NSUInteger index,NSDictionary *data) {
-                NSLog(@"index ~ %zi \ndata ~ %@",index, data);
+                PXBMViewController *vc = [PXBMViewController new];
+                [self.navigationController pushViewController:vc animated:YES];
             });
             
-            section.headerTitle(@"11111");
-            
-            section.footerView(^(){
-                UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
-                footer.backgroundColor = OrangeTextColor;
-                return footer;
-            });
+//            section.headerTitle(@"11111");
+//            section.footerView(^(){
+//                UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
+//                footer.backgroundColor = OrangeTextColor;
+//                return footer;
+//            });
         }];
         
-        make.headerView(^(){
-            UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
-            header.backgroundColor = OrangeTextColor;
-            return header;
-        });
+//        make.headerView(^(){
+//            UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
+//            header.backgroundColor = OrangeTextColor;
+//            return header;
+//        });
         
     }];
     
@@ -92,6 +93,8 @@
         _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight-TabBarHeight) style:UITableViewStylePlain];
 //        _tableView.backgroundColor = ColorWithHex(0xEEEEEE);
 //        _tableView.backgroundColor = [UIColor colorNamed:@"Blue"];
+        
+        
     }
     return _tableView;
 }

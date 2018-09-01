@@ -17,8 +17,8 @@
 
 - (instancetype)initWithTableView:(UITableView *)tableView;
 - (CBTableViewDataSourceMaker * (^)(CGFloat))height;
-- (CBTableViewDataSourceMaker * (^)(UIView * (^)()))headerView;
-- (CBTableViewDataSourceMaker * (^)(UIView * (^)()))footerView;
+- (CBTableViewDataSourceMaker * (^)(UIView * (^)(void)))headerView;
+- (CBTableViewDataSourceMaker * (^)(UIView * (^)(void)))footerView;
 
 - (void)commitEditing:(void(^)(UITableView * tableView,UITableViewCellEditingStyle * editingStyle,NSIndexPath * indexPath))block;
 - (void)scrollViewDidScroll:(void(^)(UIScrollView *scrollView))block;

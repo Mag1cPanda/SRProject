@@ -19,15 +19,15 @@
 
 - (CBTableViewSectionMaker * (^)(CGFloat))height;
 
-- (CBTableViewSectionMaker * (^)())autoHeight;
+- (CBTableViewSectionMaker * (^)(void))autoHeight;
 
 - (CBTableViewSectionMaker * (^)(void(^)(NSUInteger index, id data)))event;
 
 - (CBTableViewSectionMaker * (^)(NSString *))headerTitle;
 - (CBTableViewSectionMaker * (^)(NSString *))footerTitle;
 
-- (CBTableViewSectionMaker * (^)(UIView * (^)()))headerView;
-- (CBTableViewSectionMaker * (^)(UIView * (^)()))footerView;
+- (CBTableViewSectionMaker * (^)(UIView * (^)(void)))headerView;
+- (CBTableViewSectionMaker * (^)(UIView * (^)(void)))footerView;
 
 @property(nonatomic, strong) CBDataSourceSection * section;
 

@@ -19,8 +19,8 @@
     return self;
 }
 
-- (CBTableViewDataSourceMaker * (^)(UIView * (^)()))headerView {
-    return ^CBTableViewDataSourceMaker *(UIView * (^view)()) {
+- (CBTableViewDataSourceMaker * (^)(UIView * (^)(void)))headerView {
+    return ^CBTableViewDataSourceMaker *(UIView * (^view)(void)) {
         UIView * headerView =  view();
         [self.tableView.tableHeaderView layoutIfNeeded];
         self.tableView.tableHeaderView = headerView;
@@ -28,8 +28,8 @@
     };
 }
 
-- (CBTableViewDataSourceMaker * (^)(UIView * (^)()))footerView {
-    return ^CBTableViewDataSourceMaker *(UIView * (^view)()) {
+- (CBTableViewDataSourceMaker * (^)(UIView * (^)(void)))footerView {
+    return ^CBTableViewDataSourceMaker *(UIView * (^view)(void)) {
         UIView * footerView = view();
         [self.tableView.tableFooterView layoutIfNeeded];
         self.tableView.tableFooterView = footerView;
