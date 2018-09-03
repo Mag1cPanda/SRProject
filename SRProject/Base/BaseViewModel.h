@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "SRConstant.h"
-#import "SRMacro.h"
 #import "SRGloble.h"
 
 @interface BaseViewModel : NSObject

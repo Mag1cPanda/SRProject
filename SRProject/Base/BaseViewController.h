@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "SRConstant.h"
-#import "SRMacro.h"
 #import "SRGloble.h"
 
 @interface BaseViewController : UIViewController

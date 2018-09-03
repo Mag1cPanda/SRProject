@@ -6,8 +6,12 @@
 //  Copyright © 2018年 longrise. All rights reserved.
 //
 
-#import "BaseTableViewCell.h"
+#import "BaseCollectionViewCell.h"
 
-@interface PXBMSecondClassCell : BaseTableViewCell
+@interface PXBMSecondClassCell : BaseCollectionViewCell
+
+@property (nonatomic, strong) UILabel *centerLabel;
+
+@property (nonatomic, assign) BOOL cellSelected;
 
 @end

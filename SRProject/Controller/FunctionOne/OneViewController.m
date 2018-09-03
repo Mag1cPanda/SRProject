@@ -15,7 +15,6 @@
 
 @interface OneViewController ()
 @property (nonatomic, strong) SRTableView *tableView;
-//@property (nonatomic, strong) UICollectionView *collectionView;
 
 @property (nonatomic, strong) OneViewModel *viewModel;
 @end
@@ -91,10 +90,7 @@
 {
     if (!_tableView) {
         _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight-TabBarHeight) style:UITableViewStylePlain];
-//        _tableView.backgroundColor = ColorWithHex(0xEEEEEE);
-//        _tableView.backgroundColor = [UIColor colorNamed:@"Blue"];
-        
-        
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
 }

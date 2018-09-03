@@ -15,4 +15,6 @@
 
 @property (nonatomic, strong) NSDictionary *dataDic;
 
+@property (nonatomic, assign) BOOL cellSelected;
+
 @end
