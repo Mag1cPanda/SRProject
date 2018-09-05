@@ -14,7 +14,8 @@
 #import "PXBMRecommendOneCell.h"
 #import "PXBMRecommendTwoCell.h"
 #import "PXBMSecondClassCell.h"
-
+#import "BBAllCourseViewController.h"
+//#import <ReactiveObjC.h>
 
 @interface PXBMViewController ()
 <UITableViewDelegate,
@@ -37,6 +38,7 @@ UICollectionViewDelegateFlowLayout>
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"培训报名";
+    self.view.backgroundColor = ColorWithHex(0xF9F9F9);
     
     [self.view addSubview:self.tableView];
     
@@ -146,7 +148,12 @@ UICollectionViewDelegateFlowLayout>
     }
     
     if (indexPath.section == 3) {
-        PXBMSecondClassCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"PXBMSecondClassCell" forIndexPath:indexPath];
+        NSString *cellId=[NSString stringWithFormat:@"PXBMSecondClassCell%zi%zi", indexPath.section,indexPath.row];
+        [collectionView registerClass:[PXBMSecondClassCell class] forCellWithReuseIdentifier:cellId];
+        
+        PXBMSecondClassCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
+        
+        
         return cell;
     }
     
@@ -168,7 +175,7 @@ UICollectionViewDelegateFlowLayout>
     }
     
     if (indexPath.section == 3) {
-        return CGSizeMake(83, 30);
+        return CGSizeMake((ScreenWidth-90-40)/3, 30);
     }
     
     return CGSizeZero;
@@ -189,17 +196,62 @@ UICollectionViewDelegateFlowLayout>
     }
     
     if (indexPath.section == 3) {
+        PXBMSecondClassCell *cell = (PXBMSecondClassCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        cell.cellSelected = YES;
         
+        BBAllCourseViewController *vc = [BBAllCourseViewController new];
+        vc.title = @"继续教育";
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    if (section == 3) {
+        return UIEdgeInsetsMake(10, 10, 10, 10);
+    } else {
+        return UIEdgeInsetsZero;
+    }
+}
+
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section
+//{
+//    return 10;
+//}
+
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
+//{
+//    return 10;
+//}
+
+
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        
+    }
+    
+    if (indexPath.section == 1) {
+        
+    }
+    
+    if (indexPath.section == 2) {
+        
+    }
+    
+    if (indexPath.section == 3) {
+        PXBMSecondClassCell *cell = (PXBMSecondClassCell *)[collectionView cellForItemAtIndexPath:indexPath];
+        cell.cellSelected = NO;
+    }
+}
 
 #pragma mark - Lazy
 -(UITableView *)tableView
 {
     if (!_tableView) {
         _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, NavHeight, 90, [self getViewHeight]) style:UITableViewStylePlain];
-        _tableView.backgroundColor = ColorWithHex(0xEEEEEE);
+        _tableView.backgroundColor = ColorWithHex(0xF9F9F9);
+//        _tableView.backgroundView =
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -212,11 +264,12 @@ UICollectionViewDelegateFlowLayout>
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
 //        layout.itemSize = CGSizeMake(100, 100);
-        layout.minimumInteritemSpacing = 0;
-        layout.minimumLineSpacing = 0;
+//        layout.minimumInteritemSpacing = 10;
+//        layout.minimumLineSpacing = 0;
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(90, NavHeight, ScreenWidth-90, [self getViewHeight]) collectionViewLayout:layout];
         _collectionView.backgroundColor = ColorWithHex(0xF9F9F9);
+//        _collectionView.backgroundView =
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         
@@ -224,7 +277,7 @@ UICollectionViewDelegateFlowLayout>
         [_collectionView registerClass:[PXBMBannerCell class] forCellWithReuseIdentifier:@"PXBMBannerCell"];
         [_collectionView registerClass:[PXBMRecommendOneCell class] forCellWithReuseIdentifier:@"PXBMRecommendOneCell"];
         [_collectionView registerClass:[PXBMRecommendTwoCell class] forCellWithReuseIdentifier:@"PXBMRecommendTwoCell"];
-        [_collectionView registerClass:[PXBMSecondClassCell class] forCellWithReuseIdentifier:@"PXBMSecondClassCell"];
+//        [_collectionView registerClass:[PXBMSecondClassCell class] forCellWithReuseIdentifier:@"PXBMSecondClassCell"];
         
         if (@available(iOS 11.0, *)) {
             _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;

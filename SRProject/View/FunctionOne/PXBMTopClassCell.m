@@ -8,8 +8,11 @@
 
 #import "PXBMTopClassCell.h"
 
-#define SelectedColor ColorWithHex(0xF9F9F9)
-#define UnSelectedColor ColorWithHex(0xEEEEEE)
+#define SelectedBackColor ColorWithHex(0xF9F9F9)
+#define UnSelectedBackColor ColorWithHex(0xEEEEEE)
+#define SelectedTextColor ColorWithHex(0xFE9806)
+#define UnSelectedTextColor ColorWithHex(0x999999)
+
 
 @implementation PXBMTopClassCell
 
@@ -41,8 +44,8 @@
         }];
         
         self.centerLabel = [UILabel new];
-//        self.centerLabel.text = @"哈哈哈哈哈哈";
-        self.centerLabel.textColor = OrangeTextColor;
+        self.centerLabel.textAlignment = NSTextAlignmentCenter;
+        self.centerLabel.textColor = UnSelectedTextColor;
         self.centerLabel.font = SystemFont(14);
         [self.contentView addSubview:self.centerLabel];
         [self.centerLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -56,7 +59,7 @@
         [self.contentView addSubview:lineView];
         [lineView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.right.bottom.mas_equalTo(0);
-            make.height.mas_equalTo(1);
+            make.height.mas_equalTo(0.5);
         }];
     }
     return self;
@@ -73,10 +76,12 @@
     _cellSelected = cellSelected;
     
     if (cellSelected) {
-        self.contentView.backgroundColor = SelectedColor;
+        self.contentView.backgroundColor = SelectedBackColor;
+        self.centerLabel.textColor = SelectedTextColor;
         self.leftView.hidden = NO;
     } else {
-        self.contentView.backgroundColor = UnSelectedColor;
+        self.contentView.backgroundColor = UnSelectedBackColor;
+        self.centerLabel.textColor = UnSelectedTextColor;
         self.leftView.hidden = YES;
     }
 }

@@ -10,6 +10,13 @@
 
 #define kSRGlobleInstance [SRGloble shareInstance]
 
+
+//@protocol RCIMUserInfoDataSource <NSObject>
+//
+//- (void)testDelegate;
+//
+//@end
+
 @interface SRGloble : NSObject
 
 +(instancetype)shareInstance;

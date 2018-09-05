@@ -19,6 +19,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.contentView.backgroundColor = ColorWithHex(0xF9F9F9);
+        
         self.dotView = [UIView new];
         self.dotView.backgroundColor = [UIColor orangeColor];
         self.dotView.layer.cornerRadius = 2.5;

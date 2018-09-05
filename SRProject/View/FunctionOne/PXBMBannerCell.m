@@ -14,6 +14,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.contentView.backgroundColor = ColorWithHex(0xF9F9F9);
+        
         self.bannerImage = [UIImageView new];
         self.bannerImage.backgroundColor = [UIColor orangeColor];
         [self.contentView addSubview:self.bannerImage];

@@ -23,4 +23,5 @@ static SRGloble *_instance;
     return _instance;
 }
 
+
 @end

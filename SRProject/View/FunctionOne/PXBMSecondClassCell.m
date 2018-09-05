@@ -8,8 +8,12 @@
 
 #import "PXBMSecondClassCell.h"
 
-#define SelectedColor ColorWithHex(0xF2F2F2)
-#define UnSelectedColor ColorWithHex(0xEEEEEE)
+#define SelectedBackColor ColorWithHex(0xF2F2F2)
+#define UnSelectedBackColor ColorWithHex(0xFFFFFF)
+
+#define SelectedTextColor ColorWithHex(0xFE9806)
+#define UnSelectedTextColor ColorWithHex(0x4D4D4D)
+
 
 @implementation PXBMSecondClassCell
 
@@ -23,17 +27,25 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.layer.cornerRadius = 15;
+        //        self.contentView.backgroundColor = RandomColor;
+        self.contentView.backgroundColor = ColorWithHex(0xF9F9F9);
         
         self.centerLabel = [UILabel new];
+        self.centerLabel.backgroundColor = [UIColor whiteColor];
         self.centerLabel.text = @"哈哈哈哈哈";
-        self.centerLabel.textColor = ColorWithHex(0x4D4D4D);
+        self.centerLabel.textColor = UnSelectedTextColor;
         self.centerLabel.font = SystemFont(14);
+        self.centerLabel.textAlignment = NSTextAlignmentCenter;
+        self.centerLabel.layer.cornerRadius = 15;
+        self.centerLabel.layer.borderWidth = 0.5;
+        self.centerLabel.layer.borderColor = ColorWithHex(0xEEEEEE).CGColor;
+        self.centerLabel.clipsToBounds = YES;
         [self.contentView addSubview:self.centerLabel];
         [self.centerLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(self.contentView.mas_centerY);
-            make.left.mas_equalTo(8);
-            make.right.mas_equalTo(-8);
+            make.left.mas_equalTo(0);
+            make.right.mas_equalTo(0);
+            make.height.mas_equalTo(30);
         }];
     }
     return self;
@@ -44,13 +56,11 @@
     _cellSelected = cellSelected;
     
     if (cellSelected) {
-        self.contentView.backgroundColor = SelectedColor;;
-        
-        self.layer.backgroundColor = [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1].CGColor;
+        self.centerLabel.backgroundColor = SelectedBackColor;
+        self.centerLabel.textColor = SelectedTextColor;
     } else {
-        self.contentView.backgroundColor = UnSelectedColor;
-        
-        self.layer.backgroundColor = [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1].CGColor;
+        self.centerLabel.backgroundColor = UnSelectedBackColor;
+        self.centerLabel.textColor = UnSelectedTextColor;
     }
 }
 

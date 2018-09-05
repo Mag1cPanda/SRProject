@@ -14,9 +14,12 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+        self.contentView.backgroundColor = ColorWithHex(0xF9F9F9);
+        
         self.leftImage = [UIImageView new];
         self.leftImage.backgroundColor = [UIColor orangeColor];
-        [self addSubview:self.leftImage];
+        [self.contentView addSubview:self.leftImage];
         [self.leftImage mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.mas_equalTo(10);
             make.width.mas_equalTo(75);
@@ -29,7 +32,7 @@
         self.rightLabel.font = SystemFont(14);
         self.rightLabel.textColor = ColorWithHex(0x333333);
         self.rightLabel.numberOfLines = 2;
-        [self addSubview:self.rightLabel];
+        [self.contentView addSubview:self.rightLabel];
         [self.rightLabel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.bottom.mas_equalTo(self.leftImage);
             make.left.mas_equalTo(95);
@@ -40,10 +43,10 @@
         
         self.arrow = [UIImageView new];
         self.arrow.image = [UIImage imageNamed:@"Icons_My_ic_my_getmember_gary"];
-        [self addSubview:self.arrow];
+        [self.contentView addSubview:self.arrow];
         [self.arrow mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(-17);
-            make.centerY.mas_equalTo(self.mas_centerY);
+            make.centerY.mas_equalTo(self.contentView.mas_centerY);
             make.width.height.mas_equalTo(12);
         }];
         
