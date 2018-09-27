@@ -49,6 +49,12 @@
 		5855C5372137F5D100009064 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C5362137F5D100009064 /* ThreeModel.m */; };
 		5855C53A2137F5DC00009064 /* TwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C5392137F5DC00009064 /* TwoModel.m */; };
 		5855C53D2137F7C000009064 /* PXBMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C53C2137F7C000009064 /* PXBMViewController.m */; };
+		58603F3A215C783B001E0FF8 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F31215C783A001E0FF8 /* YZDisplayTitleLabel.m */; };
+		58603F3B215C783B001E0FF8 /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F36215C783A001E0FF8 /* YZFlowLayout.m */; };
+		58603F3C215C783B001E0FF8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F37215C783A001E0FF8 /* UIView+Frame.m */; };
+		58603F3D215C783B001E0FF8 /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F38215C783A001E0FF8 /* YZDisplayViewController.m */; };
+		58603F41215C8069001E0FF8 /* SRGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F40215C8069001E0FF8 /* SRGCD.m */; };
+		58603F44215C8083001E0FF8 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F43215C8083001E0FF8 /* GCDTestViewController.m */; };
 		586B4F2D2138D14A0073A90E /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */; };
 		588DFC3D213D1C6500E87EE4 /* SRDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC39213D1C6400E87EE4 /* SRDataSource.m */; };
 		588DFC41213D27DF00E87EE4 /* BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC40213D27DF00E87EE4 /* BaseCollectionViewCell.m */; };
@@ -58,10 +64,6 @@
 		588DFC50213D2B9A00E87EE4 /* PXBMBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC4F213D2B9A00E87EE4 /* PXBMBannerCell.m */; };
 		588DFC53213D2C1C00E87EE4 /* PXBMRecommendOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC52213D2C1C00E87EE4 /* PXBMRecommendOneCell.m */; };
 		588DFC56213D2C2900E87EE4 /* PXBMRecommendTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC55213D2C2900E87EE4 /* PXBMRecommendTwoCell.m */; };
-		588DFC61213E826300E87EE4 /* YZDisplayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC58213E826200E87EE4 /* YZDisplayTitleLabel.m */; };
-		588DFC62213E826300E87EE4 /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC5A213E826200E87EE4 /* YZFlowLayout.m */; };
-		588DFC63213E826300E87EE4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC5B213E826200E87EE4 /* UIView+Frame.m */; };
-		588DFC64213E826300E87EE4 /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC5F213E826200E87EE4 /* YZDisplayViewController.m */; };
 		588DFC67213F7F2000E87EE4 /* BBAllCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC66213F7F2000E87EE4 /* BBAllCourseViewController.m */; };
 		588DFC6A213FC7F900E87EE4 /* UIView+BBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC69213FC7F900E87EE4 /* UIView+BBLayout.m */; };
 		588DFC70213FCA1200E87EE4 /* BBCourseChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC6E213FCA1200E87EE4 /* BBCourseChildVC.m */; };
@@ -154,6 +156,19 @@
 		5855C5392137F5DC00009064 /* TwoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoModel.m; sourceTree = "<group>"; };
 		5855C53B2137F7C000009064 /* PXBMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXBMViewController.h; sourceTree = "<group>"; };
 		5855C53C2137F7C000009064 /* PXBMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXBMViewController.m; sourceTree = "<group>"; };
+		58603F31215C783A001E0FF8 /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
+		58603F32215C783A001E0FF8 /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
+		58603F33215C783A001E0FF8 /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
+		58603F34215C783A001E0FF8 /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
+		58603F35215C783A001E0FF8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		58603F36215C783A001E0FF8 /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
+		58603F37215C783A001E0FF8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		58603F38215C783A001E0FF8 /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
+		58603F39215C783B001E0FF8 /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
+		58603F3F215C8069001E0FF8 /* SRGCD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRGCD.h; sourceTree = "<group>"; };
+		58603F40215C8069001E0FF8 /* SRGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRGCD.m; sourceTree = "<group>"; };
+		58603F42215C8083001E0FF8 /* GCDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
+		58603F43215C8083001E0FF8 /* GCDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
 		586B4F2B2138D14A0073A90E /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
 		586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
 		588DFC39213D1C6400E87EE4 /* SRDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRDataSource.m; sourceTree = "<group>"; };
@@ -174,15 +189,6 @@
 		588DFC52213D2C1C00E87EE4 /* PXBMRecommendOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXBMRecommendOneCell.m; sourceTree = "<group>"; };
 		588DFC54213D2C2900E87EE4 /* PXBMRecommendTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXBMRecommendTwoCell.h; sourceTree = "<group>"; };
 		588DFC55213D2C2900E87EE4 /* PXBMRecommendTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXBMRecommendTwoCell.m; sourceTree = "<group>"; };
-		588DFC58213E826200E87EE4 /* YZDisplayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayTitleLabel.m; sourceTree = "<group>"; };
-		588DFC59213E826200E87EE4 /* YZDisplayViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewHeader.h; sourceTree = "<group>"; };
-		588DFC5A213E826200E87EE4 /* YZFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZFlowLayout.m; sourceTree = "<group>"; };
-		588DFC5B213E826200E87EE4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		588DFC5C213E826200E87EE4 /* YZDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayViewController.h; sourceTree = "<group>"; };
-		588DFC5D213E826200E87EE4 /* YZDisplayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZDisplayTitleLabel.h; sourceTree = "<group>"; };
-		588DFC5E213E826200E87EE4 /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
-		588DFC5F213E826200E87EE4 /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
-		588DFC60213E826200E87EE4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		588DFC65213F7F2000E87EE4 /* BBAllCourseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAllCourseViewController.h; sourceTree = "<group>"; };
 		588DFC66213F7F2000E87EE4 /* BBAllCourseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBAllCourseViewController.m; sourceTree = "<group>"; };
 		588DFC68213FC7F900E87EE4 /* UIView+BBLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BBLayout.h"; sourceTree = "<group>"; };
@@ -315,9 +321,9 @@
 		5855C49E2136769700009064 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				586B1032214BA3C400508370 /* YZDisplayViewController */,
 				588DFC71213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.h */,
 				588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */,
-				588DFC57213E826200E87EE4 /* YZDisplayViewController */,
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
 				586B4F2B2138D14A0073A90E /* UINavigationBar+Awesome.h */,
 				586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */,
@@ -368,6 +374,7 @@
 		5855C4C92136BEDF00009064 /* FunctionOne */ = {
 			isa = PBXGroup;
 			children = (
+				58603F3E215C7BED001E0FF8 /* GCD封装 */,
 				5855C4CD2136BF0500009064 /* OneViewController.h */,
 				5855C4CE2136BF0500009064 /* OneViewController.m */,
 				5855C53B2137F7C000009064 /* PXBMViewController.h */,
@@ -577,6 +584,34 @@
 			path = FunctionTwo;
 			sourceTree = "<group>";
 		};
+		58603F3E215C7BED001E0FF8 /* GCD封装 */ = {
+			isa = PBXGroup;
+			children = (
+				58603F3F215C8069001E0FF8 /* SRGCD.h */,
+				58603F40215C8069001E0FF8 /* SRGCD.m */,
+				58603F42215C8083001E0FF8 /* GCDTestViewController.h */,
+				58603F43215C8083001E0FF8 /* GCDTestViewController.m */,
+			);
+			path = "GCD封装";
+			sourceTree = "<group>";
+		};
+		586B1032214BA3C400508370 /* YZDisplayViewController */ = {
+			isa = PBXGroup;
+			children = (
+				58603F35215C783A001E0FF8 /* UIView+Frame.h */,
+				58603F37215C783A001E0FF8 /* UIView+Frame.m */,
+				58603F39215C783B001E0FF8 /* YZDisplayTitleLabel.h */,
+				58603F31215C783A001E0FF8 /* YZDisplayTitleLabel.m */,
+				58603F32215C783A001E0FF8 /* YZDisplayViewController.h */,
+				58603F38215C783A001E0FF8 /* YZDisplayViewController.m */,
+				58603F34215C783A001E0FF8 /* YZDisplayViewHeader.h */,
+				58603F33215C783A001E0FF8 /* YZFlowLayout.h */,
+				58603F36215C783A001E0FF8 /* YZFlowLayout.m */,
+			);
+			name = YZDisplayViewController;
+			path = ../../../YZDisplayViewController;
+			sourceTree = "<group>";
+		};
 		588DFC42213D27F600E87EE4 /* XMNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,22 +625,6 @@
 				588DFC4A213D27F600E87EE4 /* XMCenter.h */,
 			);
 			path = XMNetworking;
-			sourceTree = "<group>";
-		};
-		588DFC57213E826200E87EE4 /* YZDisplayViewController */ = {
-			isa = PBXGroup;
-			children = (
-				588DFC58213E826200E87EE4 /* YZDisplayTitleLabel.m */,
-				588DFC59213E826200E87EE4 /* YZDisplayViewHeader.h */,
-				588DFC5A213E826200E87EE4 /* YZFlowLayout.m */,
-				588DFC5B213E826200E87EE4 /* UIView+Frame.m */,
-				588DFC5C213E826200E87EE4 /* YZDisplayViewController.h */,
-				588DFC5D213E826200E87EE4 /* YZDisplayTitleLabel.h */,
-				588DFC5E213E826200E87EE4 /* YZFlowLayout.h */,
-				588DFC5F213E826200E87EE4 /* YZDisplayViewController.m */,
-				588DFC60213E826200E87EE4 /* UIView+Frame.h */,
-			);
-			path = YZDisplayViewController;
 			sourceTree = "<group>";
 		};
 		630E9CC34E0F9994EB202A9A /* Frameworks */ = {
@@ -744,17 +763,18 @@
 				5855C4C52136BC4500009064 /* SRTabBarController.m in Sources */,
 				588DFC70213FCA1200E87EE4 /* BBCourseChildVC.m in Sources */,
 				588DFC73213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m in Sources */,
+				58603F44215C8083001E0FF8 /* GCDTestViewController.m in Sources */,
 				588DFC4B213D27F600E87EE4 /* XMEngine.m in Sources */,
-				588DFC61213E826300E87EE4 /* YZDisplayTitleLabel.m in Sources */,
 				5855C5092137940C00009064 /* FiveViewModel.m in Sources */,
 				5855C5222137947200009064 /* TwoTableViewCell.m in Sources */,
+				58603F41215C8069001E0FF8 /* SRGCD.m in Sources */,
 				5855C5192137945000009064 /* FourTableViewCell.m in Sources */,
-				588DFC62213E826300E87EE4 /* YZFlowLayout.m in Sources */,
 				5855C493213674CE00009064 /* main.m in Sources */,
 				5855C4AD2136787C00009064 /* BaseTableViewController.m in Sources */,
 				5855C4BD213692A900009064 /* SRConstant.m in Sources */,
 				5855C500213793AF00009064 /* ThreeViewModel.m in Sources */,
 				5855C4B0213678E500009064 /* BaseTableViewCell.m in Sources */,
+				58603F3A215C783B001E0FF8 /* YZDisplayTitleLabel.m in Sources */,
 				5855C4D22136BF1F00009064 /* TwoViewController.m in Sources */,
 				5855C4F0213792E200009064 /* CBTableViewSectionMaker.m in Sources */,
 				588DFC50213D2B9A00E87EE4 /* PXBMBannerCell.m in Sources */,
@@ -770,8 +790,8 @@
 				5855C4A32136775700009064 /* BaseModel.m in Sources */,
 				588DFC53213D2C1C00E87EE4 /* PXBMRecommendOneCell.m in Sources */,
 				588DFC56213D2C2900E87EE4 /* PXBMRecommendTwoCell.m in Sources */,
+				58603F3B215C783B001E0FF8 /* YZFlowLayout.m in Sources */,
 				5855C53A2137F5DC00009064 /* TwoModel.m in Sources */,
-				588DFC64213E826300E87EE4 /* YZDisplayViewController.m in Sources */,
 				5855C4F2213792E200009064 /* UITableView+CBTableViewDataSource.m in Sources */,
 				588DFC6A213FC7F900E87EE4 /* UIView+BBLayout.m in Sources */,
 				588DFC67213F7F2000E87EE4 /* BBAllCourseViewController.m in Sources */,
@@ -781,6 +801,7 @@
 				5855C4D82136BF3500009064 /* FourViewController.m in Sources */,
 				5855C4C82136BC6500009064 /* SRNavigationController.m in Sources */,
 				5855C485213674CC00009064 /* AppDelegate.m in Sources */,
+				58603F3C215C783B001E0FF8 /* UIView+Frame.m in Sources */,
 				5855C4FD213793A300009064 /* TwoViewModel.m in Sources */,
 				5855C4A62136776C00009064 /* BaseViewModel.m in Sources */,
 				5855C5342137F5C500009064 /* FourModel.m in Sources */,
@@ -789,8 +810,8 @@
 				588DFC4D213D27F600E87EE4 /* XMRequest.m in Sources */,
 				588DFC4C213D27F600E87EE4 /* XMCenter.m in Sources */,
 				5855C5282137C67C00009064 /* PXBMTopClassCell.m in Sources */,
+				58603F3D215C783B001E0FF8 /* YZDisplayViewController.m in Sources */,
 				5855C5372137F5D100009064 /* ThreeModel.m in Sources */,
-				588DFC63213E826300E87EE4 /* UIView+Frame.m in Sources */,
 				5855C4B621368ECD00009064 /* SRGloble.m in Sources */,
 				5855C4CF2136BF0500009064 /* OneViewController.m in Sources */,
 			);

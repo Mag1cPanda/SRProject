@@ -73,39 +73,39 @@
     wordVc2.title = @"M了个J";
     [self addChildViewController:wordVc2];
     
-    // 段子
-    BBCourseChildVC *wordVc3 = [[BBCourseChildVC alloc] init];
-    wordVc3.title = @"啊峥";
-    [self addChildViewController:wordVc3];
-    
-    BBCourseChildVC *wordVc4 = [[BBCourseChildVC alloc] init];
-    wordVc4.title = @"吖了个峥";
-    [self addChildViewController:wordVc4];
-    
-    // 全部
-    BBCourseChildVC *allVc = [[BBCourseChildVC alloc] init];
-    allVc.title = @"全部";
-    [self addChildViewController:allVc];
-    
-    // 视频
-    BBCourseChildVC *videoVc = [[BBCourseChildVC alloc] init];
-    videoVc.title = @"视频";
-    [self addChildViewController:videoVc];
-    
-    // 声音
-    BBCourseChildVC *voiceVc = [[BBCourseChildVC alloc] init];
-    voiceVc.title = @"声音";
-    [self addChildViewController:voiceVc];
-    
-    // 图片
-    BBCourseChildVC *pictureVc = [[BBCourseChildVC alloc] init];
-    pictureVc.title = @"图片";
-    [self addChildViewController:pictureVc];
-    
-    // 段子
-    BBCourseChildVC *wordVc = [[BBCourseChildVC alloc] init];
-    wordVc.title = @"段子";
-    [self addChildViewController:wordVc];
+//    // 段子
+//    BBCourseChildVC *wordVc3 = [[BBCourseChildVC alloc] init];
+//    wordVc3.title = @"啊峥";
+//    [self addChildViewController:wordVc3];
+//
+//    BBCourseChildVC *wordVc4 = [[BBCourseChildVC alloc] init];
+//    wordVc4.title = @"吖了个峥";
+//    [self addChildViewController:wordVc4];
+//
+//    // 全部
+//    BBCourseChildVC *allVc = [[BBCourseChildVC alloc] init];
+//    allVc.title = @"全部";
+//    [self addChildViewController:allVc];
+//
+//    // 视频
+//    BBCourseChildVC *videoVc = [[BBCourseChildVC alloc] init];
+//    videoVc.title = @"视频";
+//    [self addChildViewController:videoVc];
+//
+//    // 声音
+//    BBCourseChildVC *voiceVc = [[BBCourseChildVC alloc] init];
+//    voiceVc.title = @"声音";
+//    [self addChildViewController:voiceVc];
+//
+//    // 图片
+//    BBCourseChildVC *pictureVc = [[BBCourseChildVC alloc] init];
+//    pictureVc.title = @"图片";
+//    [self addChildViewController:pictureVc];
+//
+//    // 段子
+//    BBCourseChildVC *wordVc = [[BBCourseChildVC alloc] init];
+//    wordVc.title = @"段子";
+//    [self addChildViewController:wordVc];
 }
 
 - (void)didReceiveMemoryWarning {

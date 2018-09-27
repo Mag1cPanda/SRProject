@@ -12,6 +12,7 @@
 #import "PXBMTopClassCell.h"
 #import "OneViewModel.h"
 #import "PXBMViewController.h"
+#import "GCDTestViewController.h"
 
 @interface OneViewController ()
 @property (nonatomic, strong) SRTableView *tableView;
@@ -28,16 +29,8 @@
     [self.view addSubview:self.tableView];
     
     
-    NSArray *data = @[@{@"text":@"Following"},
-                      @{@"text":@"Follower"},
-                      @{@"text":@"Star"},
-                      @{@"text":@"Setting"},
-                      @{@"text":@"Share"},
-                      @{@"text":@"Following"},
-                      @{@"text":@"Follower"},
-                      @{@"text":@"Star"},
-                      @{@"text":@"Setting"},
-                      @{@"text":@"Share"}];
+    NSArray *data = @[@"Demo1-商品分类",
+                      @"Demo2-GCD封装"];
     
 
 //    [self.tableView cb_makeSectionWithData:data];
@@ -46,18 +39,27 @@
         [make makeSection:^(CBTableViewSectionMaker *section) {
            section.cell([PXBMTopClassCell class])
             .data(data)
-            .adapter(^(PXBMTopClassCell * cell,NSDictionary * data,NSUInteger index){
+            .adapter(^(PXBMTopClassCell *cell, NSString *data, NSUInteger index){
                 if (index % 2 == 0) {
                     cell.leftView.hidden = YES;
                 } else {
                     cell.leftView.hidden = NO;
                 }
-                cell.dataDic = data;
+                cell.centerLabel.text = data;
             });
             
             section.event(^(NSUInteger index,NSDictionary *data) {
-                PXBMViewController *vc = [PXBMViewController new];
-                [self.navigationController pushViewController:vc animated:YES];
+                
+                if (index == 0) {
+                    PXBMViewController *vc = [PXBMViewController new];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                
+                if (index == 1) {
+                    GCDTestViewController *vc = [GCDTestViewController new];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                
             });
             
 //            section.headerTitle(@"11111");
