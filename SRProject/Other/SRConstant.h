@@ -40,7 +40,7 @@
 //开发中使用场景:在多个文件中经常使用的同一个字符串常量，可以使用extern与const组合。
 extern NSString * const kBBURL;
 
-//static const UIColor *kOrangeTextColor = kColorWithHex(0xFE9806);
+static const NSString *kBBURL2 = @"TestURL";
 
 @interface SRConstant : NSObject
 
