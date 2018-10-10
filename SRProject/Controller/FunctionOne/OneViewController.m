@@ -16,6 +16,8 @@
 #import "SRProject-Swift.h"
 #import "HorizontalListVC.h"
 #import "SRTreeTableViewController.h"
+#import "SRCalendarDemoVC.h"
+#import "PDFReaderDemoVC.h"
 
 @interface OneViewController ()
 <MYTreeTableViewControllerDelegate>
@@ -38,7 +40,9 @@
                       @"Demo2-GCD封装",
                       @"Demo3-SwiftTest",
                       @"Demo4-横向Table",
-                      @"Demo5-树状列表"];
+                      @"Demo5-树状列表",
+                      @"Demo6-日历",
+                      @"Demo7-PDF阅读"];
     
 
 //    [self.tableView cb_makeSectionWithData:data];
@@ -95,6 +99,16 @@
 //                    tblVC.checkItemIds = [NSArray array];
                     
                     [self.navigationController pushViewController:tblVC animated:YES];
+                }
+                
+                if (index == 5) {
+                    SRCalendarDemoVC *vc = [SRCalendarDemoVC new];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                
+                if (index == 6) {
+                    PDFReaderDemoVC *vc = [PDFReaderDemoVC new];
+                    [self.navigationController pushViewController:vc animated:YES];
                 }
                 
             });

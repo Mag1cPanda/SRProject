@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
 
 @class MinScrollMenuItem, MinScrollMenu;
 

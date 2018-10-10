@@ -9,6 +9,7 @@
 #import "MinScrollMenu.h"
 #import "MinScrollMenuItem.h"
 
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ITEMTAG 10086
 
 @interface MinScrollMenu ()<UIScrollViewDelegate>
@@ -70,7 +71,7 @@
     NSString *resetFrameString = [_frameDict allKeysForObject:@(resetCount-1)].firstObject;
     CGFloat resetMaxX = CGRectGetMaxX(CGRectFromString(resetFrameString));
     //6. UI更新
-    // 旧数据count为0，不处理
+    // 旧数据count为0，不处理 
     if (oldCount == 0) {
         return;
     }
