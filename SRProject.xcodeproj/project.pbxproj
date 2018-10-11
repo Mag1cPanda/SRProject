@@ -121,6 +121,7 @@
 		58718A40216F298B003343DC /* MCDownloadReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A3A216F298B003343DC /* MCDownloadReceipt.m */; };
 		58718A41216F298B003343DC /* MCDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A3E216F298B003343DC /* MCDownloadOperation.m */; };
 		58718A45216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A44216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m */; };
+		58718A4B216F5EDC003343DC /* UIWebView+JavaScriptAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A4A216F5EDB003343DC /* UIWebView+JavaScriptAlert.m */; };
 		58738A152160C032001076B6 /* SRCalendarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58738A142160C032001076B6 /* SRCalendarDemoVC.m */; };
 		58738A372160C1E3001076B6 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58738A172160C1E3001076B6 /* FSCalendarCollectionView.m */; };
 		58738A382160C1E3001076B6 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58738A1B2160C1E3001076B6 /* FSCalendarDelegationProxy.m */; };
@@ -365,6 +366,8 @@
 		58718A3E216F298B003343DC /* MCDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloadOperation.m; sourceTree = "<group>"; };
 		58718A43216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		58718A44216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		58718A49216F5EDB003343DC /* UIWebView+JavaScriptAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JavaScriptAlert.h"; sourceTree = "<group>"; };
+		58718A4A216F5EDB003343DC /* UIWebView+JavaScriptAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JavaScriptAlert.m"; sourceTree = "<group>"; };
 		58738A132160C032001076B6 /* SRCalendarDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCalendarDemoVC.h; sourceTree = "<group>"; };
 		58738A142160C032001076B6 /* SRCalendarDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCalendarDemoVC.m; sourceTree = "<group>"; };
 		58738A172160C1E3001076B6 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
@@ -700,6 +703,10 @@
 		5855C49E2136769700009064 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				588DFC71213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.h */,
+				588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */,
+				58718A49216F5EDB003343DC /* UIWebView+JavaScriptAlert.h */,
+				58718A4A216F5EDB003343DC /* UIWebView+JavaScriptAlert.m */,
 				58718A42216F2B57003343DC /* FDFullscreenPopGesture */,
 				58718A38216F298B003343DC /* MCDownloader */,
 				5834EA9F216DFD9A00601016 /* CGContext DrawPDFPage */,
@@ -709,8 +716,6 @@
 				588BFA29215FA07800F3C34F /* MYTreeTableView */,
 				588BFA0C215F7E4100F3C34F /* MinScrollMenu */,
 				586B1032214BA3C400508370 /* YZDisplayViewController */,
-				588DFC71213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.h */,
-				588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */,
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
 			);
 			path = Third;
@@ -1389,6 +1394,7 @@
 				5834EA19216DE00F00601016 /* SRPDFListVC.m in Sources */,
 				5834EA71216DFD3000601016 /* CGPDFDocument.m in Sources */,
 				588BFA11215F7E4100F3C34F /* MinScrollMenuItem.m in Sources */,
+				58718A4B216F5EDC003343DC /* UIWebView+JavaScriptAlert.m in Sources */,
 				5834EABA216DFDA800601016 /* PDFWebViewViewController.m in Sources */,
 				5855C4EF213792E200009064 /* CBTableViewDataSourceMaker.m in Sources */,
 				588BFA1C215F805700F3C34F /* BBCourseChildVC.m in Sources */,
