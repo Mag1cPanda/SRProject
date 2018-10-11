@@ -18,12 +18,14 @@
 #import "SRTreeTableViewController.h"
 #import "SRCalendarDemoVC.h"
 #import "PDFReaderDemoVC.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface OneViewController ()
 <MYTreeTableViewControllerDelegate>
 @property (nonatomic, strong) SRTableView *tableView;
 
 @property (nonatomic, strong) OneViewModel *viewModel;
+@property (nonatomic, strong) NSMutableArray *data;
 @end
 
 @implementation OneViewController
@@ -33,31 +35,22 @@
     // Do any additional setup after loading the view.
     self.title = @"One";
     [self.view addSubview:self.tableView];
+    self.fd_interactivePopDisabled = YES;
+//    self.fd_prefersNavigationBarHidden = YES;
     
-//    NSLog(@"%@",kBBURL2);
     
-    NSArray *data = @[@"Demo1-商品分类",
-                      @"Demo2-GCD封装",
-                      @"Demo3-SwiftTest",
-                      @"Demo4-横向Table",
-                      @"Demo5-树状列表",
-                      @"Demo6-日历",
-                      @"Demo7-PDF阅读"];
-    
-
-//    [self.tableView cb_makeSectionWithData:data];
-    
+    __weak typeof(self) weakSelf = self;
     [self.tableView cb_makeDataSource:^(CBTableViewDataSourceMaker *make) {
         [make makeSection:^(CBTableViewSectionMaker *section) {
            section.cell([PXBMTopClassCell class])
-            .data(data)
-            .adapter(^(PXBMTopClassCell *cell, NSString *data, NSUInteger index){
+            .data(weakSelf.data)
+            .adapter(^(PXBMTopClassCell *cell, NSString *text, NSUInteger index){
                 if (index % 2 == 0) {
                     cell.leftView.hidden = YES;
                 } else {
                     cell.leftView.hidden = NO;
                 }
-                cell.centerLabel.text = data;
+                cell.centerLabel.text = [NSString stringWithFormat:@"Demo%zi-%@", index+1, text];
             });
             
             section.event(^(NSUInteger index,NSDictionary *data) {
@@ -111,6 +104,11 @@
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
+                if (index == 7) {
+//                    SRTabBarController *vc = [SRTabBarController new];
+//                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                
             });
             
 //            section.headerTitle(@"11111");
@@ -156,10 +154,30 @@
 
 -(OneViewModel *)viewModel
 {
-    if (_viewModel) {
+    if (!_viewModel) {
         _viewModel = [OneViewModel new];
     }
     return _viewModel;
+}
+
+-(NSMutableArray *)data
+{
+    if (!_data) {
+        _data = [NSMutableArray array];
+        NSArray *data = @[@"Demo1-商品分类",
+                          @"GCD封装",
+                          @"SwiftTest",
+                          @"横向Table",
+                          @"树状列表",
+                          @"日历",
+                          @"PDF阅读",
+                          @"异形TabBar"];
+        [_data addObjectsFromArray:data];
+        for (NSInteger i=0; i<100; i++) {
+            [_data addObject:@"开发中"];
+        }
+    }
+    return _data;
 }
 
 @end

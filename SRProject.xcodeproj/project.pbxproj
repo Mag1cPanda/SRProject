@@ -71,9 +71,6 @@
 		5834EAB6216DFD9A00601016 /* CGContextDrawPDFPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5834EAA8216DFD9A00601016 /* CGContextDrawPDFPageModel.m */; };
 		5834EAB7216DFD9A00601016 /* CGContextDrawPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5834EAA9216DFD9A00601016 /* CGContextDrawPDFView.m */; };
 		5834EABA216DFDA800601016 /* PDFWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5834EAB9216DFDA800601016 /* PDFWebViewViewController.m */; };
-		5834EAC2216E0E0B00601016 /* MCDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5834EABD216E0E0900601016 /* MCDownloadOperation.m */; };
-		5834EAC3216E0E0B00601016 /* MCDownloadReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 5834EAC0216E0E0B00601016 /* MCDownloadReceipt.m */; };
-		5834EAC4216E0E0B00601016 /* MCDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5834EAC1216E0E0B00601016 /* MCDownloader.m */; };
 		5855C485213674CC00009064 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5855C484213674CC00009064 /* AppDelegate.m */; };
 		5855C48D213674CE00009064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5855C48C213674CE00009064 /* Assets.xcassets */; };
 		5855C490213674CE00009064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5855C48E213674CE00009064 /* LaunchScreen.storyboard */; };
@@ -120,7 +117,10 @@
 		58603F3D215C783B001E0FF8 /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F38215C783A001E0FF8 /* YZDisplayViewController.m */; };
 		58603F41215C8069001E0FF8 /* SRGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F40215C8069001E0FF8 /* SRGCD.m */; };
 		58603F44215C8083001E0FF8 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58603F43215C8083001E0FF8 /* GCDTestViewController.m */; };
-		586B4F2D2138D14A0073A90E /* UINavigationBar+Awesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */; };
+		58718A3F216F298B003343DC /* MCDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A39216F298B003343DC /* MCDownloader.m */; };
+		58718A40216F298B003343DC /* MCDownloadReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A3A216F298B003343DC /* MCDownloadReceipt.m */; };
+		58718A41216F298B003343DC /* MCDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A3E216F298B003343DC /* MCDownloadOperation.m */; };
+		58718A45216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 58718A44216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m */; };
 		58738A152160C032001076B6 /* SRCalendarDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58738A142160C032001076B6 /* SRCalendarDemoVC.m */; };
 		58738A372160C1E3001076B6 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58738A172160C1E3001076B6 /* FSCalendarCollectionView.m */; };
 		58738A382160C1E3001076B6 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58738A1B2160C1E3001076B6 /* FSCalendarDelegationProxy.m */; };
@@ -262,12 +262,6 @@
 		5834EAAE216DFD9A00601016 /* CGContextDrawPDFPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextDrawPDFPageModel.h; sourceTree = "<group>"; };
 		5834EAB8216DFDA800601016 /* PDFWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFWebViewViewController.h; sourceTree = "<group>"; };
 		5834EAB9216DFDA800601016 /* PDFWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFWebViewViewController.m; sourceTree = "<group>"; };
-		5834EABC216E0E0900601016 /* MCDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDownloader.h; sourceTree = "<group>"; };
-		5834EABD216E0E0900601016 /* MCDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloadOperation.m; sourceTree = "<group>"; };
-		5834EABE216E0E0A00601016 /* MCDownloadReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDownloadReceipt.h; sourceTree = "<group>"; };
-		5834EABF216E0E0A00601016 /* MCDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDownloadOperation.h; sourceTree = "<group>"; };
-		5834EAC0216E0E0B00601016 /* MCDownloadReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloadReceipt.m; sourceTree = "<group>"; };
-		5834EAC1216E0E0B00601016 /* MCDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloader.m; sourceTree = "<group>"; };
 		5855C480213674CC00009064 /* SRProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5855C483213674CC00009064 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5855C484213674CC00009064 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -363,8 +357,14 @@
 		58603F40215C8069001E0FF8 /* SRGCD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRGCD.m; sourceTree = "<group>"; };
 		58603F42215C8083001E0FF8 /* GCDTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
 		58603F43215C8083001E0FF8 /* GCDTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
-		586B4F2B2138D14A0073A90E /* UINavigationBar+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Awesome.h"; sourceTree = "<group>"; };
-		586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Awesome.m"; sourceTree = "<group>"; };
+		58718A39216F298B003343DC /* MCDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloader.m; sourceTree = "<group>"; };
+		58718A3A216F298B003343DC /* MCDownloadReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloadReceipt.m; sourceTree = "<group>"; };
+		58718A3B216F298B003343DC /* MCDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDownloadOperation.h; sourceTree = "<group>"; };
+		58718A3C216F298B003343DC /* MCDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDownloader.h; sourceTree = "<group>"; };
+		58718A3D216F298B003343DC /* MCDownloadReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDownloadReceipt.h; sourceTree = "<group>"; };
+		58718A3E216F298B003343DC /* MCDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDownloadOperation.m; sourceTree = "<group>"; };
+		58718A43216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		58718A44216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		58738A132160C032001076B6 /* SRCalendarDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCalendarDemoVC.h; sourceTree = "<group>"; };
 		58738A142160C032001076B6 /* SRCalendarDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCalendarDemoVC.m; sourceTree = "<group>"; };
 		58738A172160C1E3001076B6 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
@@ -592,19 +592,6 @@
 			path = "CGContext DrawPDFPage";
 			sourceTree = "<group>";
 		};
-		5834EABB216E0DFF00601016 /* MCDownloader */ = {
-			isa = PBXGroup;
-			children = (
-				5834EABC216E0E0900601016 /* MCDownloader.h */,
-				5834EAC1216E0E0B00601016 /* MCDownloader.m */,
-				5834EABF216E0E0A00601016 /* MCDownloadOperation.h */,
-				5834EABD216E0E0900601016 /* MCDownloadOperation.m */,
-				5834EABE216E0E0A00601016 /* MCDownloadReceipt.h */,
-				5834EAC0216E0E0B00601016 /* MCDownloadReceipt.m */,
-			);
-			path = MCDownloader;
-			sourceTree = "<group>";
-		};
 		5855C477213674CC00009064 = {
 			isa = PBXGroup;
 			children = (
@@ -713,6 +700,8 @@
 		5855C49E2136769700009064 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				58718A42216F2B57003343DC /* FDFullscreenPopGesture */,
+				58718A38216F298B003343DC /* MCDownloader */,
 				5834EA9F216DFD9A00601016 /* CGContext DrawPDFPage */,
 				5834EA24216DFD2F00601016 /* Reader */,
 				5834EA16216DDFE000601016 /* SRPDFReader */,
@@ -723,8 +712,6 @@
 				588DFC71213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.h */,
 				588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */,
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
-				586B4F2B2138D14A0073A90E /* UINavigationBar+Awesome.h */,
-				586B4F2C2138D14A0073A90E /* UINavigationBar+Awesome.m */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -772,7 +759,6 @@
 		5855C4C92136BEDF00009064 /* FunctionOne */ = {
 			isa = PBXGroup;
 			children = (
-				5834EABB216E0DFF00601016 /* MCDownloader */,
 				5893D5A3216CAD4C00E4BA81 /* PDFReader */,
 				587389FC21605CF2001076B6 /* 日历 */,
 				588BFA28215FA05700F3C34F /* 树状列表 */,
@@ -1011,6 +997,28 @@
 			path = ../../../YZDisplayViewController;
 			sourceTree = "<group>";
 		};
+		58718A38216F298B003343DC /* MCDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				58718A39216F298B003343DC /* MCDownloader.m */,
+				58718A3A216F298B003343DC /* MCDownloadReceipt.m */,
+				58718A3B216F298B003343DC /* MCDownloadOperation.h */,
+				58718A3C216F298B003343DC /* MCDownloader.h */,
+				58718A3D216F298B003343DC /* MCDownloadReceipt.h */,
+				58718A3E216F298B003343DC /* MCDownloadOperation.m */,
+			);
+			path = MCDownloader;
+			sourceTree = "<group>";
+		};
+		58718A42216F2B57003343DC /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				58718A43216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.h */,
+				58718A44216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
 		587389FC21605CF2001076B6 /* 日历 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1073,12 +1081,12 @@
 		588BFA14215F805700F3C34F /* 商品分类 */ = {
 			isa = PBXGroup;
 			children = (
-				588BFA15215F805700F3C34F /* PXBMViewController.m */,
 				588BFA16215F805700F3C34F /* BBAllCourseViewController.h */,
-				588BFA17215F805700F3C34F /* BBCourseChildVC.h */,
-				588BFA18215F805700F3C34F /* PXBMViewController.h */,
-				588BFA19215F805700F3C34F /* BBCourseChildVC.m */,
 				588BFA1A215F805700F3C34F /* BBAllCourseViewController.m */,
+				588BFA17215F805700F3C34F /* BBCourseChildVC.h */,
+				588BFA19215F805700F3C34F /* BBCourseChildVC.m */,
+				588BFA18215F805700F3C34F /* PXBMViewController.h */,
+				588BFA15215F805700F3C34F /* PXBMViewController.m */,
 			);
 			path = "商品分类";
 			sourceTree = "<group>";
@@ -1350,7 +1358,6 @@
 				5834EA79216DFD3000601016 /* ReaderThumbCache.m in Sources */,
 				58603F41215C8069001E0FF8 /* SRGCD.m in Sources */,
 				5855C5192137945000009064 /* FourTableViewCell.m in Sources */,
-				5834EAC4216E0E0B00601016 /* MCDownloader.m in Sources */,
 				58738A3C2160C1E3001076B6 /* FSCalendar.m in Sources */,
 				5855C493213674CE00009064 /* main.m in Sources */,
 				5834EA74216DFD3000601016 /* ReaderThumbFetch.m in Sources */,
@@ -1375,18 +1382,16 @@
 				5855C52B2137C69100009064 /* PXBMSecondClassCell.m in Sources */,
 				5855C503213793BD00009064 /* FourViewModel.m in Sources */,
 				588BFA1D215F805700F3C34F /* BBAllCourseViewController.m in Sources */,
-				5834EAC3216E0E0B00601016 /* MCDownloadReceipt.m in Sources */,
+				58718A40216F298B003343DC /* MCDownloadReceipt.m in Sources */,
 				5855C5252137C15700009064 /* SRTableView.m in Sources */,
 				5834EAB5216DFD9A00601016 /* CGContextDrawPDFReaderController.m in Sources */,
 				588DFC3D213D1C6500E87EE4 /* SRDataSource.m in Sources */,
-				586B4F2D2138D14A0073A90E /* UINavigationBar+Awesome.m in Sources */,
 				5834EA19216DE00F00601016 /* SRPDFListVC.m in Sources */,
 				5834EA71216DFD3000601016 /* CGPDFDocument.m in Sources */,
 				588BFA11215F7E4100F3C34F /* MinScrollMenuItem.m in Sources */,
 				5834EABA216DFDA800601016 /* PDFWebViewViewController.m in Sources */,
 				5855C4EF213792E200009064 /* CBTableViewDataSourceMaker.m in Sources */,
 				588BFA1C215F805700F3C34F /* BBCourseChildVC.m in Sources */,
-				5834EAC2216E0E0B00601016 /* MCDownloadOperation.m in Sources */,
 				58738A442160C1E3001076B6 /* FSCalendarHeaderView.m in Sources */,
 				5834EA6C216DFD3000601016 /* ReaderContentTile.m in Sources */,
 				58738A3A2160C1E3001076B6 /* FSCalendarCell.m in Sources */,
@@ -1404,6 +1409,7 @@
 				5855C53A2137F5DC00009064 /* TwoModel.m in Sources */,
 				5834EA7F216DFD3000601016 /* ReaderMainPagebar.m in Sources */,
 				5834EA6D216DFD3000601016 /* UIXToolbarView.m in Sources */,
+				58718A3F216F298B003343DC /* MCDownloader.m in Sources */,
 				5855C4F2213792E200009064 /* UITableView+CBTableViewDataSource.m in Sources */,
 				5834EAB0216DFD9A00601016 /* CGContextDrawPDFPageController.m in Sources */,
 				588DFC6A213FC7F900E87EE4 /* UIView+BBLayout.m in Sources */,
@@ -1417,6 +1423,7 @@
 				5855C4D82136BF3500009064 /* FourViewController.m in Sources */,
 				58738A382160C1E3001076B6 /* FSCalendarDelegationProxy.m in Sources */,
 				5834EA75216DFD3000601016 /* ReaderThumbView.m in Sources */,
+				58718A45216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				5834EA7A216DFD3000601016 /* ReaderThumbsView.m in Sources */,
 				5855C4C82136BC6500009064 /* SRNavigationController.m in Sources */,
 				58738A3F2160C1E3001076B6 /* FSCalendarWeekdayView.m in Sources */,
@@ -1435,6 +1442,7 @@
 				5855C4F1213792E200009064 /* CBDataSourceSection.m in Sources */,
 				588DFC41213D27DF00E87EE4 /* BaseCollectionViewCell.m in Sources */,
 				5834EA72216DFD3000601016 /* ReaderContentView.m in Sources */,
+				58718A41216F298B003343DC /* MCDownloadOperation.m in Sources */,
 				588DFC4D213D27F600E87EE4 /* XMRequest.m in Sources */,
 				5834EA23216DFCF600601016 /* ScanViewController.m in Sources */,
 				588DFC4C213D27F600E87EE4 /* XMCenter.m in Sources */,

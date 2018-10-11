@@ -7,8 +7,8 @@
 //
 
 #import "SRNavigationController.h"
-#import "UINavigationBar+Awesome.h"
 #import "SRMacro.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface SRNavigationController ()
 <UIGestureRecognizerDelegate>
@@ -20,9 +20,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.interactivePopGestureRecognizer.delegate = self;
+//    self.fd_fullscreenPopGestureRecognizer.enabled = YES;
+    
+    //To disable this pop gesture of a view controller:
+//    viewController.fd_interactivePopDisabled = YES;
     
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : ColorWithHex(0x4D4D4D), NSFontAttributeName : SystemFont(18)}];
-    [self.navigationBar lt_setBackgroundColor: ColorWithHex(0xF2F2F2)];
+//    [self.navigationBar lt_setBackgroundColor: ColorWithHex(0xF2F2F2)];
     [self.navigationBar setShadowImage:[UIImage new]];
     
 //    UIImage *backButtonImage = [UIImage imageNamed:@"ic_back_main"];

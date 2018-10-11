@@ -16,6 +16,7 @@
 #import "PXBMSecondClassCell.h"
 #import "BBAllCourseViewController.h"
 //#import <ReactiveObjC.h>
+//#import "UINavigationController+FDFullscreenPopGesture.h"
 
 @interface PXBMViewController ()
 <UITableViewDelegate,
@@ -39,6 +40,7 @@ UICollectionViewDelegateFlowLayout>
     // Do any additional setup after loading the view.
     self.title = @"培训报名";
     self.view.backgroundColor = ColorWithHex(0xF9F9F9);
+//    self.fd_prefersNavigationBarHidden = YES;
     
     [self.view addSubview:self.tableView];
     
