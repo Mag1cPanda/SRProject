@@ -10,8 +10,11 @@
 #import "SRTabBarController.h"
 #import "SRNavigationController.h"
 #import <IQKeyboardManager.h>
+#import "CYLTabBarControllerConfig.h"
+#import "CYLPlusButtonSubclass.h"
 
 @interface AppDelegate ()
+<UITabBarControllerDelegate>
 
 @end
 
@@ -22,9 +25,14 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [CYLPlusButtonSubclass registerPlusButton];
+    
     [self.window makeKeyAndVisible];
     
+    
     SRTabBarController *tabBarC = [SRTabBarController new];
+    tabBarC.delegate = self;
     self.window.rootViewController = tabBarC;
     
     IQKeyboardManager.sharedManager.enable = YES;
@@ -60,5 +68,10 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-
+#pragma mark - UITabBarControllerDelegate
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+{
+    NSUInteger selectedIndex = tabBarController.selectedIndex;
+    NSLog(@"selectedIndex ~ %lu",(unsigned long)selectedIndex);
+}
 @end
