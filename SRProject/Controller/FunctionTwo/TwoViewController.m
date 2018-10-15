@@ -7,9 +7,14 @@
 //
 
 #import "TwoViewController.h"
+#import "TwoViewModel.h"
+#import "SRTableView.h"
+#import "TwoTableViewCell.h"
 
 @interface TwoViewController ()
-
+@property (nonatomic, strong) SRTableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataArr;
+@property (nonatomic, strong) TwoViewModel *viewModel;
 @end
 
 @implementation TwoViewController
@@ -20,19 +25,49 @@
     self.title = @"Two";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - UITableViewDelegate & UITableViewDataSource
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return _dataArr.count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    static NSString *cellId = @"cellId";
+    
+    TwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    if (!cell) {
+        cell = [[TwoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
+        
+//        NSDictionary *dic = self.dataArr[indexPath.row];
+        
+    }
+    return cell;
 }
-*/
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+ 
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   
+}
+
+#pragma mark - Lazy
+-(NSMutableArray *)dataArr
+{
+    if (!_dataArr) {
+        _dataArr = [NSMutableArray array];
+    }
+    return _dataArr;
+}
+
+-(TwoViewModel *)viewModel
+{
+    if (!_viewModel) {
+        _viewModel = [[TwoViewModel alloc] init];
+    }
+    return _viewModel;
+}
 
 @end
