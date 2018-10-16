@@ -176,6 +176,9 @@
 		588DFC73213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */; };
 		5893D5A6216CAD6800E4BA81 /* PDFReaderDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893D5A5216CAD6800E4BA81 /* PDFReaderDemoVC.m */; };
 		58F63865217493F300D41B53 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F63864217493F300D41B53 /* UIButton+Extension.m */; };
+		58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638672174B37C00D41B53 /* YYWeakProxy.m */; };
+		58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638692174B37C00D41B53 /* YYFPSLabel.m */; };
+		58F6386F2174B43000D41B53 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6386E2174B42F00D41B53 /* NetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -486,6 +489,12 @@
 		5893D5A5216CAD6800E4BA81 /* PDFReaderDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFReaderDemoVC.m; sourceTree = "<group>"; };
 		58F63863217493F300D41B53 /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		58F63864217493F300D41B53 /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		58F638672174B37C00D41B53 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		58F638682174B37C00D41B53 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		58F638692174B37C00D41B53 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		58F6386A2174B37C00D41B53 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		58F6386D2174B42F00D41B53 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		58F6386E2174B42F00D41B53 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		7B5E38B92BE30C973AD422E6 /* Pods-SRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRProject/Pods-SRProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CDF8F22E889AC2A14A6150 /* libPods-SRProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -734,6 +743,7 @@
 		5855C49E2136769700009064 /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				58F638662174B37C00D41B53 /* YYFPSLabel */,
 				587941EA21703D6C0026527B /* YZDisplayViewController */,
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
 				5834EA9F216DFD9A00601016 /* CGContext DrawPDFPage */,
@@ -779,6 +789,8 @@
 		5855C4A02136770800009064 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				58F6386D2174B42F00D41B53 /* NetworkManager.h */,
+				58F6386E2174B42F00D41B53 /* NetworkManager.m */,
 				588DFC42213D27F600E87EE4 /* XMNetworking */,
 			);
 			path = Network;
@@ -1240,6 +1252,17 @@
 			path = PDFReader;
 			sourceTree = "<group>";
 		};
+		58F638662174B37C00D41B53 /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				58F638672174B37C00D41B53 /* YYWeakProxy.m */,
+				58F638682174B37C00D41B53 /* YYFPSLabel.h */,
+				58F638692174B37C00D41B53 /* YYFPSLabel.m */,
+				58F6386A2174B37C00D41B53 /* YYWeakProxy.h */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
 		630E9CC34E0F9994EB202A9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1438,6 +1461,7 @@
 				58738A3E2160C1E3001076B6 /* FSCalendarScopeHandle.m in Sources */,
 				588BFA3A215FA07800F3C34F /* MYTreeTableViewSearchBar.m in Sources */,
 				5855C4AD2136787C00009064 /* BaseTableViewController.m in Sources */,
+				58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */,
 				58718A61216F6054003343DC /* UIControl+CYLTabBarControllerExtention.m in Sources */,
 				58738A152160C032001076B6 /* SRCalendarDemoVC.m in Sources */,
 				5855C4BD213692A900009064 /* SRConstant.m in Sources */,
@@ -1507,6 +1531,7 @@
 				5855C4D82136BF3500009064 /* FourViewController.m in Sources */,
 				58738A382160C1E3001076B6 /* FSCalendarDelegationProxy.m in Sources */,
 				5834EA75216DFD3000601016 /* ReaderThumbView.m in Sources */,
+				58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */,
 				58718A45216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				5834EA7A216DFD3000601016 /* ReaderThumbsView.m in Sources */,
 				5855C4C82136BC6500009064 /* SRNavigationController.m in Sources */,
@@ -1531,6 +1556,7 @@
 				5834EA23216DFCF600601016 /* ScanViewController.m in Sources */,
 				588DFC4C213D27F600E87EE4 /* XMCenter.m in Sources */,
 				5834EA76216DFD3000601016 /* ReaderMainToolbar.m in Sources */,
+				58F6386F2174B43000D41B53 /* NetworkManager.m in Sources */,
 				5855C5282137C67C00009064 /* PXBMTopClassCell.m in Sources */,
 				5834EA73216DFD3000601016 /* ReaderViewController.m in Sources */,
 				5855C5372137F5D100009064 /* ThreeModel.m in Sources */,

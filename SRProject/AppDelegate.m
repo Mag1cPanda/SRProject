@@ -13,6 +13,10 @@
 #import "CYLTabBarControllerConfig.h"
 #import "CYLPlusButtonSubclass.h"
 
+#ifdef DEBUG
+#import "YYFPSLabel.h"
+#endif
+
 @interface AppDelegate ()
 <UITabBarControllerDelegate>
 
@@ -37,6 +41,12 @@
     
     IQKeyboardManager.sharedManager.enable = YES;
     IQKeyboardManager.sharedManager.enableAutoToolbar = YES;
+    
+#ifdef DEBUG
+    YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] init];
+    [self.window addSubview:fpsLabel];
+    fpsLabel.center = self.window.center;
+#endif
     
     return YES;
 }

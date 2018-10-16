@@ -7,7 +7,8 @@
 //
 
 #import "BaseTableViewCell.h"
+#import "TwoModel.h"
 
 @interface TwoTableViewCell : BaseTableViewCell
-
+@property (nonatomic, strong) TwoModel *model;
 @end

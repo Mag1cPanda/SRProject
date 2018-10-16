@@ -21,4 +21,11 @@
     // Configure the view for the selected state
 }
 
+-(void)setModel:(TwoModel *)model
+{
+    _model = model;
+    self.textLabel.text = model.content;
+    self.detailTextLabel.text = model.updatetime;
+}
+
 @end
