@@ -9,8 +9,7 @@
 #import "NetworkManager.h"
 #import <objc/runtime.h>
 
-//#define IOS_TIPS_API_HOST @"https://app.kangzubin.com/iostips/api/"
-#define IOS_TIPS_API_HOST @"http://v.juhe.cn/joke/content/list.php"
+#define IOS_TIPS_API_HOST @"https://app.kangzubin.com/iostips/api/"
 
 NSString * const XMNetworkErrorDomain = @"XMNetworkErrorDomain";
 

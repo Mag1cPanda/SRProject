@@ -99,7 +99,7 @@
 
 //开发的时候打印，但是发布的时候不打印的NSLog
 #ifdef DEBUG
-#define NSLog(...) NSLog(@"%s 第%d行 \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define NSLog(format, ...) printf("[%s] %s [第%d行] ----- %s\n", __TIME__, __FUNCTION__, __LINE__, [[NSString stringWithFormat:format, ## __VA_ARGS__] UTF8String])
 #else
 #define NSLog(...)
 #endif

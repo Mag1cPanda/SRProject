@@ -14,11 +14,16 @@
 #import "NetworkManager.h"
 #import <MJRefresh.h>
 #import <MJExtension.h>
+#import "MBProgressHUD+Extension.h"
+#import <SafariServices/SafariServices.h>
+#import "SearchViewController.h"
+#import "SRNetworkManager.h"
 
 @interface TwoViewController ()
 <UITableViewDelegate,
 UITableViewDataSource>
 @property (nonatomic, strong) SRTableView *tableView;
+@property (nonatomic, strong) UISearchController *searchController;
 @property (nonatomic, strong) NSMutableArray *dataArr;
 @property (nonatomic, strong) TwoViewModel *viewModel;
 
@@ -43,15 +48,24 @@ UITableViewDataSource>
 #pragma mark - 加载数据
 -(void)loadData
 {
-    if (self.isLoadingData) {
-        return;
-    }
+//    if (self.isLoadingData) {
+//        return;
+//    }
     
-    self.loadingData = YES;
     if (self.pageNum <= 0) {
         self.pageNum = 1;
     }
     
+    [MBProgressHUD showActivityMessageInView:@"loading..."];
+    
+    NSDictionary *parameters = @{@"page": @(self.pageNum)};
+    [SRNetworkManager requestByPOSTWithServiceName:@"listAll" parameters:parameters onSuccess:^(id responseObject) {
+        NSLog(@"SRNetworkManageronSuccess: %@", responseObject);
+    } onFailure:^(NSError *error) {
+        NSLog(@"SRNetworkManageronSuccessonFailure: %@", error);
+    }];
+    
+    __weak typeof(self) weakSelf = self;
     [XMCenter sendRequest:^(XMRequest *request) {
         request.url = @"https://app.kangzubin.com/iostips/api/feed/listAll";
 //        request.server = @"";
@@ -63,7 +77,12 @@ UITableViewDataSource>
         
         if ([responseObject isKindOfClass:NSDictionary.class]) {
             NSArray *tmpArr = responseObject[@"data"][@"feeds"];
-            NSLog(@"%zi",tmpArr.count);
+            for (NSDictionary *dic in tmpArr) {
+//                TwoModel *model = [TwoModel mj_setKeyValues:dic];
+                TwoModel *model = [TwoModel modelWithDic:dic];
+                [self.dataArr addObject:model];
+            }
+            [weakSelf.tableView reloadData];
         }
         
         
@@ -71,19 +90,39 @@ UITableViewDataSource>
         NSLog(@"onFailure: %@", error);
     } onFinished:^(id responseObject, NSError *error) {
         NSLog(@"onFinished");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MBProgressHUD hideHUD];
+            [weakSelf.tableView.mj_header endRefreshing];
+        });
     }];
 }
 
 #pragma mark - Private
 
 - (void)pullDownToRefresh {
-    if (self.isLoadingData) {
-      
-        return;
-    }
+//    if (self.isLoadingData) {
+//        return;
+//    }
     self.pageNum = 1;
     [self loadData];
 }
+
+- (SFSafariViewController *)xm_getDetailViewControllerAtIndexPath:(NSIndexPath *)indexPath  API_AVAILABLE(ios(9.0)){
+    if (indexPath.row < self.dataArr.count) {
+        TwoModel *model = self.dataArr[indexPath.row];
+        if (model.url) {
+            NSURL *url = [NSURL URLWithString:model.url];
+            SFSafariViewController *sfViewController = [[SFSafariViewController alloc] initWithURL:url];
+            if (@available(iOS 11.0, *)) {
+                sfViewController.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
+                sfViewController.dismissButtonStyle = SFSafariViewControllerDismissButtonStyleClose;
+            }
+            return sfViewController;
+        }
+    }
+    return nil;
+}
+
 
 //获取当前时间戳
 //13位
@@ -120,14 +159,9 @@ UITableViewDataSource>
 }
 
 - (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    static NSString *cellId = @"cellId";
-    
-    TwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
-    if (!cell) {
-        cell = [[TwoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
-        TwoModel *mdoel = _dataArr[indexPath.row];
-        cell.model = mdoel;
-    }
+    TwoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[TwoTableViewCell reuseIdentifier]];
+    TwoModel *mdoel = _dataArr[indexPath.row];
+    cell.model = mdoel;
     return cell;
 }
 
@@ -145,13 +179,28 @@ UITableViewDataSource>
 -(SRTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, StatusBarHeight, ScreenWidth, ScreenHeight-StatusBarHeight) style:UITableViewStylePlain];
+        _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight-TabBarHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableFooterView = [UIView new];
         _tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(pullDownToRefresh)];
+        _tableView.estimatedRowHeight = UITableViewAutomaticDimension;
+        
+//        self.tableView.tableHeaderView = self.searchController.searchBar;
+        
+        [_tableView registerClass:[TwoTableViewCell class] forCellReuseIdentifier:[TwoTableViewCell reuseIdentifier]];
     }
     return _tableView;
+}
+
+- (UISearchController *)searchController {
+    if (!_searchController) {
+        SearchViewController *searchViewController = [[SearchViewController alloc] init];
+        _searchController = [[UISearchController alloc] initWithSearchResultsController:searchViewController];
+        _searchController.searchBar.placeholder = @"搜索";
+        _searchController.searchResultsUpdater = searchViewController;
+    }
+    return _searchController;
 }
 
 -(NSMutableArray *)dataArr

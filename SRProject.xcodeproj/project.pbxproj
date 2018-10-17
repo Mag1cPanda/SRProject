@@ -172,9 +172,41 @@
 		588DFC50213D2B9A00E87EE4 /* PXBMBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC4F213D2B9A00E87EE4 /* PXBMBannerCell.m */; };
 		588DFC53213D2C1C00E87EE4 /* PXBMRecommendOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC52213D2C1C00E87EE4 /* PXBMRecommendOneCell.m */; };
 		588DFC56213D2C2900E87EE4 /* PXBMRecommendTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC55213D2C2900E87EE4 /* PXBMRecommendTwoCell.m */; };
-		588DFC6A213FC7F900E87EE4 /* UIView+BBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC69213FC7F900E87EE4 /* UIView+BBLayout.m */; };
 		588DFC73213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */; };
 		5893D5A6216CAD6800E4BA81 /* PDFReaderDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5893D5A5216CAD6800E4BA81 /* PDFReaderDemoVC.m */; };
+		58B44BC92175832A00AE85BE /* UIView+BBLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44BC72175832A00AE85BE /* UIView+BBLayout.m */; };
+		58B44BDF2175B88200AE85BE /* MBHUD_Success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BD72175B88200AE85BE /* MBHUD_Success@2x.png */; };
+		58B44BE02175B88200AE85BE /* MBHUD_Info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BD82175B88200AE85BE /* MBHUD_Info@3x.png */; };
+		58B44BE12175B88200AE85BE /* MBHUD_Info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BD92175B88200AE85BE /* MBHUD_Info@2x.png */; };
+		58B44BE22175B88200AE85BE /* MBHUD_Success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BDA2175B88200AE85BE /* MBHUD_Success@3x.png */; };
+		58B44BE32175B88200AE85BE /* MBHUD_Error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BDB2175B88200AE85BE /* MBHUD_Error@2x.png */; };
+		58B44BE42175B88200AE85BE /* MBHUD_Warn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BDC2175B88200AE85BE /* MBHUD_Warn@3x.png */; };
+		58B44BE52175B88200AE85BE /* MBHUD_Warn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BDD2175B88200AE85BE /* MBHUD_Warn@2x.png */; };
+		58B44BE62175B88200AE85BE /* MBHUD_Error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 58B44BDE2175B88200AE85BE /* MBHUD_Error@3x.png */; };
+		58B44BE92175B8A500AE85BE /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44BE82175B8A500AE85BE /* MBProgressHUD+Extension.m */; };
+		58B44BEC2175D9B800AE85BE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44BEB2175D9B700AE85BE /* SearchViewController.m */; };
+		58B44BEF2175D9D900AE85BE /* TipSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44BEE2175D9D800AE85BE /* TipSetTableViewCell.m */; };
+		58B44BF22175D9F700AE85BE /* TipSetItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44BF12175D9F700AE85BE /* TipSetItemModel.m */; };
+		58B44BF52175E47900AE85BE /* SRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44BF42175E47900AE85BE /* SRNetworkManager.m */; };
+		58B44C2C21773C7C00AE85BE /* SRChartListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C2B21773C7C00AE85BE /* SRChartListVC.m */; };
+		58B44C2F21773C9D00AE85BE /* SRChartSampleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C2E21773C9D00AE85BE /* SRChartSampleVC.m */; };
+		58B44C8821774B8F00AE85BE /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C6821774B8E00AE85BE /* PNPieChartDataItem.m */; };
+		58B44C8921774B8F00AE85BE /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C6D21774B8E00AE85BE /* PNChartLabel.m */; };
+		58B44C8A21774B8F00AE85BE /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C6F21774B8E00AE85BE /* PNScatterChartDataItem.m */; };
+		58B44C8B21774B8F00AE85BE /* PNRadarChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7121774B8E00AE85BE /* PNRadarChartDataItem.m */; };
+		58B44C8C21774B8F00AE85BE /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7221774B8E00AE85BE /* PNGenericChart.m */; };
+		58B44C8D21774B8F00AE85BE /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7321774B8E00AE85BE /* PNBarChart.m */; };
+		58B44C8E21774B8F00AE85BE /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7421774B8E00AE85BE /* PNLineChart.m */; };
+		58B44C8F21774B8F00AE85BE /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7521774B8E00AE85BE /* PNCircleChart.m */; };
+		58B44C9021774B8F00AE85BE /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7621774B8E00AE85BE /* PNLineChartData.m */; };
+		58B44C9121774B8F00AE85BE /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7721774B8E00AE85BE /* PNLineChartDataItem.m */; };
+		58B44C9221774B8F00AE85BE /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7921774B8E00AE85BE /* PNPieChart.m */; };
+		58B44C9321774B8F00AE85BE /* PNRadarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7A21774B8E00AE85BE /* PNRadarChart.m */; };
+		58B44C9421774B8F00AE85BE /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7C21774B8E00AE85BE /* PNColor.m */; };
+		58B44C9521774B8F00AE85BE /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7D21774B8E00AE85BE /* PNScatterChartData.m */; };
+		58B44C9621774B8F00AE85BE /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7E21774B8E00AE85BE /* PNBar.m */; };
+		58B44C9721774B8F00AE85BE /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C8221774B8E00AE85BE /* PNScatterChart.m */; };
+		58B44C9A21774BDC00AE85BE /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C9921774BDC00AE85BE /* UICountingLabel.m */; };
 		58F63865217493F300D41B53 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F63864217493F300D41B53 /* UIButton+Extension.m */; };
 		58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638672174B37C00D41B53 /* YYWeakProxy.m */; };
 		58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638692174B37C00D41B53 /* YYFPSLabel.m */; };
@@ -481,12 +513,71 @@
 		588DFC52213D2C1C00E87EE4 /* PXBMRecommendOneCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXBMRecommendOneCell.m; sourceTree = "<group>"; };
 		588DFC54213D2C2900E87EE4 /* PXBMRecommendTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PXBMRecommendTwoCell.h; sourceTree = "<group>"; };
 		588DFC55213D2C2900E87EE4 /* PXBMRecommendTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PXBMRecommendTwoCell.m; sourceTree = "<group>"; };
-		588DFC68213FC7F900E87EE4 /* UIView+BBLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BBLayout.h"; sourceTree = "<group>"; };
-		588DFC69213FC7F900E87EE4 /* UIView+BBLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BBLayout.m"; sourceTree = "<group>"; };
 		588DFC71213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
 		588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
 		5893D5A4216CAD6800E4BA81 /* PDFReaderDemoVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFReaderDemoVC.h; sourceTree = "<group>"; };
 		5893D5A5216CAD6800E4BA81 /* PDFReaderDemoVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFReaderDemoVC.m; sourceTree = "<group>"; };
+		58B44BC72175832A00AE85BE /* UIView+BBLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BBLayout.m"; sourceTree = "<group>"; };
+		58B44BC82175832A00AE85BE /* UIView+BBLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BBLayout.h"; sourceTree = "<group>"; };
+		58B44BD1217591CA00AE85BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58B44BD72175B88200AE85BE /* MBHUD_Success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Success@2x.png"; sourceTree = "<group>"; };
+		58B44BD82175B88200AE85BE /* MBHUD_Info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Info@3x.png"; sourceTree = "<group>"; };
+		58B44BD92175B88200AE85BE /* MBHUD_Info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Info@2x.png"; sourceTree = "<group>"; };
+		58B44BDA2175B88200AE85BE /* MBHUD_Success@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Success@3x.png"; sourceTree = "<group>"; };
+		58B44BDB2175B88200AE85BE /* MBHUD_Error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Error@2x.png"; sourceTree = "<group>"; };
+		58B44BDC2175B88200AE85BE /* MBHUD_Warn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Warn@3x.png"; sourceTree = "<group>"; };
+		58B44BDD2175B88200AE85BE /* MBHUD_Warn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Warn@2x.png"; sourceTree = "<group>"; };
+		58B44BDE2175B88200AE85BE /* MBHUD_Error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MBHUD_Error@3x.png"; sourceTree = "<group>"; };
+		58B44BE72175B8A500AE85BE /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		58B44BE82175B8A500AE85BE /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		58B44BEA2175D9B700AE85BE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		58B44BEB2175D9B700AE85BE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		58B44BED2175D9D800AE85BE /* TipSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipSetTableViewCell.h; sourceTree = "<group>"; };
+		58B44BEE2175D9D800AE85BE /* TipSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipSetTableViewCell.m; sourceTree = "<group>"; };
+		58B44BF02175D9F700AE85BE /* TipSetItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipSetItemModel.h; sourceTree = "<group>"; };
+		58B44BF12175D9F700AE85BE /* TipSetItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipSetItemModel.m; sourceTree = "<group>"; };
+		58B44BF32175E47900AE85BE /* SRNetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRNetworkManager.h; sourceTree = "<group>"; };
+		58B44BF42175E47900AE85BE /* SRNetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRNetworkManager.m; sourceTree = "<group>"; };
+		58B44C2A21773C7C00AE85BE /* SRChartListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRChartListVC.h; sourceTree = "<group>"; };
+		58B44C2B21773C7C00AE85BE /* SRChartListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRChartListVC.m; sourceTree = "<group>"; };
+		58B44C2D21773C9D00AE85BE /* SRChartSampleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRChartSampleVC.h; sourceTree = "<group>"; };
+		58B44C2E21773C9D00AE85BE /* SRChartSampleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRChartSampleVC.m; sourceTree = "<group>"; };
+		58B44C6621774B8E00AE85BE /* PNChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChart.h; sourceTree = "<group>"; };
+		58B44C6721774B8E00AE85BE /* PNPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChart.h; sourceTree = "<group>"; };
+		58B44C6821774B8E00AE85BE /* PNPieChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChartDataItem.m; sourceTree = "<group>"; };
+		58B44C6921774B8E00AE85BE /* PNLineChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartDataItem.h; sourceTree = "<group>"; };
+		58B44C6A21774B8E00AE85BE /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBar.h; sourceTree = "<group>"; };
+		58B44C6B21774B8E00AE85BE /* PNScatterChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartData.h; sourceTree = "<group>"; };
+		58B44C6C21774B8E00AE85BE /* PNColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNColor.h; sourceTree = "<group>"; };
+		58B44C6D21774B8E00AE85BE /* PNChartLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNChartLabel.m; sourceTree = "<group>"; };
+		58B44C6E21774B8E00AE85BE /* PNRadarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRadarChart.h; sourceTree = "<group>"; };
+		58B44C6F21774B8E00AE85BE /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		58B44C7021774B8E00AE85BE /* PNScatterChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChart.h; sourceTree = "<group>"; };
+		58B44C7121774B8E00AE85BE /* PNRadarChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRadarChartDataItem.m; sourceTree = "<group>"; };
+		58B44C7221774B8E00AE85BE /* PNGenericChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNGenericChart.m; sourceTree = "<group>"; };
+		58B44C7321774B8E00AE85BE /* PNBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBarChart.m; sourceTree = "<group>"; };
+		58B44C7421774B8E00AE85BE /* PNLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChart.m; sourceTree = "<group>"; };
+		58B44C7521774B8E00AE85BE /* PNCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNCircleChart.m; sourceTree = "<group>"; };
+		58B44C7621774B8E00AE85BE /* PNLineChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartData.m; sourceTree = "<group>"; };
+		58B44C7721774B8E00AE85BE /* PNLineChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNLineChartDataItem.m; sourceTree = "<group>"; };
+		58B44C7821774B8E00AE85BE /* PNPieChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNPieChartDataItem.h; sourceTree = "<group>"; };
+		58B44C7921774B8E00AE85BE /* PNPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNPieChart.m; sourceTree = "<group>"; };
+		58B44C7A21774B8E00AE85BE /* PNRadarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNRadarChart.m; sourceTree = "<group>"; };
+		58B44C7B21774B8E00AE85BE /* PNChartLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartLabel.h; sourceTree = "<group>"; };
+		58B44C7C21774B8E00AE85BE /* PNColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNColor.m; sourceTree = "<group>"; };
+		58B44C7D21774B8E00AE85BE /* PNScatterChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChartData.m; sourceTree = "<group>"; };
+		58B44C7E21774B8E00AE85BE /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNBar.m; sourceTree = "<group>"; };
+		58B44C7F21774B8E00AE85BE /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNBarChart.h; sourceTree = "<group>"; };
+		58B44C8021774B8E00AE85BE /* PNGenericChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGenericChart.h; sourceTree = "<group>"; };
+		58B44C8121774B8E00AE85BE /* PNRadarChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNRadarChartDataItem.h; sourceTree = "<group>"; };
+		58B44C8221774B8E00AE85BE /* PNScatterChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNScatterChart.m; sourceTree = "<group>"; };
+		58B44C8321774B8E00AE85BE /* PNChartDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNChartDelegate.h; sourceTree = "<group>"; };
+		58B44C8421774B8E00AE85BE /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		58B44C8521774B8E00AE85BE /* PNLineChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChartData.h; sourceTree = "<group>"; };
+		58B44C8621774B8E00AE85BE /* PNCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNCircleChart.h; sourceTree = "<group>"; };
+		58B44C8721774B8E00AE85BE /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
+		58B44C9821774BDB00AE85BE /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		58B44C9921774BDC00AE85BE /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
 		58F63863217493F300D41B53 /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		58F63864217493F300D41B53 /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		58F638672174B37C00D41B53 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
@@ -639,6 +730,7 @@
 			isa = PBXGroup;
 			children = (
 				5855C482213674CC00009064 /* SRProject */,
+				58B44BD0217591CA00AE85BE /* MBProgressHUDExtension */,
 				5855C481213674CC00009064 /* Products */,
 				DFCFF0E94545823831436231 /* Pods */,
 				630E9CC34E0F9994EB202A9A /* Frameworks */,
@@ -727,8 +819,8 @@
 		5855C49D2136766C00009064 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				588DFC68213FC7F900E87EE4 /* UIView+BBLayout.h */,
-				588DFC69213FC7F900E87EE4 /* UIView+BBLayout.m */,
+				58B44BC82175832A00AE85BE /* UIView+BBLayout.h */,
+				58B44BC72175832A00AE85BE /* UIView+BBLayout.m */,
 				588DFC3C213D1C6400E87EE4 /* SRDataSource.h */,
 				588DFC39213D1C6400E87EE4 /* SRDataSource.m */,
 				5855C4B1213680FB00009064 /* SRMacro.h */,
@@ -743,24 +835,26 @@
 		5855C49E2136769700009064 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				58F638662174B37C00D41B53 /* YYFPSLabel */,
-				587941EA21703D6C0026527B /* YZDisplayViewController */,
+				58B44C6521774B8E00AE85BE /* PNChart */,
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
 				5834EA9F216DFD9A00601016 /* CGContext DrawPDFPage */,
 				58718A4C216F6054003343DC /* CYLTabBarController */,
 				58718A42216F2B57003343DC /* FDFullscreenPopGesture */,
 				58738A162160C1E3001076B6 /* FSCalendar */,
+				58B44BD52175B88200AE85BE /* MBProgressHUD+Extension */,
 				58718A38216F298B003343DC /* MCDownloader */,
 				588BFA0C215F7E4100F3C34F /* MinScrollMenu */,
 				588BFA29215FA07800F3C34F /* MYTreeTableView */,
 				5834EA24216DFD2F00601016 /* Reader */,
 				5834EA16216DDFE000601016 /* SRPDFReader */,
+				58F63863217493F300D41B53 /* UIButton+Extension.h */,
+				58F63864217493F300D41B53 /* UIButton+Extension.m */,
 				588DFC71213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.h */,
 				588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */,
 				58718A49216F5EDB003343DC /* UIWebView+JavaScriptAlert.h */,
 				58718A4A216F5EDB003343DC /* UIWebView+JavaScriptAlert.m */,
-				58F63863217493F300D41B53 /* UIButton+Extension.h */,
-				58F63864217493F300D41B53 /* UIButton+Extension.m */,
+				58F638662174B37C00D41B53 /* YYFPSLabel */,
+				587941EA21703D6C0026527B /* YZDisplayViewController */,
 			);
 			path = Third;
 			sourceTree = "<group>";
@@ -791,6 +885,8 @@
 			children = (
 				58F6386D2174B42F00D41B53 /* NetworkManager.h */,
 				58F6386E2174B42F00D41B53 /* NetworkManager.m */,
+				58B44BF32175E47900AE85BE /* SRNetworkManager.h */,
+				58B44BF42175E47900AE85BE /* SRNetworkManager.m */,
 				588DFC42213D27F600E87EE4 /* XMNetworking */,
 			);
 			path = Network;
@@ -810,6 +906,7 @@
 		5855C4C92136BEDF00009064 /* FunctionOne */ = {
 			isa = PBXGroup;
 			children = (
+				58B44BF621773B3000AE85BE /* 图表 */,
 				587941F821703EA10026527B /* 异形TabBar */,
 				5893D5A3216CAD4C00E4BA81 /* PDFReader */,
 				587389FC21605CF2001076B6 /* 日历 */,
@@ -847,6 +944,8 @@
 			children = (
 				5855C4D02136BF1F00009064 /* TwoViewController.h */,
 				5855C4D12136BF1F00009064 /* TwoViewController.m */,
+				58B44BEA2175D9B700AE85BE /* SearchViewController.h */,
+				58B44BEB2175D9B700AE85BE /* SearchViewController.m */,
 			);
 			path = FunctionTwo;
 			sourceTree = "<group>";
@@ -972,6 +1071,8 @@
 			children = (
 				5855C5202137947200009064 /* TwoTableViewCell.h */,
 				5855C5212137947200009064 /* TwoTableViewCell.m */,
+				58B44BED2175D9D800AE85BE /* TipSetTableViewCell.h */,
+				58B44BEE2175D9D800AE85BE /* TipSetTableViewCell.m */,
 			);
 			path = FunctionTwo;
 			sourceTree = "<group>";
@@ -1017,6 +1118,8 @@
 			children = (
 				5855C5382137F5DC00009064 /* TwoModel.h */,
 				5855C5392137F5DC00009064 /* TwoModel.m */,
+				58B44BF02175D9F700AE85BE /* TipSetItemModel.h */,
+				58B44BF12175D9F700AE85BE /* TipSetItemModel.m */,
 			);
 			path = FunctionTwo;
 			sourceTree = "<group>";
@@ -1252,6 +1355,93 @@
 			path = PDFReader;
 			sourceTree = "<group>";
 		};
+		58B44BD0217591CA00AE85BE /* MBProgressHUDExtension */ = {
+			isa = PBXGroup;
+			children = (
+				58B44BD1217591CA00AE85BE /* Info.plist */,
+			);
+			path = MBProgressHUDExtension;
+			sourceTree = "<group>";
+		};
+		58B44BD52175B88200AE85BE /* MBProgressHUD+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				58B44BD62175B88200AE85BE /* Images */,
+				58B44BE72175B8A500AE85BE /* MBProgressHUD+Extension.h */,
+				58B44BE82175B8A500AE85BE /* MBProgressHUD+Extension.m */,
+			);
+			path = "MBProgressHUD+Extension";
+			sourceTree = "<group>";
+		};
+		58B44BD62175B88200AE85BE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				58B44BD72175B88200AE85BE /* MBHUD_Success@2x.png */,
+				58B44BD82175B88200AE85BE /* MBHUD_Info@3x.png */,
+				58B44BD92175B88200AE85BE /* MBHUD_Info@2x.png */,
+				58B44BDA2175B88200AE85BE /* MBHUD_Success@3x.png */,
+				58B44BDB2175B88200AE85BE /* MBHUD_Error@2x.png */,
+				58B44BDC2175B88200AE85BE /* MBHUD_Warn@3x.png */,
+				58B44BDD2175B88200AE85BE /* MBHUD_Warn@2x.png */,
+				58B44BDE2175B88200AE85BE /* MBHUD_Error@3x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		58B44BF621773B3000AE85BE /* 图表 */ = {
+			isa = PBXGroup;
+			children = (
+				58B44C2A21773C7C00AE85BE /* SRChartListVC.h */,
+				58B44C2B21773C7C00AE85BE /* SRChartListVC.m */,
+				58B44C2D21773C9D00AE85BE /* SRChartSampleVC.h */,
+				58B44C2E21773C9D00AE85BE /* SRChartSampleVC.m */,
+			);
+			path = "图表";
+			sourceTree = "<group>";
+		};
+		58B44C6521774B8E00AE85BE /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				58B44C9821774BDB00AE85BE /* UICountingLabel.h */,
+				58B44C9921774BDC00AE85BE /* UICountingLabel.m */,
+				58B44C6621774B8E00AE85BE /* PNChart.h */,
+				58B44C6721774B8E00AE85BE /* PNPieChart.h */,
+				58B44C6821774B8E00AE85BE /* PNPieChartDataItem.m */,
+				58B44C6921774B8E00AE85BE /* PNLineChartDataItem.h */,
+				58B44C6A21774B8E00AE85BE /* PNBar.h */,
+				58B44C6B21774B8E00AE85BE /* PNScatterChartData.h */,
+				58B44C6C21774B8E00AE85BE /* PNColor.h */,
+				58B44C6D21774B8E00AE85BE /* PNChartLabel.m */,
+				58B44C6E21774B8E00AE85BE /* PNRadarChart.h */,
+				58B44C6F21774B8E00AE85BE /* PNScatterChartDataItem.m */,
+				58B44C7021774B8E00AE85BE /* PNScatterChart.h */,
+				58B44C7121774B8E00AE85BE /* PNRadarChartDataItem.m */,
+				58B44C7221774B8E00AE85BE /* PNGenericChart.m */,
+				58B44C7321774B8E00AE85BE /* PNBarChart.m */,
+				58B44C7421774B8E00AE85BE /* PNLineChart.m */,
+				58B44C7521774B8E00AE85BE /* PNCircleChart.m */,
+				58B44C7621774B8E00AE85BE /* PNLineChartData.m */,
+				58B44C7721774B8E00AE85BE /* PNLineChartDataItem.m */,
+				58B44C7821774B8E00AE85BE /* PNPieChartDataItem.h */,
+				58B44C7921774B8E00AE85BE /* PNPieChart.m */,
+				58B44C7A21774B8E00AE85BE /* PNRadarChart.m */,
+				58B44C7B21774B8E00AE85BE /* PNChartLabel.h */,
+				58B44C7C21774B8E00AE85BE /* PNColor.m */,
+				58B44C7D21774B8E00AE85BE /* PNScatterChartData.m */,
+				58B44C7E21774B8E00AE85BE /* PNBar.m */,
+				58B44C7F21774B8E00AE85BE /* PNBarChart.h */,
+				58B44C8021774B8E00AE85BE /* PNGenericChart.h */,
+				58B44C8121774B8E00AE85BE /* PNRadarChartDataItem.h */,
+				58B44C8221774B8E00AE85BE /* PNScatterChart.m */,
+				58B44C8321774B8E00AE85BE /* PNChartDelegate.h */,
+				58B44C8421774B8E00AE85BE /* PNScatterChartDataItem.h */,
+				58B44C8521774B8E00AE85BE /* PNLineChartData.h */,
+				58B44C8621774B8E00AE85BE /* PNCircleChart.h */,
+				58B44C8721774B8E00AE85BE /* PNLineChart.h */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
 		58F638662174B37C00D41B53 /* YYFPSLabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1352,26 +1542,34 @@
 				5834EA97216DFD3000601016 /* Reader-Export@3x.png in Resources */,
 				5834EA83216DFD3000601016 /* Reader-Print.png in Resources */,
 				5834EA94216DFD3000601016 /* Reader-Mark-Y.png in Resources */,
+				58B44BE62175B88200AE85BE /* MBHUD_Error@3x.png in Resources */,
 				5855C490213674CE00009064 /* LaunchScreen.storyboard in Resources */,
 				5834EA86216DFD3000601016 /* Reader-Mark-Y@2x.png in Resources */,
 				5834EA85216DFD3000601016 /* Reader-Email@3x.png in Resources */,
 				5834EA93216DFD3000601016 /* AppIcon-120.png in Resources */,
 				5834EA90216DFD3000601016 /* Reader-Email.png in Resources */,
+				58B44BE32175B88200AE85BE /* MBHUD_Error@2x.png in Resources */,
 				5834EA84216DFD3000601016 /* Reader-Button-N@2x.png in Resources */,
 				5834EA8C216DFD3000601016 /* Reader-Mark-Y@3x.png in Resources */,
 				5834EAB3216DFD9A00601016 /* 002.pdf in Resources */,
+				58B44BE02175B88200AE85BE /* MBHUD_Info@3x.png in Resources */,
 				5834EA8E216DFD3000601016 /* Reader-Thumbs.png in Resources */,
 				5834EA8F216DFD3000601016 /* Reader-Thumbs@2x.png in Resources */,
 				5834EA98216DFD3000601016 /* Reader-Mark-N@3x.png in Resources */,
 				5834EA89216DFD3000601016 /* AppIcon-076.png in Resources */,
+				58B44BE52175B88200AE85BE /* MBHUD_Warn@2x.png in Resources */,
 				588BFA39215FA07800F3C34F /* MYTreeTableView.bundle in Resources */,
 				5834EA87216DFD3000601016 /* Reader-Button-H@3x.png in Resources */,
+				58B44BE22175B88200AE85BE /* MBHUD_Success@3x.png in Resources */,
 				5834EA9B216DFD3000601016 /* Reader-Export@2x.png in Resources */,
 				5834EA8B216DFD3000601016 /* Reader-Button-H@2x.png in Resources */,
 				5834EAB1216DFD9A00601016 /* 001.pdf in Resources */,
 				5834EA9A216DFD3000601016 /* Reader-Mark-N@2x.png in Resources */,
+				58B44BDF2175B88200AE85BE /* MBHUD_Success@2x.png in Resources */,
 				588BFA40215FA9A900F3C34F /* cityResource.json in Resources */,
 				5834EA99216DFD3000601016 /* Reader-Export.png in Resources */,
+				58B44BE42175B88200AE85BE /* MBHUD_Warn@3x.png in Resources */,
+				58B44BE12175B88200AE85BE /* MBHUD_Info@2x.png in Resources */,
 				5834EA8A216DFD3000601016 /* Reader-Button-N.png in Resources */,
 				5834EA95216DFD3000601016 /* Reader-Mark-N.png in Resources */,
 				5855C48D213674CE00009064 /* Assets.xcassets in Resources */,
@@ -1429,7 +1627,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B44C8F21774B8F00AE85BE /* PNCircleChart.m in Sources */,
+				58B44C9521774B8F00AE85BE /* PNScatterChartData.m in Sources */,
 				5855C4AA2136783800009064 /* BaseViewController.m in Sources */,
+				58B44BE92175B8A500AE85BE /* MBProgressHUD+Extension.m in Sources */,
 				5834EA7E216DFD3000601016 /* ThumbsMainToolbar.m in Sources */,
 				5893D5A6216CAD6800E4BA81 /* PDFReaderDemoVC.m in Sources */,
 				58738A422160C1E3001076B6 /* FSCalendarConstants.m in Sources */,
@@ -1438,8 +1639,11 @@
 				588BFA3D215FA58D00F3C34F /* SRTreeTableViewController.m in Sources */,
 				5855C52E2137D49100009064 /* PXBMTopClassModel.m in Sources */,
 				5855C4FA2137939600009064 /* OneViewModel.m in Sources */,
+				58B44C9121774B8F00AE85BE /* PNLineChartDataItem.m in Sources */,
 				5855C4EE213792E200009064 /* CBBaseTableViewDataSource.m in Sources */,
 				5834EA6E216DFD3000601016 /* ReaderThumbQueue.m in Sources */,
+				58B44BEF2175D9D900AE85BE /* TipSetTableViewCell.m in Sources */,
+				58B44BC92175832A00AE85BE /* UIView+BBLayout.m in Sources */,
 				5855C4C52136BC4500009064 /* SRTabBarController.m in Sources */,
 				5834EA22216DFCF600601016 /* DownloadViewController.m in Sources */,
 				588DFC73213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m in Sources */,
@@ -1457,19 +1661,23 @@
 				5855C5192137945000009064 /* FourTableViewCell.m in Sources */,
 				58738A3C2160C1E3001076B6 /* FSCalendar.m in Sources */,
 				5855C493213674CE00009064 /* main.m in Sources */,
+				58B44C8921774B8F00AE85BE /* PNChartLabel.m in Sources */,
 				5834EA74216DFD3000601016 /* ReaderThumbFetch.m in Sources */,
 				58738A3E2160C1E3001076B6 /* FSCalendarScopeHandle.m in Sources */,
 				588BFA3A215FA07800F3C34F /* MYTreeTableViewSearchBar.m in Sources */,
 				5855C4AD2136787C00009064 /* BaseTableViewController.m in Sources */,
 				58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */,
 				58718A61216F6054003343DC /* UIControl+CYLTabBarControllerExtention.m in Sources */,
+				58B44C2F21773C9D00AE85BE /* SRChartSampleVC.m in Sources */,
 				58738A152160C032001076B6 /* SRCalendarDemoVC.m in Sources */,
+				58B44C9021774B8F00AE85BE /* PNLineChartData.m in Sources */,
 				5855C4BD213692A900009064 /* SRConstant.m in Sources */,
 				588BFA27215F96FC00F3C34F /* HorizontalListVC.m in Sources */,
 				588BFA21215F811100F3C34F /* TestSwiftViewController.swift in Sources */,
 				5855C500213793AF00009064 /* ThreeViewModel.m in Sources */,
 				588BFA36215FA07800F3C34F /* MYTreeTableViewController.m in Sources */,
 				5834EA6F216DFD3000601016 /* ReaderContentPage.m in Sources */,
+				58B44C8821774B8F00AE85BE /* PNPieChartDataItem.m in Sources */,
 				5855C4B0213678E500009064 /* BaseTableViewCell.m in Sources */,
 				58718A62216F6054003343DC /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				58738A462160C1E3001076B6 /* FSCalendarAppearance.m in Sources */,
@@ -1489,12 +1697,16 @@
 				588DFC3D213D1C6500E87EE4 /* SRDataSource.m in Sources */,
 				58718A5E216F6054003343DC /* CYLTabBarController.m in Sources */,
 				5834EA19216DE00F00601016 /* SRPDFListVC.m in Sources */,
+				58B44C9A21774BDC00AE85BE /* UICountingLabel.m in Sources */,
 				5834EA71216DFD3000601016 /* CGPDFDocument.m in Sources */,
 				588BFA11215F7E4100F3C34F /* MinScrollMenuItem.m in Sources */,
+				58B44C8E21774B8F00AE85BE /* PNLineChart.m in Sources */,
 				587941F521703D6C0026527B /* YZFlowLayout.m in Sources */,
 				58718A4B216F5EDC003343DC /* UIWebView+JavaScriptAlert.m in Sources */,
 				587941FE217085CA0026527B /* CYLPlusButtonSubclass.m in Sources */,
+				58B44C8C21774B8F00AE85BE /* PNGenericChart.m in Sources */,
 				5834EABA216DFDA800601016 /* PDFWebViewViewController.m in Sources */,
+				58B44C2C21773C7C00AE85BE /* SRChartListVC.m in Sources */,
 				5855C4EF213792E200009064 /* CBTableViewDataSourceMaker.m in Sources */,
 				588BFA1C215F805700F3C34F /* BBCourseChildVC.m in Sources */,
 				58738A442160C1E3001076B6 /* FSCalendarHeaderView.m in Sources */,
@@ -1505,6 +1717,7 @@
 				58738A402160C1E3001076B6 /* FSCalendarExtensions.m in Sources */,
 				5855C5312137F5BB00009064 /* FiveModel.m in Sources */,
 				5855C51F2137946800009064 /* ThreeTableViewCell.m in Sources */,
+				58B44C8A21774B8F00AE85BE /* PNScatterChartDataItem.m in Sources */,
 				5834EAB6216DFD9A00601016 /* CGContextDrawPDFPageModel.m in Sources */,
 				5855C4A32136775700009064 /* BaseModel.m in Sources */,
 				588DFC53213D2C1C00E87EE4 /* PXBMRecommendOneCell.m in Sources */,
@@ -1519,17 +1732,20 @@
 				58718A60216F6054003343DC /* CYLPlusButton.m in Sources */,
 				5855C4F2213792E200009064 /* UITableView+CBTableViewDataSource.m in Sources */,
 				5834EAB0216DFD9A00601016 /* CGContextDrawPDFPageController.m in Sources */,
-				588DFC6A213FC7F900E87EE4 /* UIView+BBLayout.m in Sources */,
 				5834EA7D216DFD3000601016 /* ReaderConstants.m in Sources */,
 				5834EA70216DFD3000601016 /* ReaderThumbRender.m in Sources */,
+				58B44C8B21774B8F00AE85BE /* PNRadarChartDataItem.m in Sources */,
 				5834EAB7216DFD9A00601016 /* CGContextDrawPDFView.m in Sources */,
 				5855C4E12136C67100009064 /* FiveViewController.m in Sources */,
 				58738A432160C1E3001076B6 /* FSCalendarCalculator.m in Sources */,
 				5855C5162137944600009064 /* FiveTableViewCell.m in Sources */,
 				5855C4D52136BF2C00009064 /* ThreeViewController.m in Sources */,
 				58718A5D216F6054003343DC /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */,
+				58B44C9721774B8F00AE85BE /* PNScatterChart.m in Sources */,
 				5855C4D82136BF3500009064 /* FourViewController.m in Sources */,
 				58738A382160C1E3001076B6 /* FSCalendarDelegationProxy.m in Sources */,
+				58B44C9621774B8F00AE85BE /* PNBar.m in Sources */,
+				58B44BF22175D9F700AE85BE /* TipSetItemModel.m in Sources */,
 				5834EA75216DFD3000601016 /* ReaderThumbView.m in Sources */,
 				58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */,
 				58718A45216F2B57003343DC /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -1537,13 +1753,17 @@
 				5855C4C82136BC6500009064 /* SRNavigationController.m in Sources */,
 				58738A3F2160C1E3001076B6 /* FSCalendarWeekdayView.m in Sources */,
 				58738A392160C1E3001076B6 /* FSCalendarDelegationFactory.m in Sources */,
+				58B44C8D21774B8F00AE85BE /* PNBarChart.m in Sources */,
 				58738A3D2160C1E3001076B6 /* FSCalendarCollectionViewLayout.m in Sources */,
 				5834EA7B216DFD3000601016 /* ThumbsViewController.m in Sources */,
 				5855C485213674CC00009064 /* AppDelegate.m in Sources */,
+				58B44BEC2175D9B800AE85BE /* SearchViewController.m in Sources */,
+				58B44C9421774B8F00AE85BE /* PNColor.m in Sources */,
 				5855C4FD213793A300009064 /* TwoViewModel.m in Sources */,
 				58738A372160C1E3001076B6 /* FSCalendarCollectionView.m in Sources */,
 				5855C4A62136776C00009064 /* BaseViewModel.m in Sources */,
 				588BFA35215FA07800F3C34F /* MYTreeItem.m in Sources */,
+				58B44C9321774B8F00AE85BE /* PNRadarChart.m in Sources */,
 				5855C5342137F5C500009064 /* FourModel.m in Sources */,
 				5834EA7C216DFD3000601016 /* ReaderThumbRequest.m in Sources */,
 				58F63865217493F300D41B53 /* UIButton+Extension.m in Sources */,
@@ -1552,12 +1772,14 @@
 				588DFC41213D27DF00E87EE4 /* BaseCollectionViewCell.m in Sources */,
 				5834EA72216DFD3000601016 /* ReaderContentView.m in Sources */,
 				58718A41216F298B003343DC /* MCDownloadOperation.m in Sources */,
+				58B44BF52175E47900AE85BE /* SRNetworkManager.m in Sources */,
 				588DFC4D213D27F600E87EE4 /* XMRequest.m in Sources */,
 				5834EA23216DFCF600601016 /* ScanViewController.m in Sources */,
 				588DFC4C213D27F600E87EE4 /* XMCenter.m in Sources */,
 				5834EA76216DFD3000601016 /* ReaderMainToolbar.m in Sources */,
 				58F6386F2174B43000D41B53 /* NetworkManager.m in Sources */,
 				5855C5282137C67C00009064 /* PXBMTopClassCell.m in Sources */,
+				58B44C9221774B8F00AE85BE /* PNPieChart.m in Sources */,
 				5834EA73216DFD3000601016 /* ReaderViewController.m in Sources */,
 				5855C5372137F5D100009064 /* ThreeModel.m in Sources */,
 				5855C4B621368ECD00009064 /* SRGloble.m in Sources */,

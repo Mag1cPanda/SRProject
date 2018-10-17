@@ -26,10 +26,7 @@
 
 +(instancetype)modelWithDic:(NSDictionary *)dic
 {
-    BaseModel *model = [BaseModel new];
-//    [model setValuesForKeysWithDictionary:dic];
-    
-    return model;
+    return [[self alloc] initWithDic:dic];
 }
 
 @end

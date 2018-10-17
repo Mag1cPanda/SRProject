@@ -9,8 +9,10 @@
 #import "BaseModel.h"
 
 @interface TwoModel : BaseModel
-@property (nonatomic, copy) NSString *content;
-@property (nonatomic, copy) NSString *hashId;
-@property (nonatomic, copy) NSString *unixtime;
-@property (nonatomic, copy) NSString *updatetime;
+@property (nonatomic, copy) NSString *fid;
+@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *url;
+@property (nonatomic, copy) NSString *postdate;
+@property (nonatomic, assign) NSInteger platform;
 @end

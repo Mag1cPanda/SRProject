@@ -11,4 +11,6 @@
 
 @interface TwoTableViewCell : BaseTableViewCell
 @property (nonatomic, strong) TwoModel *model;
+
+
 @end

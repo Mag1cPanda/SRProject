@@ -20,6 +20,7 @@
 #import "PDFReaderDemoVC.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "CYLTabBarControllerConfig.h"
+#import "SRChartListVC.h"
 
 #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
 
@@ -31,6 +32,7 @@ UITabBarControllerDelegate>
 
 @property (nonatomic, strong) OneViewModel *viewModel;
 @property (nonatomic, strong) NSMutableArray *data;
+
 @end
 
 @implementation OneViewController
@@ -116,6 +118,11 @@ UITabBarControllerDelegate>
                     [self.navigationController pushViewController:tabBarController animated:YES];
                 }
                 
+                if (index == 8) {
+                    SRChartListVC *vc = SRChartListVC.new;
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
+                
             });
             
 //            section.headerTitle(@"11111");
@@ -146,8 +153,7 @@ UITabBarControllerDelegate>
     NSLog(@"%@", [NSString stringWithFormat:@"已选择了 %lu 个 items", (unsigned long)items.count]);
 }
 
-#pragma mark - delegate
-
+#pragma mark - UITabBarControllerDelegate
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
     return YES;
 }
@@ -266,7 +272,8 @@ UITabBarControllerDelegate>
                           @"树状列表",
                           @"日历",
                           @"PDF阅读",
-                          @"异形TabBar"];
+                          @"异形TabBar",
+                          @"图表"];
         [_data addObjectsFromArray:data];
         for (NSInteger i=0; i<100; i++) {
             [_data addObject:@"开发中"];

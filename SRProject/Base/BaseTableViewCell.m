@@ -30,4 +30,14 @@
     return self;
 }
 
+
++ (CGFloat)cellHeight {
+    return 44;
+}
+
++ (NSString *)reuseIdentifier {
+    return NSStringFromClass(self.class);
+}
+
+
 @end

@@ -12,4 +12,7 @@
 
 @interface BaseTableViewCell : UITableViewCell
 
++ (CGFloat)cellHeight;
++ (NSString *)reuseIdentifier;
+
 @end

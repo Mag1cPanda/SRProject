@@ -142,7 +142,6 @@ static const char MJRefreshReloadDataBlockKey = '\0';
 - (void)mj_reloadData
 {
     [self mj_reloadData];
-    
     [self executeReloadDataBlock];
 }
 @end
