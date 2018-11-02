@@ -207,6 +207,11 @@
 		58B44C9621774B8F00AE85BE /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7E21774B8E00AE85BE /* PNBar.m */; };
 		58B44C9721774B8F00AE85BE /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C8221774B8E00AE85BE /* PNScatterChart.m */; };
 		58B44C9A21774BDC00AE85BE /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C9921774BDC00AE85BE /* UICountingLabel.m */; };
+		58DB5D1C2178363A00C22881 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DB5D1B2178363A00C22881 /* NSString+URL.m */; };
+		58DB5D1E2178567C00C22881 /* bbwAPP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58DB5D1D2178567C00C22881 /* bbwAPP.pdf */; };
+		58DB5D2B2179C35500C22881 /* SRModalTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DB5D2A2179C35500C22881 /* SRModalTestVC.m */; };
+		58DFF6E5218C41B700146244 /* SRCircleProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DFF6E4218C41B700146244 /* SRCircleProgress.m */; };
+		58DFF6E8218C50FA00146244 /* TestCircleProgressVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DFF6E7218C50FA00146244 /* TestCircleProgressVC.m */; };
 		58F63865217493F300D41B53 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F63864217493F300D41B53 /* UIButton+Extension.m */; };
 		58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638672174B37C00D41B53 /* YYWeakProxy.m */; };
 		58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638692174B37C00D41B53 /* YYFPSLabel.m */; };
@@ -578,6 +583,15 @@
 		58B44C8721774B8E00AE85BE /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
 		58B44C9821774BDB00AE85BE /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
 		58B44C9921774BDC00AE85BE /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		58DB5D1A2178363A00C22881 /* NSString+URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		58DB5D1B2178363A00C22881 /* NSString+URL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		58DB5D1D2178567C00C22881 /* bbwAPP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bbwAPP.pdf; sourceTree = "<group>"; };
+		58DB5D292179C35500C22881 /* SRModalTestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRModalTestVC.h; sourceTree = "<group>"; };
+		58DB5D2A2179C35500C22881 /* SRModalTestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRModalTestVC.m; sourceTree = "<group>"; };
+		58DFF6E3218C41B700146244 /* SRCircleProgress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRCircleProgress.h; sourceTree = "<group>"; };
+		58DFF6E4218C41B700146244 /* SRCircleProgress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRCircleProgress.m; sourceTree = "<group>"; };
+		58DFF6E6218C50FA00146244 /* TestCircleProgressVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCircleProgressVC.h; sourceTree = "<group>"; };
+		58DFF6E7218C50FA00146244 /* TestCircleProgressVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCircleProgressVC.m; sourceTree = "<group>"; };
 		58F63863217493F300D41B53 /* UIButton+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		58F63864217493F300D41B53 /* UIButton+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		58F638672174B37C00D41B53 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
@@ -707,21 +721,21 @@
 		5834EA9F216DFD9A00601016 /* CGContext DrawPDFPage */ = {
 			isa = PBXGroup;
 			children = (
-				5834EAA0216DFD9A00601016 /* BackViewController.m */,
-				5834EAA1216DFD9A00601016 /* CGContextDrawPDFPageController.m */,
 				5834EAA2216DFD9A00601016 /* 001.pdf */,
-				5834EAA3216DFD9A00601016 /* 003.pdf */,
-				5834EAA4216DFD9A00601016 /* CGContextDrawPDFView.h */,
 				5834EAA5216DFD9A00601016 /* 002.pdf */,
-				5834EAA6216DFD9A00601016 /* CGContextDrawPDFListViewController.m */,
-				5834EAA7216DFD9A00601016 /* CGContextDrawPDFReaderController.m */,
-				5834EAA8216DFD9A00601016 /* CGContextDrawPDFPageModel.m */,
-				5834EAA9216DFD9A00601016 /* CGContextDrawPDFView.m */,
-				5834EAAA216DFD9A00601016 /* CGContextDrawPDFPageController.h */,
+				5834EAA3216DFD9A00601016 /* 003.pdf */,
 				5834EAAB216DFD9A00601016 /* BackViewController.h */,
+				5834EAA0216DFD9A00601016 /* BackViewController.m */,
 				5834EAAC216DFD9A00601016 /* CGContextDrawPDFListViewController.h */,
-				5834EAAD216DFD9A00601016 /* CGContextDrawPDFReaderController.h */,
+				5834EAA6216DFD9A00601016 /* CGContextDrawPDFListViewController.m */,
+				5834EAAA216DFD9A00601016 /* CGContextDrawPDFPageController.h */,
+				5834EAA1216DFD9A00601016 /* CGContextDrawPDFPageController.m */,
 				5834EAAE216DFD9A00601016 /* CGContextDrawPDFPageModel.h */,
+				5834EAA8216DFD9A00601016 /* CGContextDrawPDFPageModel.m */,
+				5834EAAD216DFD9A00601016 /* CGContextDrawPDFReaderController.h */,
+				5834EAA7216DFD9A00601016 /* CGContextDrawPDFReaderController.m */,
+				5834EAA4216DFD9A00601016 /* CGContextDrawPDFView.h */,
+				5834EAA9216DFD9A00601016 /* CGContextDrawPDFView.m */,
 			);
 			path = "CGContext DrawPDFPage";
 			sourceTree = "<group>";
@@ -764,6 +778,7 @@
 				5855C491213674CE00009064 /* Info.plist */,
 				5855C492213674CE00009064 /* main.m */,
 				5855C4B321368E5900009064 /* PrefixHeader.pch */,
+				58DB5D1D2178567C00C22881 /* bbwAPP.pdf */,
 			);
 			path = SRProject;
 			sourceTree = "<group>";
@@ -853,6 +868,8 @@
 				588DFC72213FD43F00E87EE4 /* UIScrollView+EmptyDataSet.m */,
 				58718A49216F5EDB003343DC /* UIWebView+JavaScriptAlert.h */,
 				58718A4A216F5EDB003343DC /* UIWebView+JavaScriptAlert.m */,
+				58DB5D1A2178363A00C22881 /* NSString+URL.h */,
+				58DB5D1B2178363A00C22881 /* NSString+URL.m */,
 				58F638662174B37C00D41B53 /* YYFPSLabel */,
 				587941EA21703D6C0026527B /* YZDisplayViewController */,
 			);
@@ -906,6 +923,8 @@
 		5855C4C92136BEDF00009064 /* FunctionOne */ = {
 			isa = PBXGroup;
 			children = (
+				58DFF6E2218C3F1500146244 /* 环形进度条 */,
+				58DB5D282179C30700C22881 /* 半透明Modal */,
 				58B44BF621773B3000AE85BE /* 图表 */,
 				587941F821703EA10026527B /* 异形TabBar */,
 				5893D5A3216CAD4C00E4BA81 /* PDFReader */,
@@ -1402,44 +1421,64 @@
 		58B44C6521774B8E00AE85BE /* PNChart */ = {
 			isa = PBXGroup;
 			children = (
-				58B44C9821774BDB00AE85BE /* UICountingLabel.h */,
-				58B44C9921774BDC00AE85BE /* UICountingLabel.m */,
-				58B44C6621774B8E00AE85BE /* PNChart.h */,
-				58B44C6721774B8E00AE85BE /* PNPieChart.h */,
-				58B44C6821774B8E00AE85BE /* PNPieChartDataItem.m */,
-				58B44C6921774B8E00AE85BE /* PNLineChartDataItem.h */,
 				58B44C6A21774B8E00AE85BE /* PNBar.h */,
-				58B44C6B21774B8E00AE85BE /* PNScatterChartData.h */,
-				58B44C6C21774B8E00AE85BE /* PNColor.h */,
-				58B44C6D21774B8E00AE85BE /* PNChartLabel.m */,
-				58B44C6E21774B8E00AE85BE /* PNRadarChart.h */,
-				58B44C6F21774B8E00AE85BE /* PNScatterChartDataItem.m */,
-				58B44C7021774B8E00AE85BE /* PNScatterChart.h */,
-				58B44C7121774B8E00AE85BE /* PNRadarChartDataItem.m */,
-				58B44C7221774B8E00AE85BE /* PNGenericChart.m */,
-				58B44C7321774B8E00AE85BE /* PNBarChart.m */,
-				58B44C7421774B8E00AE85BE /* PNLineChart.m */,
-				58B44C7521774B8E00AE85BE /* PNCircleChart.m */,
-				58B44C7621774B8E00AE85BE /* PNLineChartData.m */,
-				58B44C7721774B8E00AE85BE /* PNLineChartDataItem.m */,
-				58B44C7821774B8E00AE85BE /* PNPieChartDataItem.h */,
-				58B44C7921774B8E00AE85BE /* PNPieChart.m */,
-				58B44C7A21774B8E00AE85BE /* PNRadarChart.m */,
-				58B44C7B21774B8E00AE85BE /* PNChartLabel.h */,
-				58B44C7C21774B8E00AE85BE /* PNColor.m */,
-				58B44C7D21774B8E00AE85BE /* PNScatterChartData.m */,
 				58B44C7E21774B8E00AE85BE /* PNBar.m */,
 				58B44C7F21774B8E00AE85BE /* PNBarChart.h */,
-				58B44C8021774B8E00AE85BE /* PNGenericChart.h */,
-				58B44C8121774B8E00AE85BE /* PNRadarChartDataItem.h */,
-				58B44C8221774B8E00AE85BE /* PNScatterChart.m */,
+				58B44C7321774B8E00AE85BE /* PNBarChart.m */,
+				58B44C6621774B8E00AE85BE /* PNChart.h */,
 				58B44C8321774B8E00AE85BE /* PNChartDelegate.h */,
-				58B44C8421774B8E00AE85BE /* PNScatterChartDataItem.h */,
-				58B44C8521774B8E00AE85BE /* PNLineChartData.h */,
+				58B44C7B21774B8E00AE85BE /* PNChartLabel.h */,
+				58B44C6D21774B8E00AE85BE /* PNChartLabel.m */,
 				58B44C8621774B8E00AE85BE /* PNCircleChart.h */,
+				58B44C7521774B8E00AE85BE /* PNCircleChart.m */,
+				58B44C6C21774B8E00AE85BE /* PNColor.h */,
+				58B44C7C21774B8E00AE85BE /* PNColor.m */,
+				58B44C8021774B8E00AE85BE /* PNGenericChart.h */,
+				58B44C7221774B8E00AE85BE /* PNGenericChart.m */,
 				58B44C8721774B8E00AE85BE /* PNLineChart.h */,
+				58B44C7421774B8E00AE85BE /* PNLineChart.m */,
+				58B44C8521774B8E00AE85BE /* PNLineChartData.h */,
+				58B44C7621774B8E00AE85BE /* PNLineChartData.m */,
+				58B44C6921774B8E00AE85BE /* PNLineChartDataItem.h */,
+				58B44C7721774B8E00AE85BE /* PNLineChartDataItem.m */,
+				58B44C6721774B8E00AE85BE /* PNPieChart.h */,
+				58B44C7921774B8E00AE85BE /* PNPieChart.m */,
+				58B44C7821774B8E00AE85BE /* PNPieChartDataItem.h */,
+				58B44C6821774B8E00AE85BE /* PNPieChartDataItem.m */,
+				58B44C6E21774B8E00AE85BE /* PNRadarChart.h */,
+				58B44C7A21774B8E00AE85BE /* PNRadarChart.m */,
+				58B44C8121774B8E00AE85BE /* PNRadarChartDataItem.h */,
+				58B44C7121774B8E00AE85BE /* PNRadarChartDataItem.m */,
+				58B44C7021774B8E00AE85BE /* PNScatterChart.h */,
+				58B44C8221774B8E00AE85BE /* PNScatterChart.m */,
+				58B44C6B21774B8E00AE85BE /* PNScatterChartData.h */,
+				58B44C7D21774B8E00AE85BE /* PNScatterChartData.m */,
+				58B44C8421774B8E00AE85BE /* PNScatterChartDataItem.h */,
+				58B44C6F21774B8E00AE85BE /* PNScatterChartDataItem.m */,
+				58B44C9821774BDB00AE85BE /* UICountingLabel.h */,
+				58B44C9921774BDC00AE85BE /* UICountingLabel.m */,
 			);
 			path = PNChart;
+			sourceTree = "<group>";
+		};
+		58DB5D282179C30700C22881 /* 半透明Modal */ = {
+			isa = PBXGroup;
+			children = (
+				58DB5D292179C35500C22881 /* SRModalTestVC.h */,
+				58DB5D2A2179C35500C22881 /* SRModalTestVC.m */,
+			);
+			path = "半透明Modal";
+			sourceTree = "<group>";
+		};
+		58DFF6E2218C3F1500146244 /* 环形进度条 */ = {
+			isa = PBXGroup;
+			children = (
+				58DFF6E3218C41B700146244 /* SRCircleProgress.h */,
+				58DFF6E4218C41B700146244 /* SRCircleProgress.m */,
+				58DFF6E6218C50FA00146244 /* TestCircleProgressVC.h */,
+				58DFF6E7218C50FA00146244 /* TestCircleProgressVC.m */,
+			);
+			path = "环形进度条";
 			sourceTree = "<group>";
 		};
 		58F638662174B37C00D41B53 /* YYFPSLabel */ = {
@@ -1561,6 +1600,7 @@
 				588BFA39215FA07800F3C34F /* MYTreeTableView.bundle in Resources */,
 				5834EA87216DFD3000601016 /* Reader-Button-H@3x.png in Resources */,
 				58B44BE22175B88200AE85BE /* MBHUD_Success@3x.png in Resources */,
+				58DB5D1E2178567C00C22881 /* bbwAPP.pdf in Resources */,
 				5834EA9B216DFD3000601016 /* Reader-Export@2x.png in Resources */,
 				5834EA8B216DFD3000601016 /* Reader-Button-H@2x.png in Resources */,
 				5834EAB1216DFD9A00601016 /* 001.pdf in Resources */,
@@ -1700,7 +1740,9 @@
 				58B44C9A21774BDC00AE85BE /* UICountingLabel.m in Sources */,
 				5834EA71216DFD3000601016 /* CGPDFDocument.m in Sources */,
 				588BFA11215F7E4100F3C34F /* MinScrollMenuItem.m in Sources */,
+				58DB5D1C2178363A00C22881 /* NSString+URL.m in Sources */,
 				58B44C8E21774B8F00AE85BE /* PNLineChart.m in Sources */,
+				58DB5D2B2179C35500C22881 /* SRModalTestVC.m in Sources */,
 				587941F521703D6C0026527B /* YZFlowLayout.m in Sources */,
 				58718A4B216F5EDC003343DC /* UIWebView+JavaScriptAlert.m in Sources */,
 				587941FE217085CA0026527B /* CYLPlusButtonSubclass.m in Sources */,
@@ -1738,6 +1780,7 @@
 				5834EAB7216DFD9A00601016 /* CGContextDrawPDFView.m in Sources */,
 				5855C4E12136C67100009064 /* FiveViewController.m in Sources */,
 				58738A432160C1E3001076B6 /* FSCalendarCalculator.m in Sources */,
+				58DFF6E8218C50FA00146244 /* TestCircleProgressVC.m in Sources */,
 				5855C5162137944600009064 /* FiveTableViewCell.m in Sources */,
 				5855C4D52136BF2C00009064 /* ThreeViewController.m in Sources */,
 				58718A5D216F6054003343DC /* UITabBarItem+CYLTabBarControllerExtention.m in Sources */,
@@ -1778,6 +1821,7 @@
 				588DFC4C213D27F600E87EE4 /* XMCenter.m in Sources */,
 				5834EA76216DFD3000601016 /* ReaderMainToolbar.m in Sources */,
 				58F6386F2174B43000D41B53 /* NetworkManager.m in Sources */,
+				58DFF6E5218C41B700146244 /* SRCircleProgress.m in Sources */,
 				5855C5282137C67C00009064 /* PXBMTopClassCell.m in Sources */,
 				58B44C9221774B8F00AE85BE /* PNPieChart.m in Sources */,
 				5834EA73216DFD3000601016 /* ReaderViewController.m in Sources */,

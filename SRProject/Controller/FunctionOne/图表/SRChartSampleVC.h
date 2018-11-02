@@ -10,4 +10,6 @@
 
 @interface SRChartSampleVC : BaseViewController
 
+@property (nonatomic, copy) NSString *titleStr;
+
 @end

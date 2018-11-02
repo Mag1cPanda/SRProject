@@ -39,11 +39,11 @@
 #define TabBarHeight 49.0
 
 //一些缩写
-#define Application        [UIApplication sharedApplication]
-#define KeyWindow          [UIApplication sharedApplication].keyWindow
-#define AppDelegate        [UIApplication sharedApplication].delegate
-#define UserDefaults       [NSUserDefaults standardUserDefaults]
-#define NotificationCenter [NSNotificationCenter defaultCenter]
+#define kApplication        [UIApplication sharedApplication]
+#define kKeyWindow          [UIApplication sharedApplication].keyWindow
+#define kAppDelegate        [UIApplication sharedApplication].delegate
+#define kUserDefaults       [NSUserDefaults standardUserDefaults]
+#define kNotificationCenter [NSNotificationCenter defaultCenter]
 
 //APP版本号
 #define AppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]

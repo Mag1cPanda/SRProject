@@ -6,7 +6,12 @@
 //  Copyright © 2018 longrise. All rights reserved.
 //
 
+
+#if __has_include(<MBProgressHUD.h>)
+#import <MBProgressHUD.h>
+#else
 #import "MBProgressHUD.h"
+#endif
 
 @interface MBProgressHUD (Extension)
 

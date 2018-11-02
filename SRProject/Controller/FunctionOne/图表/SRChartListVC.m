@@ -55,8 +55,10 @@ UITableViewDataSource>
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SRChartSampleVC *vc = SRChartSampleVC.new;
-    vc.title = _dataArr[indexPath.row];
+    vc.titleStr = _dataArr[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

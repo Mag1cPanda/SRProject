@@ -9,6 +9,7 @@
 #import "CGContextDrawPDFListViewController.h"
 #import "CGContextDrawPDFReaderController.h"
 #import "Masonry.h"
+#import "MCDownloader.h"
 
 @interface CGContextDrawPDFListViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -80,11 +81,24 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     NSLog(@"didSelectRowAtIndexPath >>>> ");
     
-    CGContextDrawPDFReaderController *targetViewCtrl = [[CGContextDrawPDFReaderController alloc] init];
-    targetViewCtrl.hidesBottomBarWhenPushed = YES;//从第一个页面跳到第二个页面时隐藏tabBar的设置方法
-    targetViewCtrl.titleText = [titleArray objectAtIndex:indexPath.row];
-    targetViewCtrl.fileName =  [fileArray objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:targetViewCtrl animated:YES];
+//    [[MCDownloader sharedDownloader] downloadDataWithURL:URL progress:^(NSInteger receivedSize, NSInteger expectedSize, NSInteger speed, NSURL * _Nullable targetURL) {
+//
+//    } completed:^(MCDownloadReceipt * _Nullable receipt, NSError * _Nullable error, BOOL finished) {
+//
+//    }];
+    
+    CGContextDrawPDFReaderController *vc = [[CGContextDrawPDFReaderController alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;//从第一个页面跳到第二个页面时隐藏tabBar的设置方法
+    vc.titleText = [titleArray objectAtIndex:indexPath.row];
+    vc.fileName = @"http://zhimei.hntv.tv/bbvideo/2018/10/12/2.1jsjzdsyzfdbsfs.pdf";
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    
+//    CGContextDrawPDFReaderController *vc = [[CGContextDrawPDFReaderController alloc] init];
+//    vc.hidesBottomBarWhenPushed = YES;//从第一个页面跳到第二个页面时隐藏tabBar的设置方法
+//    vc.titleText = [titleArray objectAtIndex:indexPath.row];
+//    vc.fileName =  [fileArray objectAtIndex:indexPath.row];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

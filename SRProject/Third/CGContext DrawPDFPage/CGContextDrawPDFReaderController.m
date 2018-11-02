@@ -20,10 +20,12 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = self.titleText;
     //CFURLRef pdfURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), CFSTR("test.pdf"), NULL, NULL);
-    CFURLRef pdfURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), (__bridge CFStringRef)self.fileName, NULL, NULL);
+//    CFURLRef pdfURL = CFBundleCopyResourceURL(CFBundleGetMainBundle(), (__bridge CFStringRef)self.fileName, NULL, NULL);
     //创建CGPDFDocument对象
-    CGPDFDocumentRef pdfDocument = CGPDFDocumentCreateWithURL((CFURLRef)pdfURL);
-    CFRelease(pdfURL);
+//    CGPDFDocumentRef pdfDocument = CGPDFDocumentCreateWithURL((CFURLRef)pdfURL);
+//    CFRelease(pdfURL);
+    CGPDFDocumentRef pdfDocument = [self pdfRefByDataByUrl:self.fileName];
+    
     pdfPageModel = [[CGContextDrawPDFPageModel alloc] initWithPDFDocument:pdfDocument];
     
     // UIPageViewControllerSpineLocationMin 单页显示
@@ -51,6 +53,41 @@
     //当我们向我们的视图控制器容器（就是父视图控制器，它调用addChildViewController方法加入子视图控制器，它就成为了视图控制器的容器）中添加（或者删除）子视图控制器后，必须调用该方法，告诉iOS，已经完成添加（或删除）子控制器的操作。
     [pageViewCtrl didMoveToParentViewController:self];
 }
+
+//用于本地pdf文件
+- (CGPDFDocumentRef)pdfRefByFilePath:(NSString *)aFilePath {
+    CFStringRef path;
+    CFURLRef url;
+    CGPDFDocumentRef document;
+    
+    path = CFStringCreateWithCString(NULL, [aFilePath UTF8String], kCFStringEncodingUTF8);
+    url = CFURLCreateWithFileSystemPath(NULL, path, kCFURLPOSIXPathStyle, NO);
+    document = CGPDFDocumentCreateWithURL(url);
+    
+    CFRelease(path);
+    CFRelease(url);
+    
+    return document;
+}
+
+- (NSString *)getPdfPathByFile:(NSString *)fileName {
+    return [[NSBundle mainBundle] pathForResource:fileName ofType:@".pdf"];
+}
+
+//用于网络pdf文件
+- (CGPDFDocumentRef)pdfRefByDataByUrl:(NSString *)aFileUrl {
+    NSData *pdfData = [NSData dataWithContentsOfFile:aFileUrl];
+    CFDataRef dataRef = (__bridge_retained CFDataRef)(pdfData);
+    
+    CGDataProviderRef proRef = CGDataProviderCreateWithCFData(dataRef);
+    CGPDFDocumentRef pdfRef = CGPDFDocumentCreateWithProvider(proRef);
+    
+    CGDataProviderRelease(proRef);
+    CFRelease(dataRef);
+    
+    return pdfRef;
+}
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {

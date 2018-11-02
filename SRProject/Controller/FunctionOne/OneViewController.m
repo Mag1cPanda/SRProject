@@ -21,6 +21,9 @@
 #import "UINavigationController+FDFullscreenPopGesture.h"
 #import "CYLTabBarControllerConfig.h"
 #import "SRChartListVC.h"
+#import "SRModalTestVC.h"
+#import "AppDelegate.h"
+#import "TestCircleProgressVC.h"
 
 #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
 
@@ -123,6 +126,23 @@ UITabBarControllerDelegate>
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
+                if (index == 9) {
+                    AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                    UIViewController *rootVC = app.window.rootViewController;
+                
+                    
+                    
+                    SRModalTestVC *vc = SRModalTestVC.new;
+                    rootVC.definesPresentationContext = YES;
+                    vc.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
+                    vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+                    [rootVC presentViewController:vc animated:YES completion:nil];
+                }
+                
+                if (index == 10) {
+                    TestCircleProgressVC *vc = [TestCircleProgressVC new];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
             });
             
 //            section.headerTitle(@"11111");
@@ -273,7 +293,9 @@ UITabBarControllerDelegate>
                           @"日历",
                           @"PDF阅读",
                           @"异形TabBar",
-                          @"图表"];
+                          @"图表",
+                          @"半透明Modal",
+                          @"环形进度条"];
         [_data addObjectsFromArray:data];
         for (NSInteger i=0; i<100; i++) {
             [_data addObject:@"开发中"];

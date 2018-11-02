@@ -44,7 +44,7 @@
     
 #ifdef DEBUG
     YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] init];
-    [self.window addSubview:fpsLabel];
+//    [self.window addSubview:fpsLabel];
     fpsLabel.center = self.window.center;
 #endif
     

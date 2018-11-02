@@ -26,7 +26,6 @@
 //    viewController.fd_interactivePopDisabled = YES;
     
     [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : ColorWithHex(0x4D4D4D), NSFontAttributeName : SystemFont(18)}];
-//    [self.navigationBar lt_setBackgroundColor: ColorWithHex(0xF2F2F2)];
     [self.navigationBar setShadowImage:[UIImage new]];
     
 //    UIImage *backButtonImage = [UIImage imageNamed:@"ic_back_main"];

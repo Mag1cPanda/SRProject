@@ -16,6 +16,7 @@
 #define PDF_FILE_PATH1 [[NSBundle mainBundle] pathForResource:@"003" ofType:@"pdf"]
 #import "ReaderViewController.h"
 #import "MCDownloader.h"
+#import "NSString+URL.h"
 
 @interface ScanViewController ()<UITableViewDataSource,UITableViewDelegate,QLPreviewControllerDelegate,QLPreviewControllerDataSource,ReaderViewControllerDelegate>
 
@@ -87,14 +88,32 @@
         case 0:{
             //UIWebView加载本地pdf文件
             PDFWebViewViewController *webViewVC = [[PDFWebViewViewController alloc] init];
-            webViewVC.urlStr = PDF_FILE_PATH;
+            webViewVC.urlStr = [[NSBundle mainBundle] pathForResource:@"bbwAPP" ofType:@"pdf"];
             [self.navigationController pushViewController:webViewVC animated:YES];
+            
+//            NSString *str = @"http://zhimei.hntv.tv/bbvideo/2018/10/12/2.1jsjzdsyzfdbsfs.pdf";
+            //            NSString *tmpStr = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//            NSURL *URL = [NSURL URLWithString:str];
+//            [[MCDownloader sharedDownloader] downloadDataWithURL:URL progress:^(NSInteger receivedSize, NSInteger expectedSize, NSInteger speed, NSURL * _Nullable targetURL) {
+//
+//            } completed:^(MCDownloadReceipt * _Nullable receipt, NSError * _Nullable error, BOOL finished) {
+//
+//                PDFWebViewViewController *webViewVC = [[PDFWebViewViewController alloc] init];
+//                webViewVC.urlStr = receipt.filePath;
+//                [self.navigationController pushViewController:webViewVC animated:YES];
+//
+//            }];
+            
+            
             break;
         }
         case 1:{
             //UIWebView加载网络pdf文件
             PDFWebViewViewController *webViewVC = [[PDFWebViewViewController alloc] init];
-            webViewVC.urlStr = PDF_URL;
+            NSString *str = @"http://zhimei.hntv.tv/bbvideo/2018/10/12/2.1jsjzdsyzfdbsfs.pdf";
+            NSString *urlStr = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            NSLog(@"%@",urlStr);
+            webViewVC.urlStr = urlStr;
             [self.navigationController pushViewController:webViewVC animated:YES];
             break;
         }
@@ -117,9 +136,12 @@
 //            [self.navigationController pushViewController:rederVC animated:YES];
             
             //网络文件
-            NSURL *URL = [NSURL URLWithString:PDF_URL];
+//            NSURL *URL = [NSURL URLWithString:PDF_URL];
+            NSString *str = @"http://zhimei.hntv.tv/bbvideo/2018/10/12/2.1jsjzdsyzfdbsfs.pdf";
+//            NSString *tmpStr = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            NSURL *URL = [NSURL URLWithString:str];
             [[MCDownloader sharedDownloader] downloadDataWithURL:URL progress:^(NSInteger receivedSize, NSInteger expectedSize, NSInteger speed, NSURL * _Nullable targetURL) {
-                
+
             } completed:^(MCDownloadReceipt * _Nullable receipt, NSError * _Nullable error, BOOL finished) {
                 ReaderDocument *doc = [[ReaderDocument alloc] initWithFilePath:receipt.filePath password:nil];
                 ReaderViewController *rederVC = [[ReaderViewController alloc] initWithReaderDocument:doc];
@@ -155,7 +177,6 @@
 }
 - (id<QLPreviewItem>)previewController:(QLPreviewController *)controller previewItemAtIndex:(NSInteger)index{
     NSArray *arr = @[PDF_FILE_PATH,PDF_FILE_PATH1];
-    
     return [NSURL fileURLWithPath:arr[index]];
 }
 
