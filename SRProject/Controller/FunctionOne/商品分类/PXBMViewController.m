@@ -40,11 +40,25 @@ UICollectionViewDelegateFlowLayout>
     // Do any additional setup after loading the view.
     self.title = @"培训报名";
     self.view.backgroundColor = ColorWithHex(0xF9F9F9);
-//    self.fd_prefersNavigationBarHidden = YES;
     
     [self.view addSubview:self.tableView];
     
     [self.view addSubview:self.collectionView];
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.mas_topLayoutGuide);
+        make.left.mas_equalTo(0);
+        make.bottom.mas_equalTo(self.mas_bottomLayoutGuide);
+        make.width.mas_equalTo(90);
+    }];
+    
+    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.mas_topLayoutGuide);
+        make.bottom.mas_equalTo(self.mas_bottomLayoutGuide);
+        make.left.mas_equalTo(90);
+        make.right.mas_equalTo(self.view);
+    }];
+    
     
     NSArray *data = @[@{@"text":@"Following"},
                       @{@"text":@"Follower"},
@@ -60,16 +74,6 @@ UICollectionViewDelegateFlowLayout>
     _topData = [NSMutableArray arrayWithArray:data];
     
 
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
--(CGFloat)getViewHeight
-{
-    return ScreenHeight-NavHeight;
 }
 
 #pragma mark - UITableViewDelegate & UITableViewDataSource
@@ -251,7 +255,7 @@ UICollectionViewDelegateFlowLayout>
 -(UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, NavHeight, 90, [self getViewHeight]) style:UITableViewStylePlain];
+        _tableView = [[SRTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.backgroundColor = ColorWithHex(0xF9F9F9);
 //        _tableView.backgroundView =
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -269,7 +273,7 @@ UICollectionViewDelegateFlowLayout>
 //        layout.minimumInteritemSpacing = 10;
 //        layout.minimumLineSpacing = 0;
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(90, NavHeight, ScreenWidth-90, [self getViewHeight]) collectionViewLayout:layout];
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.backgroundColor = ColorWithHex(0xF9F9F9);
 //        _collectionView.backgroundView =
         _collectionView.delegate = self;
@@ -287,12 +291,5 @@ UICollectionViewDelegateFlowLayout>
     }
     return _collectionView;
 }
-
-
-
-
-
-
-
 
 @end

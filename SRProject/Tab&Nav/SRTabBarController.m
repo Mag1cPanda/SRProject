@@ -14,6 +14,9 @@
 #import "FiveViewController.h"
 #import "SRNavigationController.h"
 
+//#import "GKNavigationController.h"
+#import "JPNavigationController.h"
+
 @interface SRTabBarController ()
 
 @end
@@ -25,6 +28,8 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor whiteColor];
+    //解决Pop时tabBar跳动
+    [[UITabBar appearance] setTranslucent:NO];
     
     [self setupControllers];
 }
@@ -37,25 +42,25 @@
 - (void)setupControllers
 {
     OneViewController *oneVC = [OneViewController new];
-    [oneVC.tabBarItem setupWithTitle:@"One" imageName:@"bar1_inactive" selectedImageName:@"bar1_active"];
+    SRNavigationController *nav1 = [[SRNavigationController alloc] initWithRootViewController:oneVC];
+//    JPNavigationController *nav1 = [[JPNavigationController alloc] initWithRootViewController:oneVC];
+    [nav1.tabBarItem setupWithTitle:@"One" imageName:@"bar1_inactive" selectedImageName:@"bar1_active"];
     
     TwoViewController *twoVC = [TwoViewController new];
-    [twoVC.tabBarItem setupWithTitle:@"Two" imageName:@"bar2_inactive" selectedImageName:@"bar2_active"];
+    SRNavigationController *nav2 = [[SRNavigationController alloc] initWithRootViewController:twoVC];
+    [nav2.tabBarItem setupWithTitle:@"Two" imageName:@"bar2_inactive" selectedImageName:@"bar2_active"];
     
     ThreeViewController *threeVC = [ThreeViewController new];
-    [threeVC.tabBarItem setupWithTitle:@"Three" imageName:@"bar3_inactive" selectedImageName:@"bar3_active"];
+    SRNavigationController *nav3 = [[SRNavigationController alloc] initWithRootViewController:threeVC];
+    [nav3.tabBarItem setupWithTitle:@"Three" imageName:@"bar3_inactive" selectedImageName:@"bar3_active"];
     
     FourViewController *fourVC = [FourViewController new];
-    [fourVC.tabBarItem setupWithTitle:@"Four" imageName:@"bar4_inactive" selectedImageName:@"bar4_active"];
+    SRNavigationController *nav4 = [[SRNavigationController alloc] initWithRootViewController:fourVC];
+    [nav4.tabBarItem setupWithTitle:@"Four" imageName:@"bar4_inactive" selectedImageName:@"bar4_active"];
     
     FiveViewController *fiveVC = [FiveViewController new];
-    [fiveVC.tabBarItem setupWithTitle:@"Five" imageName:@"bar5_inactive" selectedImageName:@"bar5_active"];
-    
-    SRNavigationController *nav1 = [[SRNavigationController alloc] initWithRootViewController:oneVC];
-    SRNavigationController *nav2 = [[SRNavigationController alloc] initWithRootViewController:twoVC];
-    SRNavigationController *nav3 = [[SRNavigationController alloc] initWithRootViewController:threeVC];
-    SRNavigationController *nav4 = [[SRNavigationController alloc] initWithRootViewController:fourVC];
     SRNavigationController *nav5 = [[SRNavigationController alloc] initWithRootViewController:fiveVC];
+    [nav5.tabBarItem setupWithTitle:@"Five" imageName:@"bar5_inactive" selectedImageName:@"bar5_active"];
     
     self.viewControllers = @[nav1, nav2, nav3, nav4, nav5];
     

@@ -6,8 +6,9 @@
 //  Copyright © 2018年 longrise. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+//#import <UIKit/UIKit.h>
+#import "JPNavigationController.h"
 
-@interface SRNavigationController : UINavigationController
+@interface SRNavigationController : JPNavigationController
 
 @end

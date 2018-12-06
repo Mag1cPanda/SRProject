@@ -18,6 +18,7 @@
 #import <SafariServices/SafariServices.h>
 #import "SearchViewController.h"
 #import "SRNetworkManager.h"
+#import "UIView+ProgressView.h"
 
 @interface TwoViewController ()
 <UITableViewDelegate,
@@ -56,7 +57,8 @@ UITableViewDataSource>
         self.pageNum = 1;
     }
     
-    [MBProgressHUD showActivityMessageInView:@"loading..."];
+//    [MBProgressHUD showActivityMessageInView:@"loading..."];
+    [self.view showJUHUAWithBool:YES andTitle:@"正在加载..." andBackColor:[UIColor colorWithWhite:1 alpha:1] andAlpha:0.00001f];
     
     NSDictionary *parameters = @{@"page": @(self.pageNum)};
     [SRNetworkManager requestByPOSTWithServiceName:@"listAll" parameters:parameters onSuccess:^(id responseObject) {
@@ -91,7 +93,8 @@ UITableViewDataSource>
     } onFinished:^(id responseObject, NSError *error) {
         NSLog(@"onFinished");
         dispatch_async(dispatch_get_main_queue(), ^{
-            [MBProgressHUD hideHUD];
+//            [MBProgressHUD hideHUD];
+            [self.view showJUHUAWithBool:NO];
             [weakSelf.tableView.mj_header endRefreshing];
         });
     }];

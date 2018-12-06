@@ -17,10 +17,9 @@
         self.tableFooterView = [UIView new];
         
         if (@available(iOS 11.0, *)) {
-            self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+//            self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
 //            self.contentInset =UIEdgeInsetsMake(64,0,49,0);//64和49自己看效果，是否应该改成0
-            self.scrollIndicatorInsets =self.contentInset;
-            
+//            self.scrollIndicatorInsets =self.contentInset;
         }
         
         self.estimatedRowHeight = 0;

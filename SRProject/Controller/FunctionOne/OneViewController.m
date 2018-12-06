@@ -18,7 +18,7 @@
 #import "SRTreeTableViewController.h"
 #import "SRCalendarDemoVC.h"
 #import "PDFReaderDemoVC.h"
-#import "UINavigationController+FDFullscreenPopGesture.h"
+//#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "CYLTabBarControllerConfig.h"
 #import "SRChartListVC.h"
 #import "SRModalTestVC.h"
@@ -44,9 +44,16 @@ UITabBarControllerDelegate>
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"One";
+    
     [self.view addSubview:self.tableView];
-    self.fd_interactivePopDisabled = YES;
-//    self.fd_prefersNavigationBarHidden = YES;
+    
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(self.mas_topLayoutGuide);
+        make.left.mas_equalTo(self.view);
+        make.right.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(self.mas_bottomLayoutGuide);
+    }];
+    
     
     
     __weak typeof(self) weakSelf = self;
@@ -61,12 +68,14 @@ UITabBarControllerDelegate>
                     cell.leftView.hidden = NO;
                 }
                 cell.centerLabel.text = [NSString stringWithFormat:@"Demo%zi-%@", index+1, text];
+//                cell.contentView.backgroundColor = RandomColor;
             });
             
             section.event(^(NSUInteger index,NSDictionary *data) {
                 
                 if (index == 0) {
                     PXBMViewController *vc = [PXBMViewController new];
+                    vc.hidesBottomBarWhenPushed = YES;
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
@@ -266,8 +275,9 @@ UITabBarControllerDelegate>
 #pragma mark - Lazy
 -(UITableView *)tableView
 {
+//    CGRectMake(0, 0, ScreenWidth, ScreenHeight-NavHeight-TabBarHeight)
     if (!_tableView) {
-        _tableView = [[SRTableView alloc] initWithFrame:CGRectMake(0, NavHeight, ScreenWidth, ScreenHeight-NavHeight-TabBarHeight) style:UITableViewStylePlain];
+        _tableView = [[SRTableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _tableView;
