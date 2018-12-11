@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame style:style];
     if (self) {
-        self.tableFooterView = [UIView new];
+//        self.tableFooterView = [UIView new];
         
         if (@available(iOS 11.0, *)) {
 //            self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -22,11 +22,11 @@
 //            self.scrollIndicatorInsets =self.contentInset;
         }
         
-        self.estimatedRowHeight = 0;
-        
-        self.estimatedSectionHeaderHeight = 0;
-        
-        self.estimatedSectionFooterHeight = 0;
+//        self.estimatedRowHeight = 0;
+//
+//        self.estimatedSectionHeaderHeight = 0;
+//
+//        self.estimatedSectionFooterHeight = 0;
         
     }
     return self;

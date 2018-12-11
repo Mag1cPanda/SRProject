@@ -35,6 +35,7 @@ UICollectionViewDelegateFlowLayout>
 
 @implementation PXBMViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -44,21 +45,19 @@ UICollectionViewDelegateFlowLayout>
     [self.view addSubview:self.tableView];
     
     [self.view addSubview:self.collectionView];
-    
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.mas_topLayoutGuide);
         make.left.mas_equalTo(0);
-        make.bottom.mas_equalTo(self.mas_bottomLayoutGuide);
+        make.bottom.mas_equalTo(self.view);
         make.width.mas_equalTo(90);
     }];
     
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(self.mas_topLayoutGuide);
-        make.bottom.mas_equalTo(self.mas_bottomLayoutGuide);
+        make.bottom.mas_equalTo(self.view);
         make.left.mas_equalTo(90);
         make.right.mas_equalTo(self.view);
     }];
-    
     
     NSArray *data = @[@{@"text":@"Following"},
                       @{@"text":@"Follower"},

@@ -14,4 +14,6 @@
 
 @property (nonatomic, copy) NSString *testStr;
 
+-(void)backBtnClicked;
+
 @end

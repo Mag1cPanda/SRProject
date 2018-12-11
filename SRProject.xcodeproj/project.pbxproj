@@ -217,19 +217,6 @@
 		58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638672174B37C00D41B53 /* YYWeakProxy.m */; };
 		58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F638692174B37C00D41B53 /* YYFPSLabel.m */; };
 		58F6386F2174B43000D41B53 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F6386E2174B42F00D41B53 /* NetworkManager.m */; };
-		58FC43F621AFECD70094E02C /* JPPushAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43D921AFECD60094E02C /* JPPushAnimationTransition.m */; };
-		58FC43F721AFECD70094E02C /* UIViewController+ViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43DA21AFECD60094E02C /* UIViewController+ViewControllers.m */; };
-		58FC43F821AFECD70094E02C /* JPNavigationController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 58FC43DC21AFECD60094E02C /* JPNavigationController.bundle */; };
-		58FC43F921AFECD70094E02C /* UIColor+ImageGenerate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43DD21AFECD60094E02C /* UIColor+ImageGenerate.m */; };
-		58FC43FA21AFECD70094E02C /* JPNavigationControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43DE21AFECD60094E02C /* JPNavigationControllerTransition.m */; };
-		58FC43FB21AFECD70094E02C /* JPWarpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43DF21AFECD60094E02C /* JPWarpViewController.m */; };
-		58FC43FC21AFECD70094E02C /* JPBaseAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43E121AFECD60094E02C /* JPBaseAnimationTransition.m */; };
-		58FC43FD21AFECD70094E02C /* UINavigationBar+HitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43E421AFECD60094E02C /* UINavigationBar+HitTest.m */; };
-		58FC43FE21AFECD70094E02C /* JPNavigationControllerGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43E621AFECD60094E02C /* JPNavigationControllerGestureRecognizer.m */; };
-		58FC43FF21AFECD70094E02C /* UIView+ScreenCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43E921AFECD60094E02C /* UIView+ScreenCapture.m */; };
-		58FC440021AFECD70094E02C /* JPTransitionShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43F221AFECD60094E02C /* JPTransitionShadowView.m */; };
-		58FC440121AFECD70094E02C /* JPWarpNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43F321AFECD60094E02C /* JPWarpNavigationController.m */; };
-		58FC440221AFECD70094E02C /* JPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58FC43F421AFECD70094E02C /* JPNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -616,35 +603,6 @@
 		58F6386A2174B37C00D41B53 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		58F6386D2174B42F00D41B53 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		58F6386E2174B42F00D41B53 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
-		58FC43D921AFECD60094E02C /* JPPushAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPPushAnimationTransition.m; sourceTree = "<group>"; };
-		58FC43DA21AFECD60094E02C /* UIViewController+ViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ViewControllers.m"; sourceTree = "<group>"; };
-		58FC43DB21AFECD60094E02C /* UIView+ScreenCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScreenCapture.h"; sourceTree = "<group>"; };
-		58FC43DC21AFECD60094E02C /* JPNavigationController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JPNavigationController.bundle; sourceTree = "<group>"; };
-		58FC43DD21AFECD60094E02C /* UIColor+ImageGenerate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGenerate.m"; sourceTree = "<group>"; };
-		58FC43DE21AFECD60094E02C /* JPNavigationControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNavigationControllerTransition.m; sourceTree = "<group>"; };
-		58FC43DF21AFECD60094E02C /* JPWarpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPWarpViewController.m; sourceTree = "<group>"; };
-		58FC43E021AFECD60094E02C /* UINavigationController+FulllScreenPopPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FulllScreenPopPush.h"; sourceTree = "<group>"; };
-		58FC43E121AFECD60094E02C /* JPBaseAnimationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPBaseAnimationTransition.m; sourceTree = "<group>"; };
-		58FC43E221AFECD60094E02C /* JPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNavigationController.h; sourceTree = "<group>"; };
-		58FC43E321AFECD60094E02C /* JPWarpNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPWarpNavigationController.h; sourceTree = "<group>"; };
-		58FC43E421AFECD60094E02C /* UINavigationBar+HitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HitTest.m"; sourceTree = "<group>"; };
-		58FC43E521AFECD60094E02C /* JPTransitionShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPTransitionShadowView.h; sourceTree = "<group>"; };
-		58FC43E621AFECD60094E02C /* JPNavigationControllerGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNavigationControllerGestureRecognizer.m; sourceTree = "<group>"; };
-		58FC43E721AFECD60094E02C /* JPNavigationControllerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNavigationControllerKit.h; sourceTree = "<group>"; };
-		58FC43E821AFECD60094E02C /* UIViewController+ViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ViewControllers.h"; sourceTree = "<group>"; };
-		58FC43E921AFECD60094E02C /* UIView+ScreenCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScreenCapture.m"; sourceTree = "<group>"; };
-		58FC43EA21AFECD60094E02C /* JPPushAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPPushAnimationTransition.h; sourceTree = "<group>"; };
-		58FC43EB21AFECD60094E02C /* JPNavigationControllerCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNavigationControllerCompat.h; sourceTree = "<group>"; };
-		58FC43EC21AFECD60094E02C /* JPWarpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPWarpViewController.h; sourceTree = "<group>"; };
-		58FC43ED21AFECD60094E02C /* JPNavigationControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNavigationControllerTransition.h; sourceTree = "<group>"; };
-		58FC43EE21AFECD60094E02C /* UIColor+ImageGenerate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ImageGenerate.h"; sourceTree = "<group>"; };
-		58FC43EF21AFECD60094E02C /* JPNavigationControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNavigationControllerProtocol.h; sourceTree = "<group>"; };
-		58FC43F021AFECD60094E02C /* JPNavigationControllerGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPNavigationControllerGestureRecognizer.h; sourceTree = "<group>"; };
-		58FC43F121AFECD60094E02C /* UINavigationBar+HitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HitTest.h"; sourceTree = "<group>"; };
-		58FC43F221AFECD60094E02C /* JPTransitionShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPTransitionShadowView.m; sourceTree = "<group>"; };
-		58FC43F321AFECD60094E02C /* JPWarpNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPWarpNavigationController.m; sourceTree = "<group>"; };
-		58FC43F421AFECD70094E02C /* JPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPNavigationController.m; sourceTree = "<group>"; };
-		58FC43F521AFECD70094E02C /* JPBaseAnimationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPBaseAnimationTransition.h; sourceTree = "<group>"; };
 		7B5E38B92BE30C973AD422E6 /* Pods-SRProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRProject/Pods-SRProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A6CDF8F22E889AC2A14A6150 /* libPods-SRProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -895,7 +853,6 @@
 		5855C49E2136769700009064 /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				58FC43D821AFECD60094E02C /* JPNavigationController */,
 				58B44C6521774B8E00AE85BE /* PNChart */,
 				5855C4E2213792E200009064 /* CBTableViewDataSource */,
 				5834EA9F216DFD9A00601016 /* CGContext DrawPDFPage */,
@@ -1540,42 +1497,6 @@
 			path = YYFPSLabel;
 			sourceTree = "<group>";
 		};
-		58FC43D821AFECD60094E02C /* JPNavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				58FC43F521AFECD70094E02C /* JPBaseAnimationTransition.h */,
-				58FC43E121AFECD60094E02C /* JPBaseAnimationTransition.m */,
-				58FC43DC21AFECD60094E02C /* JPNavigationController.bundle */,
-				58FC43E221AFECD60094E02C /* JPNavigationController.h */,
-				58FC43F421AFECD70094E02C /* JPNavigationController.m */,
-				58FC43EB21AFECD60094E02C /* JPNavigationControllerCompat.h */,
-				58FC43F021AFECD60094E02C /* JPNavigationControllerGestureRecognizer.h */,
-				58FC43E621AFECD60094E02C /* JPNavigationControllerGestureRecognizer.m */,
-				58FC43E721AFECD60094E02C /* JPNavigationControllerKit.h */,
-				58FC43EF21AFECD60094E02C /* JPNavigationControllerProtocol.h */,
-				58FC43ED21AFECD60094E02C /* JPNavigationControllerTransition.h */,
-				58FC43DE21AFECD60094E02C /* JPNavigationControllerTransition.m */,
-				58FC43EA21AFECD60094E02C /* JPPushAnimationTransition.h */,
-				58FC43D921AFECD60094E02C /* JPPushAnimationTransition.m */,
-				58FC43E521AFECD60094E02C /* JPTransitionShadowView.h */,
-				58FC43F221AFECD60094E02C /* JPTransitionShadowView.m */,
-				58FC43E321AFECD60094E02C /* JPWarpNavigationController.h */,
-				58FC43F321AFECD60094E02C /* JPWarpNavigationController.m */,
-				58FC43EC21AFECD60094E02C /* JPWarpViewController.h */,
-				58FC43DF21AFECD60094E02C /* JPWarpViewController.m */,
-				58FC43EE21AFECD60094E02C /* UIColor+ImageGenerate.h */,
-				58FC43DD21AFECD60094E02C /* UIColor+ImageGenerate.m */,
-				58FC43F121AFECD60094E02C /* UINavigationBar+HitTest.h */,
-				58FC43E421AFECD60094E02C /* UINavigationBar+HitTest.m */,
-				58FC43E021AFECD60094E02C /* UINavigationController+FulllScreenPopPush.h */,
-				58FC43DB21AFECD60094E02C /* UIView+ScreenCapture.h */,
-				58FC43E921AFECD60094E02C /* UIView+ScreenCapture.m */,
-				58FC43E821AFECD60094E02C /* UIViewController+ViewControllers.h */,
-				58FC43DA21AFECD60094E02C /* UIViewController+ViewControllers.m */,
-			);
-			path = JPNavigationController;
-			sourceTree = "<group>";
-		};
 		630E9CC34E0F9994EB202A9A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1622,7 +1543,7 @@
 		5855C478213674CC00009064 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = longrise;
 				TargetAttributes = {
 					5855C47F213674CC00009064 = {
@@ -1678,7 +1599,6 @@
 				58B44BE02175B88200AE85BE /* MBHUD_Info@3x.png in Resources */,
 				5834EA8E216DFD3000601016 /* Reader-Thumbs.png in Resources */,
 				5834EA8F216DFD3000601016 /* Reader-Thumbs@2x.png in Resources */,
-				58FC43F821AFECD70094E02C /* JPNavigationController.bundle in Resources */,
 				5834EA98216DFD3000601016 /* Reader-Mark-N@3x.png in Resources */,
 				5834EA89216DFD3000601016 /* AppIcon-076.png in Resources */,
 				58B44BE52175B88200AE85BE /* MBHUD_Warn@2x.png in Resources */,
@@ -1754,7 +1674,6 @@
 			files = (
 				58B44C8F21774B8F00AE85BE /* PNCircleChart.m in Sources */,
 				58B44C9521774B8F00AE85BE /* PNScatterChartData.m in Sources */,
-				58FC43FB21AFECD70094E02C /* JPWarpViewController.m in Sources */,
 				5855C4AA2136783800009064 /* BaseViewController.m in Sources */,
 				58B44BE92175B8A500AE85BE /* MBProgressHUD+Extension.m in Sources */,
 				5834EA7E216DFD3000601016 /* ThumbsMainToolbar.m in Sources */,
@@ -1765,9 +1684,7 @@
 				588BFA3D215FA58D00F3C34F /* SRTreeTableViewController.m in Sources */,
 				5855C52E2137D49100009064 /* PXBMTopClassModel.m in Sources */,
 				5855C4FA2137939600009064 /* OneViewModel.m in Sources */,
-				58FC43FF21AFECD70094E02C /* UIView+ScreenCapture.m in Sources */,
 				58B44C9121774B8F00AE85BE /* PNLineChartDataItem.m in Sources */,
-				58FC43F721AFECD70094E02C /* UIViewController+ViewControllers.m in Sources */,
 				5855C4EE213792E200009064 /* CBBaseTableViewDataSource.m in Sources */,
 				5834EA6E216DFD3000601016 /* ReaderThumbQueue.m in Sources */,
 				58B44BEF2175D9D900AE85BE /* TipSetTableViewCell.m in Sources */,
@@ -1780,7 +1697,6 @@
 				588DFC4B213D27F600E87EE4 /* XMEngine.m in Sources */,
 				587941F721703D6C0026527B /* YZDisplayViewController.m in Sources */,
 				5834EAAF216DFD9A00601016 /* BackViewController.m in Sources */,
-				58FC43FC21AFECD70094E02C /* JPBaseAnimationTransition.m in Sources */,
 				58718A5C216F6054003343DC /* UIView+CYLTabBarControllerExtention.m in Sources */,
 				5855C5092137940C00009064 /* FiveViewModel.m in Sources */,
 				5855C5222137947200009064 /* TwoTableViewCell.m in Sources */,
@@ -1799,19 +1715,16 @@
 				5855C4AD2136787C00009064 /* BaseTableViewController.m in Sources */,
 				58F6386B2174B37D00D41B53 /* YYWeakProxy.m in Sources */,
 				58718A61216F6054003343DC /* UIControl+CYLTabBarControllerExtention.m in Sources */,
-				58FC43F621AFECD70094E02C /* JPPushAnimationTransition.m in Sources */,
 				58B44C2F21773C9D00AE85BE /* SRChartSampleVC.m in Sources */,
 				58738A152160C032001076B6 /* SRCalendarDemoVC.m in Sources */,
 				58B44C9021774B8F00AE85BE /* PNLineChartData.m in Sources */,
 				5855C4BD213692A900009064 /* SRConstant.m in Sources */,
 				588BFA27215F96FC00F3C34F /* HorizontalListVC.m in Sources */,
-				58FC440121AFECD70094E02C /* JPWarpNavigationController.m in Sources */,
 				588BFA21215F811100F3C34F /* TestSwiftViewController.swift in Sources */,
 				5855C500213793AF00009064 /* ThreeViewModel.m in Sources */,
 				588BFA36215FA07800F3C34F /* MYTreeTableViewController.m in Sources */,
 				5834EA6F216DFD3000601016 /* ReaderContentPage.m in Sources */,
 				58B44C8821774B8F00AE85BE /* PNPieChartDataItem.m in Sources */,
-				58FC43FD21AFECD70094E02C /* UINavigationBar+HitTest.m in Sources */,
 				5855C4B0213678E500009064 /* BaseTableViewCell.m in Sources */,
 				58718A62216F6054003343DC /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				58738A462160C1E3001076B6 /* FSCalendarAppearance.m in Sources */,
@@ -1821,7 +1734,6 @@
 				5855C4D22136BF1F00009064 /* TwoViewController.m in Sources */,
 				5855C4F0213792E200009064 /* CBTableViewSectionMaker.m in Sources */,
 				587941F421703D6C0026527B /* YZDisplayTitleLabel.m in Sources */,
-				58FC440221AFECD70094E02C /* JPNavigationController.m in Sources */,
 				588DFC50213D2B9A00E87EE4 /* PXBMBannerCell.m in Sources */,
 				5855C52B2137C69100009064 /* PXBMSecondClassCell.m in Sources */,
 				5855C503213793BD00009064 /* FourViewModel.m in Sources */,
@@ -1871,7 +1783,6 @@
 				5834EAB0216DFD9A00601016 /* CGContextDrawPDFPageController.m in Sources */,
 				5834EA7D216DFD3000601016 /* ReaderConstants.m in Sources */,
 				5834EA70216DFD3000601016 /* ReaderThumbRender.m in Sources */,
-				58FC440021AFECD70094E02C /* JPTransitionShadowView.m in Sources */,
 				58B44C8B21774B8F00AE85BE /* PNRadarChartDataItem.m in Sources */,
 				5834EAB7216DFD9A00601016 /* CGContextDrawPDFView.m in Sources */,
 				5855C4E12136C67100009064 /* FiveViewController.m in Sources */,
@@ -1901,11 +1812,9 @@
 				58738A372160C1E3001076B6 /* FSCalendarCollectionView.m in Sources */,
 				5855C4A62136776C00009064 /* BaseViewModel.m in Sources */,
 				588BFA35215FA07800F3C34F /* MYTreeItem.m in Sources */,
-				58FC43FE21AFECD70094E02C /* JPNavigationControllerGestureRecognizer.m in Sources */,
 				58B44C9321774B8F00AE85BE /* PNRadarChart.m in Sources */,
 				5855C5342137F5C500009064 /* FourModel.m in Sources */,
 				5834EA7C216DFD3000601016 /* ReaderThumbRequest.m in Sources */,
-				58FC43F921AFECD70094E02C /* UIColor+ImageGenerate.m in Sources */,
 				58F63865217493F300D41B53 /* UIButton+Extension.m in Sources */,
 				58738A3B2160C1E3001076B6 /* FSCalendarStickyHeader.m in Sources */,
 				5855C4F1213792E200009064 /* CBDataSourceSection.m in Sources */,
@@ -1924,7 +1833,6 @@
 				5834EA73216DFD3000601016 /* ReaderViewController.m in Sources */,
 				5855C5372137F5D100009064 /* ThreeModel.m in Sources */,
 				5855C4B621368ECD00009064 /* SRGloble.m in Sources */,
-				58FC43FA21AFECD70094E02C /* JPNavigationControllerTransition.m in Sources */,
 				5855C4CF2136BF0500009064 /* OneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2049,6 +1957,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

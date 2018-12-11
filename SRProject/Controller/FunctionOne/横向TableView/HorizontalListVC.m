@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
     _menu = [[MinScrollMenu alloc] initWithFrame:CGRectMake(0, 100, ScreenWidth, 100)];
     _menu.delegate = self;
     [self.view addSubview:_menu];

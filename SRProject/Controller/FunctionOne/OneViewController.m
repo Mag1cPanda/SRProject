@@ -40,6 +40,17 @@ UITabBarControllerDelegate>
 
 @implementation OneViewController
 
+- (UIWindow *)currentWindow
+{
+    UIApplication *app = [UIApplication sharedApplication];
+    if ([app.delegate respondsToSelector:@selector(window)]) {
+        return [app.delegate window];
+    } else {
+        return [app keyWindow];
+    }
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -51,10 +62,8 @@ UITabBarControllerDelegate>
         make.top.mas_equalTo(self.mas_topLayoutGuide);
         make.left.mas_equalTo(self.view);
         make.right.mas_equalTo(self.view);
-        make.bottom.mas_equalTo(self.mas_bottomLayoutGuide);
+        make.bottom.mas_equalTo(self.view);
     }];
-    
-    
     
     __weak typeof(self) weakSelf = self;
     [self.tableView cb_makeDataSource:^(CBTableViewDataSourceMaker *make) {
@@ -75,27 +84,32 @@ UITabBarControllerDelegate>
                 
                 if (index == 0) {
                     PXBMViewController *vc = [PXBMViewController new];
+                    vc.title = self.data[index];
                     vc.hidesBottomBarWhenPushed = YES;
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
                 if (index == 1) {
                     GCDTestViewController *vc = [GCDTestViewController new];
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
                 if (index == 2) {
                     TestSwiftViewController *vc = [TestSwiftViewController new];
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
                 if (index == 3) {
                     HorizontalListVC *vc = [HorizontalListVC new];
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
                 if (index == 4) {
                     SRTreeTableViewController *tblVC = [[SRTreeTableViewController alloc] initWithStyle:UITableViewStylePlain];
+                    tblVC.title = self.data[index];
                     tblVC.delegate = self;
                     
                     tblVC.isShowExpandedAnimation = NO;
@@ -115,11 +129,13 @@ UITabBarControllerDelegate>
                 
                 if (index == 5) {
                     SRCalendarDemoVC *vc = [SRCalendarDemoVC new];
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
                 if (index == 6) {
                     PDFReaderDemoVC *vc = [PDFReaderDemoVC new];
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
@@ -132,6 +148,7 @@ UITabBarControllerDelegate>
                 
                 if (index == 8) {
                     SRChartListVC *vc = SRChartListVC.new;
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                 
@@ -139,8 +156,6 @@ UITabBarControllerDelegate>
                     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
                     UIViewController *rootVC = app.window.rootViewController;
                 
-                    
-                    
                     SRModalTestVC *vc = SRModalTestVC.new;
                     rootVC.definesPresentationContext = YES;
                     vc.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
@@ -150,6 +165,7 @@ UITabBarControllerDelegate>
                 
                 if (index == 10) {
                     TestCircleProgressVC *vc = [TestCircleProgressVC new];
+                    vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
             });

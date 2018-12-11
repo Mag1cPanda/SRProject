@@ -7,8 +7,9 @@
 //
 
 //#import <UIKit/UIKit.h>
-#import "JPNavigationController.h"
+//#import "JPNavigationController.h"
+#import <RTRootNavigationController.h>
 
-@interface SRNavigationController : JPNavigationController
+@interface SRNavigationController : RTRootNavigationController
 
 @end

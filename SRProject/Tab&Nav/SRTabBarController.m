@@ -14,9 +14,6 @@
 #import "FiveViewController.h"
 #import "SRNavigationController.h"
 
-//#import "GKNavigationController.h"
-#import "JPNavigationController.h"
-
 @interface SRTabBarController ()
 
 @end
