@@ -12,4 +12,6 @@ pod 'Masonry', '~> 1.1.0'
 pod 'IQKeyboardManager'
 pod 'ReactiveObjC', '~> 2.1.2'
 pod "RTRootNavigationController"
+pod 'MMKV'
+pod 'Realm'
 end

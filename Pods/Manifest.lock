@@ -19,7 +19,11 @@ PODS:
   - MBProgressHUD (1.0.0)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
+  - MMKV (1.0.12)
   - ReactiveObjC (2.1.2)
+  - Realm (3.11.1):
+    - Realm/Headers (= 3.11.1)
+  - Realm/Headers (3.11.1)
   - RTRootNavigationController (0.7.0):
     - RTRootNavigationController/Core (= 0.7.0)
   - RTRootNavigationController/Core (0.7.0)
@@ -34,7 +38,9 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - MJExtension (~> 3.0.13)
   - MJRefresh (~> 3.1.12)
+  - MMKV
   - ReactiveObjC (~> 2.1.2)
+  - Realm
   - RTRootNavigationController
   - SDWebImage (~> 4.0.0)
 
@@ -46,7 +52,9 @@ SPEC REPOS:
     - MBProgressHUD
     - MJExtension
     - MJRefresh
+    - MMKV
     - ReactiveObjC
+    - Realm
     - RTRootNavigationController
     - SDWebImage
 
@@ -57,10 +65,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MMKV: 0a96d8a53c1e508e7061c5067ed214b2e5d8d4a7
   ReactiveObjC: 7b6782ae39f9ac0f57205c3b0c0b69b9dd7048c0
+  Realm: 037c5919b9ceb59d6beed5d3b031096856b119b3
   RTRootNavigationController: f1369f4257c8a44a05c5d3b151d2b8ec7accf121
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 6813d35611190ed9b7e6e42484e7a87d6698b79b
+PODFILE CHECKSUM: 703a7d6ae69d738e9b572f1f6bf83b5d56bc5677
 
 COCOAPODS: 1.5.3
