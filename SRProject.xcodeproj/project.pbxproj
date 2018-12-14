@@ -208,6 +208,7 @@
 		58B44C9621774B8F00AE85BE /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C7E21774B8E00AE85BE /* PNBar.m */; };
 		58B44C9721774B8F00AE85BE /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C8221774B8E00AE85BE /* PNScatterChart.m */; };
 		58B44C9A21774BDC00AE85BE /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B44C9921774BDC00AE85BE /* UICountingLabel.m */; };
+		58CFFEF721C10D4300367EA4 /* LifeCycleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CFFEF621C10D4300367EA4 /* LifeCycleVC.m */; };
 		58DB5D1C2178363A00C22881 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DB5D1B2178363A00C22881 /* NSString+URL.m */; };
 		58DB5D1E2178567C00C22881 /* bbwAPP.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 58DB5D1D2178567C00C22881 /* bbwAPP.pdf */; };
 		58DB5D2B2179C35500C22881 /* SRModalTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DB5D2A2179C35500C22881 /* SRModalTestVC.m */; };
@@ -586,6 +587,8 @@
 		58B44C8721774B8E00AE85BE /* PNLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNLineChart.h; sourceTree = "<group>"; };
 		58B44C9821774BDB00AE85BE /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
 		58B44C9921774BDC00AE85BE /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		58CFFEF521C10D4300367EA4 /* LifeCycleVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LifeCycleVC.h; sourceTree = "<group>"; };
+		58CFFEF621C10D4300367EA4 /* LifeCycleVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleVC.m; sourceTree = "<group>"; };
 		58DB5D1A2178363A00C22881 /* NSString+URL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
 		58DB5D1B2178363A00C22881 /* NSString+URL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		58DB5D1D2178567C00C22881 /* bbwAPP.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bbwAPP.pdf; sourceTree = "<group>"; };
@@ -928,6 +931,7 @@
 		5855C4C92136BEDF00009064 /* FunctionOne */ = {
 			isa = PBXGroup;
 			children = (
+				58CFFEF421C10D2F00367EA4 /* VC生命周期 */,
 				58DFF6E2218C3F1500146244 /* 环形进度条 */,
 				58DB5D282179C30700C22881 /* 半透明Modal */,
 				58B44BF621773B3000AE85BE /* 图表 */,
@@ -1466,6 +1470,15 @@
 			path = PNChart;
 			sourceTree = "<group>";
 		};
+		58CFFEF421C10D2F00367EA4 /* VC生命周期 */ = {
+			isa = PBXGroup;
+			children = (
+				58CFFEF521C10D4300367EA4 /* LifeCycleVC.h */,
+				58CFFEF621C10D4300367EA4 /* LifeCycleVC.m */,
+			);
+			path = "VC生命周期";
+			sourceTree = "<group>";
+		};
 		58DB5D282179C30700C22881 /* 半透明Modal */ = {
 			isa = PBXGroup;
 			children = (
@@ -1795,6 +1808,7 @@
 				5855C4D82136BF3500009064 /* FourViewController.m in Sources */,
 				58738A382160C1E3001076B6 /* FSCalendarDelegationProxy.m in Sources */,
 				58B44C9621774B8F00AE85BE /* PNBar.m in Sources */,
+				58CFFEF721C10D4300367EA4 /* LifeCycleVC.m in Sources */,
 				58B44BF22175D9F700AE85BE /* TipSetItemModel.m in Sources */,
 				5834EA75216DFD3000601016 /* ReaderThumbView.m in Sources */,
 				58F6386C2174B37D00D41B53 /* YYFPSLabel.m in Sources */,

@@ -24,6 +24,7 @@
 #import "SRModalTestVC.h"
 #import "AppDelegate.h"
 #import "TestCircleProgressVC.h"
+#import "LifeCycleVC.h"
 
 #define RANDOM_COLOR [UIColor colorWithHue: (arc4random() % 256 / 256.0) saturation:((arc4random()% 128 / 256.0 ) + 0.5) brightness:(( arc4random() % 128 / 256.0 ) + 0.5) alpha:1]
 
@@ -40,20 +41,63 @@ UITabBarControllerDelegate>
 
 @implementation OneViewController
 
-- (UIWindow *)currentWindow
-{
-    UIApplication *app = [UIApplication sharedApplication];
-    if ([app.delegate respondsToSelector:@selector(window)]) {
-        return [app.delegate window];
-    } else {
-        return [app keyWindow];
-    }
-}
+#pragma mark - LifeCycle
 
+- (void)loadView
+{
+    [super loadView];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+    [self createUI];
+}
+
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+-(void)dealloc
+{
+    NSLog(@"method: %@",NSStringFromSelector(_cmd));
+}
+
+- (void)createUI
+{
     self.title = @"One";
     
     [self.view addSubview:self.tableView];
@@ -68,7 +112,7 @@ UITabBarControllerDelegate>
     __weak typeof(self) weakSelf = self;
     [self.tableView cb_makeDataSource:^(CBTableViewDataSourceMaker *make) {
         [make makeSection:^(CBTableViewSectionMaker *section) {
-           section.cell([PXBMTopClassCell class])
+            section.cell([PXBMTopClassCell class])
             .data(weakSelf.data)
             .adapter(^(PXBMTopClassCell *cell, NSString *text, NSUInteger index){
                 if (index % 2 == 0) {
@@ -77,7 +121,7 @@ UITabBarControllerDelegate>
                     cell.leftView.hidden = NO;
                 }
                 cell.centerLabel.text = [NSString stringWithFormat:@"Demo%zi-%@", index+1, text];
-//                cell.contentView.backgroundColor = RandomColor;
+                //                cell.contentView.backgroundColor = RandomColor;
             });
             
             section.event(^(NSUInteger index,NSDictionary *data) {
@@ -113,16 +157,16 @@ UITabBarControllerDelegate>
                     tblVC.delegate = self;
                     
                     tblVC.isShowExpandedAnimation = NO;
-//                    tblVC.isShowArrowIfNoChildNode = NO;
-//                    tblVC.isShowArrow = YES;
-//                    tblVC.isShowCheck = YES;
-//                    tblVC.isSingleCheck = NO;
-//                    tblVC.isCancelSingleCheck = YES;
-//                    tblVC.isExpandCheckedNode = YES;
-//                    tblVC.isShowLevelColor = YES;
-//                    tblVC.isShowSearchBar = YES;
-//                    tblVC.isSearchRealTime = YES;
-//                    tblVC.checkItemIds = [NSArray array];
+                    //                    tblVC.isShowArrowIfNoChildNode = NO;
+                    //                    tblVC.isShowArrow = YES;
+                    //                    tblVC.isShowCheck = YES;
+                    //                    tblVC.isSingleCheck = NO;
+                    //                    tblVC.isCancelSingleCheck = YES;
+                    //                    tblVC.isExpandCheckedNode = YES;
+                    //                    tblVC.isShowLevelColor = YES;
+                    //                    tblVC.isShowSearchBar = YES;
+                    //                    tblVC.isSearchRealTime = YES;
+                    //                    tblVC.checkItemIds = [NSArray array];
                     
                     [self.navigationController pushViewController:tblVC animated:YES];
                 }
@@ -155,7 +199,7 @@ UITabBarControllerDelegate>
                 if (index == 9) {
                     AppDelegate *app = (AppDelegate *)[UIApplication sharedApplication].delegate;
                     UIViewController *rootVC = app.window.rootViewController;
-                
+                    
                     SRModalTestVC *vc = SRModalTestVC.new;
                     rootVC.definesPresentationContext = YES;
                     vc.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.4];
@@ -168,30 +212,31 @@ UITabBarControllerDelegate>
                     vc.title = self.data[index];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
+                
+                if (index == 11) {
+                    LifeCycleVC *vc = [LifeCycleVC new];
+                    vc.title = self.data[index];
+                    [self.navigationController pushViewController:vc animated:YES];
+                }
             });
             
-//            section.headerTitle(@"11111");
-//            section.footerView(^(){
-//                UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
-//                footer.backgroundColor = OrangeTextColor;
-//                return footer;
-//            });
+            //            section.headerTitle(@"11111");
+            //            section.footerView(^(){
+            //                UIView *footer = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
+            //                footer.backgroundColor = OrangeTextColor;
+            //                return footer;
+            //            });
         }];
         
-//        make.headerView(^(){
-//            UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
-//            header.backgroundColor = OrangeTextColor;
-//            return header;
-//        });
+        //        make.headerView(^(){
+        //            UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 40)];
+        //            header.backgroundColor = OrangeTextColor;
+        //            return header;
+        //        });
         
     }];
-    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 #pragma mark - MYTreeTableViewControllerDelegate
 - (void)tableViewController:(MYTreeTableViewController *)tableViewController checkItems:(NSArray<MYTreeItem *> *)items
 {
@@ -262,6 +307,18 @@ UITabBarControllerDelegate>
 }
 
 #pragma mark - Private
+//获取当前window
+- (UIWindow *)currentWindow
+{
+    UIApplication *app = [UIApplication sharedApplication];
+    if ([app.delegate respondsToSelector:@selector(window)]) {
+        return [app.delegate window];
+    } else {
+        return [app keyWindow];
+    }
+}
+
+#pragma mark - CYLTabBarControllerDelegate
 - (void)customizeInterfaceWithTabBarController:(CYLTabBarController *)tabBarController {
 
     [tabBarController hideTabBadgeBackgroundSeparator];
@@ -321,7 +378,8 @@ UITabBarControllerDelegate>
                           @"异形TabBar",
                           @"图表",
                           @"半透明Modal",
-                          @"环形进度条"];
+                          @"环形进度条",
+                          @"VC生命周期"];
         [_data addObjectsFromArray:data];
         for (NSInteger i=0; i<100; i++) {
             [_data addObject:@"开发中"];
